@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Specification-Title: sdmcrtplus
+Specification-Vendor: 
+Specification-Version: 1
+Implementation-Title: sdmcrtplus
+Implementation-Version: 1.19.2-V0.1
+Implementation-Vendor: 
+Implementation-Timestamp: 2023-08-25T19:06:26+0300
+MixinConfigs: sdmcrtplus.mixins.json
+

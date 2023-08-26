@@ -1,0 +1,4 @@
+net/sixik/sdmcrtplus/mixin/RaidMixin raidMap f_37951_
+net/sixik/sdmcrtplus/mixin/RaidMixin level f_37952_
+net/sixik/sdmcrtplus/mixin/VillagerMixin lastTradedPlayer f_35375_
+net/sixik/sdmcrtplus/mixin/VillagerMixin getVillagerData ()Lnet/minecraft/world/entity/npc/VillagerData; m_7141_
