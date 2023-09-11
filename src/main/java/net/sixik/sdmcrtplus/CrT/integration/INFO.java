@@ -9,6 +9,6 @@ import org.openzen.zencode.java.ZenCodeType;
  */
 @ZenRegister
 @Document("mods/sdmcrtplus/integration/Info")
-@ZenCodeType.Name("mods.sdmcrtplus.integration.Info")
+//@ZenCodeType.Name("mods.sdmcrtplus.integration.Info")
 public class INFO {
 }

@@ -8,6 +8,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.levelgen.structure.Structure;
+import net.minecraftforge.server.ServerLifecycleHooks;
 import org.openzen.zencode.java.ZenCodeType;
 
 import java.util.ArrayList;
@@ -26,5 +27,12 @@ public class ExpandStructure {
             list.add(s.get());
         });
         return list;
+    }
+
+    @ZenCodeType.Method
+    @ZenCodeType.Getter("registryName")
+    public static ResourceLocation getRegistryName(Structure structure){
+       Registry<Structure> registry =  ServerLifecycleHooks.getCurrentServer().registryAccess().registryOrThrow(Registry.STRUCTURE_REGISTRY);
+       return registry.getKey(structure);
     }
 }

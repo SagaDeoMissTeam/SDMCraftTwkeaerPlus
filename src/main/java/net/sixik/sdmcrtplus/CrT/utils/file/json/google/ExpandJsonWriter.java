@@ -15,12 +15,10 @@ import java.io.Writer;
 @Document("mods/sdmcrtplus/utils/file/json/google/JsonWriter")
 @NativeTypeRegistration(value = JsonWriter.class, zenCodeName = "mods.sdmcrtplus.utils.file.json.google.JsonWriter",
 constructors = @NativeConstructor(value = {@NativeConstructor.ConstructorParameter(
-        name = "OutputStream", type = OutputStreamWriter.class
+        name = "OutputStream", type = Writer.class
 )}))
 public class ExpandJsonWriter {
-    public ExpandJsonWriter(){
 
-    }
     /**
      Encodes the property name.
      * @param name – the name of the forthcoming value. May not be null.

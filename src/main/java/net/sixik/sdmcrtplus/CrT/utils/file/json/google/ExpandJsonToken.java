@@ -14,7 +14,4 @@ import javax.json.JsonValue;
 @BracketEnum("json:token")
 public class ExpandJsonToken {
 
-    public ExpandJsonToken(){
-
-    }
 }

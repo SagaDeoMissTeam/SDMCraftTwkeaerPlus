@@ -23,7 +23,8 @@ import java.io.PrintWriter;
                 name = "append",
                 type = boolean.class
         )}
-        ), @NativeConstructor(value = {
+        ),
+                @NativeConstructor(value = {
         @NativeConstructor.ConstructorParameter(
             name = "file", type = File.class
         ),

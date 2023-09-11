@@ -3,14 +3,23 @@ package net.sixik.sdmcrtplus.CrT.entity.type.player;
 
 import com.blamejared.crafttweaker.api.annotation.ZenRegister;
 import com.blamejared.crafttweaker_annotations.annotations.Document;
+import net.minecraft.commands.arguments.ResourceLocationArgument;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Registry;
+import net.minecraft.network.protocol.game.ClientboundCustomSoundPacket;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.server.level.ServerPlayerGameMode;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.phys.Vec3;
 import org.openzen.zencode.java.ZenCodeType;
+
+import java.util.Objects;
 
 /**
  * @docParam this serverPlayer
@@ -67,4 +76,52 @@ public class ExpandServerPlayer {
     public static long getLastActionTime(ServerPlayer player) {
         return player.getLastActionTime();
     }
+
+    @ZenCodeType.Method
+    public static void playNotifySound(ServerPlayer player, ResourceLocation sound, float volume, float pitch){
+        player.playNotifySound(new SoundEvent(sound), SoundSource.PLAYERS, volume, pitch);
+    }
+
+    @ZenCodeType.Method
+    public static void setPlayerInput(ServerPlayer player, float posX, float posY, boolean jump, boolean shiftKey){
+        player.setPlayerInput(posX,posY,jump,shiftKey);
+    }
+
+    @ZenCodeType.Method
+    public static void trackStartFallingPosition(ServerPlayer player){player.trackStartFallingPosition();;
+    }
+
+//    /**
+//     * @param sound - ID of the sound to be played
+//     * @param volume - Volume
+//     * @param pitch - Speed
+//     * @param minVolume - MinVolume
+//     */
+//    @ZenCodeType.Method
+//    public static boolean playSound(ServerPlayer player, ResourceLocation sound, float volume, float pitch, float minVolume){
+//
+//        Registry<SoundEvent> register = player.getServer().registryAccess().registryOrThrow(Registry.SOUND_EVENT_REGISTRY);
+//        for(SoundEvent soundEvent : register){
+//            ResourceLocationArgument.getId(sound, "sound");
+//            if(Objects.equals(register.get(sound), soundEvent)){
+//                float f = volume;
+//                long j = player.getLevel().getRandom().nextLong();
+//
+//                if((minVolume <= 0.0f)){
+//                    f = minVolume;
+//                }
+//
+//                player.connection.send(new ClientboundCustomSoundPacket(
+//                        sound,
+//                        SoundSource.PLAYERS,
+//                        new Vec3(player.getX(),player.getY(),player.getZ()),
+//                        f,
+//                        pitch,
+//                        j
+//                ));
+//                return true;
+//            }
+//        }
+//        return false;
+//    }
 }

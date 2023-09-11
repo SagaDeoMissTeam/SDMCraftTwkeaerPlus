@@ -4,10 +4,12 @@ import com.blamejared.crafttweaker.api.CraftTweakerAPI;
 import com.blamejared.crafttweaker.api.CraftTweakerConstants;
 import com.blamejared.crafttweaker.api.annotation.ZenRegister;
 import com.blamejared.crafttweaker_annotations.annotations.Document;
+import com.google.gson.stream.JsonReader;
+import com.google.gson.stream.JsonWriter;
 import net.minecraft.client.Minecraft;
 import org.openzen.zencode.java.ZenCodeType;
 
-import java.io.IOException;
+import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
@@ -89,5 +91,14 @@ public class FileUtils {
     @ZenCodeType.Method
     public static Path getPath(String path) {
         return Path.of(path);
+    }
+
+    @ZenCodeType.Method
+    public static JsonReader createJsonReader(Reader reader){
+        return new JsonReader(reader);
+    }
+    @ZenCodeType.Method
+    public static JsonWriter createJsonWriter(Writer writer){
+        return new JsonWriter(writer);
     }
 }

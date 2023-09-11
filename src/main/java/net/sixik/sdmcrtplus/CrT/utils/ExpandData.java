@@ -17,7 +17,6 @@ public class ExpandData {
     /**
      Returns the number of seconds past the minute represented by this date. The value returned is between 0 and 59;
      * @param data
-     * @return
      */
     @ZenCodeType.Method
     public static int getSeconds(Date data){

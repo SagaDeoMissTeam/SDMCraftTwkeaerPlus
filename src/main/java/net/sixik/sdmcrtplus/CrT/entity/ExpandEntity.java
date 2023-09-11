@@ -3,6 +3,9 @@ package net.sixik.sdmcrtplus.CrT.entity;
 import com.blamejared.crafttweaker.api.annotation.ZenRegister;
 import com.blamejared.crafttweaker_annotations.annotations.Document;
 import net.minecraft.core.BlockPos;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerPlayer;
+import net.minecraft.sounds.SoundEvent;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
@@ -39,6 +42,15 @@ public class ExpandEntity {
     @ZenCodeType.Method
     public static int getLeftBlocksToUp(Entity player) {
         return player.level.getMaxBuildHeight() - (int) player.getY();
+    }
+
+    @ZenCodeType.Method
+    public static void playSound(Entity entity, ResourceLocation sound){
+        entity.playSound(new SoundEvent(sound));
+    }
+    @ZenCodeType.Method
+    public static void playSound(Entity entity, ResourceLocation sound, float volume, float pitch){
+        entity.playSound(new SoundEvent(sound), volume, pitch);
     }
 
     private static Map<BlockPos,BlockState> getBlocks(Entity player) {

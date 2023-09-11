@@ -12,17 +12,16 @@ import org.openzen.zencode.java.ZenCodeType;
 
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.Reader;
 
 @ZenRegister
 @Document("mods/sdmcrtplus/utils/file/json/google/JsonReader")
 @NativeTypeRegistration(value = JsonReader.class, zenCodeName = "mods.sdmcrtplus.utils.file.json.google.JsonReader",
 constructors = @NativeConstructor(value = {@NativeConstructor.ConstructorParameter(
-        name = "InputStream", type = InputStreamReader.class
+        name = "InputStream", type = Reader.class
 )}))
 public class ExpandJsonReader {
 
-        public ExpandJsonReader(){
-        }
 
         /**
          Consumes the next token from the JSON stream and asserts that it is the beginning of a new array.
