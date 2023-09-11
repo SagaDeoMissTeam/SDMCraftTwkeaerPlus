@@ -1,5 +1,9 @@
 # FillFromNoiseEvent
 
+The event can be canceled
+
+ The event is called when the terrain is created. You can change the generation conditions with it.
+
 The event is not cancelable.
 
 The event does not have a result.

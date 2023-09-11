@@ -6,7 +6,7 @@
   "refmap": "sdmcrtplus.refmap.json",
   "plugin": "net.sixik.sdmcrtplus.mixin.SDMMixinPlugin",
   "mixins": [
-    "mods.enhancedcelestials.MeteorContextMixin",
+    "mods.enhancedcelestials.LunarForecastMixin",
     "vanilla.ChestBlockEntityMixin",
     "vanilla.ChestLootGenMixin",
     "vanilla.EnchantMixin",

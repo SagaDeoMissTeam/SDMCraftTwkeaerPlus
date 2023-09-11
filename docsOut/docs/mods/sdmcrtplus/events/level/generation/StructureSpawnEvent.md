@@ -1,5 +1,9 @@
 # StructureSpawnEvent
 
+The event can be canceled
+
+ An event is called every time a structure tries to appear in the world.
+
 The event is not cancelable.
 
 The event does not have a result.

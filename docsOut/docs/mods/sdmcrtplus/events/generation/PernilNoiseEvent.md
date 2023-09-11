@@ -1,5 +1,9 @@
 # PernilNoiseEvent
 
+The event can be canceled
+
+ Event is called every time the perlin noise is called . In 90% of cases, these are terrain generation.
+
 The event is not cancelable.
 
 The event does not have a result.

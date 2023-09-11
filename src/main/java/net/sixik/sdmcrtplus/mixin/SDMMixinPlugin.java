@@ -15,7 +15,7 @@ public final class SDMMixinPlugin implements IMixinConfigPlugin {
     private static final Supplier<Boolean> TRUE = () -> true;
 
     private static final Map<String, Supplier<Boolean>> CONDITIONS = ImmutableMap.of(
-            "mods.enhancedcelestials.MeteorContextMixin", () -> Services.PLATFORM.isModLoaded("enhancedcelestials")
+            "mods.enhancedcelestials.LunarForecastMixin", () -> Services.PLATFORM.isModLoaded("enhancedcelestials")
     );
     @Override
     public void onLoad(String mixinPackage) {

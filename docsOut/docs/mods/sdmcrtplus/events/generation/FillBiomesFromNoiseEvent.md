@@ -1,5 +1,9 @@
 # FillBiomesFromNoiseEvent
 
+The event can be canceled
+
+ An event is called whenever a biome is created.
+
 The event is not cancelable.
 
 The event does not have a result.
