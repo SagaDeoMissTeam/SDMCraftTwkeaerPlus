@@ -172,6 +172,24 @@ dependencies {
     implementation fg.deobf("curse.maven:enhanced-celestials-438447:4598311")
     implementation fg.deobf("curse.maven:architectury-api-419699:4521273")
 
+    implementation fg.deobf("curse.maven:waystones-245755:4635420")
+    implementation fg.deobf("curse.maven:night-config-fixes-813369:4459148")
+    implementation fg.deobf("curse.maven:placebo-283644:4677899")
+    implementation fg.deobf("curse.maven:balm-531761:4442591")
+    implementation fg.deobf("curse.maven:patchouli-306770:4031402")
+    implementation fg.deobf("curse.maven:caelus-308989:3929284")
+
+    implementation fg.deobf("curse.maven:apotheosis-313970:4730358")
+    implementation fg.deobf("curse.maven:enigmatic-legacy-336184:4392950")
+
+
+    implementation fg.deobf("curse.maven:minecolonies-245506:4735228")
+
+    implementation fg.deobf("curse.maven:blockui-522992:4399022")
+    implementation fg.deobf("curse.maven:domum-ornamentum-527361:4741135")
+    implementation fg.deobf("curse.maven:multi-piston-303278:4128597")
+    implementation fg.deobf("curse.maven:structurize-298744:4716727")
+
     annotationProcessor ctDep
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 

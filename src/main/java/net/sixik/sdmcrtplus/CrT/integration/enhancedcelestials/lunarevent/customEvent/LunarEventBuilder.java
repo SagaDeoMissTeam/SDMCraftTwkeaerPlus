@@ -20,6 +20,8 @@ import net.sixik.sdmcrtplus.Sdmcrtplus;
 import org.openzen.zencode.java.ZenCodeType;
 import twilightforest.item.SteeleafHoeItem;
 
+import static corgitaco.enhancedcelestials.api.lunarevent.DefaultLunarEvents.LUNAR_EVENTS;
+
 @Document("mods/sdmcrtplus/integration/enhancedcelestials/lunarevent/customEvent/LunarEventBuilder")
 @ZenCodeType.Name("mods.sdmcrtplus.integration.enhancedcelestials.lunarevent.customEvent.LunarEventBuilder")
 @ZenRegister(modDeps = "enhancedcelestials", loaders = SDMConstants.CT_LOADER)

@@ -1,0 +1,35 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.sixik.sdmcrtplus.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "sdmcrtplus.refmap.json",
+  "plugin": "net.sixik.sdmcrtplus.mixin.SDMMixinPlugin",
+  "mixins": [
+    "mods.enhancedcelestials.LunarForecastMixin",
+    "vanilla.ChestBlockEntityMixin",
+    "vanilla.ChestLootGenMixin",
+    "vanilla.EnchantMixin",
+    "vanilla.EntityLivingMixin",
+    "vanilla.MixinEntityPlayer",
+    "vanilla.PotionItemMixin",
+    "vanilla.RaidMixin",
+    "vanilla.ServerPlayerMixin",
+    "vanilla.VillagerMixin",
+    "vanilla.generation.BlendMixin",
+    "vanilla.generation.ChunkAccessMixin",
+    "vanilla.generation.ChunkGeneratorMixin",
+    "vanilla.generation.ChunkMapMixin",
+    "vanilla.generation.DualNoiseProviderMixin",
+    "vanilla.generation.LevelChunkSectionMixin",
+    "vanilla.generation.NoiseBasedChunkGeneratorMixin",
+    "vanilla.generation.PerlinNoiseMixin",
+    "vanilla.generation.StructureStartMixin",
+    "vanilla.generation.SurfaceSystemMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "mappings": {
+    "net/sixik/sdmcrtplus/mixin/vanilla/RaidMixin": {
+      "Lnet/minecraft/world/entity/raid/Raid;tick()V": "Lnet/minecraft/world/entity/raid/Raid;m_37775_()V",
+      "Lnet/minecraft/world/entity/raid/Raids;tick()V": "Lnet/minecraft/world/entity/raid/Raids;m_37957_()V"
+    },
+    "net/sixik/sdmcrtplus/mixin/vanilla/MixinEntityPlayer": {
+      "Lnet/minecraft/world/entity/player/Player;eat(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;": "Lnet/minecraft/world/entity/player/Player;m_5584_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;"
+    },
+    "net/sixik/sdmcrtplus/mixin/vanilla/EntityLivingMixin": {
+      "Lnet/minecraft/world/entity/LivingEntity;onItemPickup(Lnet/minecraft/world/entity/item/ItemEntity;)V": "Lnet/minecraft/world/entity/LivingEntity;m_21053_(Lnet/minecraft/world/entity/item/ItemEntity;)V",
+      "Lnet/minecraft/world/entity/ExperienceOrb;award(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/phys/Vec3;I)V": "Lnet/minecraft/world/entity/ExperienceOrb;m_147082_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/phys/Vec3;I)V",
+      "Lnet/minecraft/world/entity/LivingEntity;dropExperience()V": "Lnet/minecraft/world/entity/LivingEntity;m_21226_()V",
+      "Lnet/minecraft/world/entity/LivingEntity;tick()V": "Lnet/minecraft/world/entity/LivingEntity;m_8119_()V"
+    },
+    "net/sixik/sdmcrtplus/mixin/vanilla/VillagerMixin": {
+      "Lnet/minecraft/world/entity/npc/Villager;startTrading(Lnet/minecraft/world/entity/player/Player;)V": "Lnet/minecraft/world/entity/npc/Villager;m_35536_(Lnet/minecraft/world/entity/player/Player;)V",
+      "Lnet/minecraft/world/entity/npc/Villager;mobInteract(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;": "Lnet/minecraft/world/entity/npc/Villager;m_6071_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;"
+    },
+    "net/sixik/sdmcrtplus/mixin/vanilla/generation/BlendMixin": {
+      "addAroundOldChunksCarvingMaskFilter": "Lnet/minecraft/world/level/levelgen/blending/Blender;m_197034_(Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/world/level/chunk/ProtoChunk;)V"
+    },
+    "net/sixik/sdmcrtplus/mixin/vanilla/EnchantMixin": {
+      "Lnet/minecraft/world/item/ItemStack;enchant(Lnet/minecraft/world/item/enchantment/Enchantment;I)V": "Lnet/minecraft/world/item/ItemStack;m_41663_(Lnet/minecraft/world/item/enchantment/Enchantment;I)V",
+      "lambda$clickMenuButton$1(Lnet/minecraft/world/item/ItemStack;ILnet/minecraft/world/entity/player/Player;ILnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V": "Lnet/minecraft/world/inventory/EnchantmentMenu;m_39475_(Lnet/minecraft/world/item/ItemStack;ILnet/minecraft/world/entity/player/Player;ILnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V"
+    },
+    "net/sixik/sdmcrtplus/mixin/vanilla/generation/ChunkGeneratorMixin": {
+      "applyBiomeDecoration": "Lnet/minecraft/world/level/chunk/ChunkGenerator;m_213609_(Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/world/level/chunk/ChunkAccess;Lnet/minecraft/world/level/StructureManager;)V",
+      "createBiomes": "Lnet/minecraft/world/level/chunk/ChunkGenerator;m_213908_(Lnet/minecraft/core/Registry;Ljava/util/concurrent/Executor;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/levelgen/blending/Blender;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/chunk/ChunkAccess;)Ljava/util/concurrent/CompletableFuture;",
+      "Lnet/minecraft/world/level/StructureManager;startsForStructure(Lnet/minecraft/core/SectionPos;Lnet/minecraft/world/level/levelgen/structure/Structure;)Ljava/util/List;": "Lnet/minecraft/world/level/StructureManager;m_220504_(Lnet/minecraft/core/SectionPos;Lnet/minecraft/world/level/levelgen/structure/Structure;)Ljava/util/List;"
+    },
+    "net/sixik/sdmcrtplus/mixin/vanilla/ServerPlayerMixin": {
+      "sendChatMessage": "Lnet/minecraft/server/level/ServerPlayer;m_243093_(Lnet/minecraft/network/chat/OutgoingPlayerChatMessage;ZLnet/minecraft/network/chat/ChatType$Bound;)V"
+    },
+    "net/sixik/sdmcrtplus/mixin/vanilla/ChestBlockEntityMixin": {
+      "Lnet/minecraft/world/level/block/entity/ChestBlockEntity;startOpen(Lnet/minecraft/world/entity/player/Player;)V": "Lnet/minecraft/world/level/block/entity/ChestBlockEntity;m_5856_(Lnet/minecraft/world/entity/player/Player;)V",
+      "Lnet/minecraft/world/level/block/entity/ChestBlockEntity;stopOpen(Lnet/minecraft/world/entity/player/Player;)V": "Lnet/minecraft/world/level/block/entity/ChestBlockEntity;m_5785_(Lnet/minecraft/world/entity/player/Player;)V"
+    },
+    "net/sixik/sdmcrtplus/mixin/vanilla/generation/SurfaceSystemMixin": {
+      "buildSurface": "Lnet/minecraft/world/level/levelgen/SurfaceSystem;m_224648_(Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/biome/BiomeManager;Lnet/minecraft/core/Registry;ZLnet/minecraft/world/level/levelgen/WorldGenerationContext;Lnet/minecraft/world/level/chunk/ChunkAccess;Lnet/minecraft/world/level/levelgen/NoiseChunk;Lnet/minecraft/world/level/levelgen/SurfaceRules$RuleSource;)V"
+    },
+    "net/sixik/sdmcrtplus/mixin/vanilla/ChestLootGenMixin": {
+      "fill": "Lnet/minecraft/world/level/storage/loot/LootTable;m_79123_(Lnet/minecraft/world/Container;Lnet/minecraft/world/level/storage/loot/LootContext;)V"
+    },
+    "net/sixik/sdmcrtplus/mixin/vanilla/generation/PerlinNoiseMixin": {
+      "Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;getValue(DDDDDZ)D": "Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;m_75417_(DDDDDZ)D"
+    },
+    "net/sixik/sdmcrtplus/mixin/vanilla/generation/ChunkMapMixin": {
+      "Lnet/minecraft/server/level/ChunkMap;playerLoadedChunk(Lnet/minecraft/server/level/ServerPlayer;Lorg/apache/commons/lang3/mutable/MutableObject;Lnet/minecraft/world/level/chunk/LevelChunk;)V": "Lnet/minecraft/server/level/ChunkMap;m_183760_(Lnet/minecraft/server/level/ServerPlayer;Lorg/apache/commons/lang3/mutable/MutableObject;Lnet/minecraft/world/level/chunk/LevelChunk;)V"
+    },
+    "net/sixik/sdmcrtplus/mixin/vanilla/PotionItemMixin": {
+      "Lnet/minecraft/world/item/PotionItem;finishUsingItem(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/ItemStack;": "Lnet/minecraft/world/item/PotionItem;m_5922_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/ItemStack;"
+    },
+    "net/sixik/sdmcrtplus/mixin/vanilla/generation/LevelChunkSectionMixin": {
+      "fillBiomesFromNoise": "Lnet/minecraft/world/level/chunk/LevelChunkSection;m_188003_(Lnet/minecraft/world/level/biome/BiomeResolver;Lnet/minecraft/world/level/biome/Climate$Sampler;II)V"
+    },
+    "net/sixik/sdmcrtplus/mixin/vanilla/generation/NoiseBasedChunkGeneratorMixin": {
+      "Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;buildSurface(Lnet/minecraft/server/level/WorldGenRegion;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/chunk/ChunkAccess;)V": "Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;m_214194_(Lnet/minecraft/server/level/WorldGenRegion;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/chunk/ChunkAccess;)V",
+      "fillFromNoise": "Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;m_213974_(Ljava/util/concurrent/Executor;Lnet/minecraft/world/level/levelgen/blending/Blender;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/chunk/ChunkAccess;)Ljava/util/concurrent/CompletableFuture;",
+      "applyCarvers": "Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;m_213679_(Lnet/minecraft/server/level/WorldGenRegion;JLnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/biome/BiomeManager;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/chunk/ChunkAccess;Lnet/minecraft/world/level/levelgen/GenerationStep$Carving;)V"
+    }
+  },
+  "data": {
+    "searge": {
+      "net/sixik/sdmcrtplus/mixin/vanilla/RaidMixin": {
+        "Lnet/minecraft/world/entity/raid/Raid;tick()V": "Lnet/minecraft/world/entity/raid/Raid;m_37775_()V",
+        "Lnet/minecraft/world/entity/raid/Raids;tick()V": "Lnet/minecraft/world/entity/raid/Raids;m_37957_()V"
+      },
+      "net/sixik/sdmcrtplus/mixin/vanilla/MixinEntityPlayer": {
+        "Lnet/minecraft/world/entity/player/Player;eat(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;": "Lnet/minecraft/world/entity/player/Player;m_5584_(Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/world/item/ItemStack;"
+      },
+      "net/sixik/sdmcrtplus/mixin/vanilla/EntityLivingMixin": {
+        "Lnet/minecraft/world/entity/LivingEntity;onItemPickup(Lnet/minecraft/world/entity/item/ItemEntity;)V": "Lnet/minecraft/world/entity/LivingEntity;m_21053_(Lnet/minecraft/world/entity/item/ItemEntity;)V",
+        "Lnet/minecraft/world/entity/ExperienceOrb;award(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/phys/Vec3;I)V": "Lnet/minecraft/world/entity/ExperienceOrb;m_147082_(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/phys/Vec3;I)V",
+        "Lnet/minecraft/world/entity/LivingEntity;dropExperience()V": "Lnet/minecraft/world/entity/LivingEntity;m_21226_()V",
+        "Lnet/minecraft/world/entity/LivingEntity;tick()V": "Lnet/minecraft/world/entity/LivingEntity;m_8119_()V"
+      },
+      "net/sixik/sdmcrtplus/mixin/vanilla/VillagerMixin": {
+        "Lnet/minecraft/world/entity/npc/Villager;startTrading(Lnet/minecraft/world/entity/player/Player;)V": "Lnet/minecraft/world/entity/npc/Villager;m_35536_(Lnet/minecraft/world/entity/player/Player;)V",
+        "Lnet/minecraft/world/entity/npc/Villager;mobInteract(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;": "Lnet/minecraft/world/entity/npc/Villager;m_6071_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;"
+      },
+      "net/sixik/sdmcrtplus/mixin/vanilla/generation/BlendMixin": {
+        "addAroundOldChunksCarvingMaskFilter": "Lnet/minecraft/world/level/levelgen/blending/Blender;m_197034_(Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/world/level/chunk/ProtoChunk;)V"
+      },
+      "net/sixik/sdmcrtplus/mixin/vanilla/EnchantMixin": {
+        "Lnet/minecraft/world/item/ItemStack;enchant(Lnet/minecraft/world/item/enchantment/Enchantment;I)V": "Lnet/minecraft/world/item/ItemStack;m_41663_(Lnet/minecraft/world/item/enchantment/Enchantment;I)V",
+        "lambda$clickMenuButton$1(Lnet/minecraft/world/item/ItemStack;ILnet/minecraft/world/entity/player/Player;ILnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V": "Lnet/minecraft/world/inventory/EnchantmentMenu;m_39475_(Lnet/minecraft/world/item/ItemStack;ILnet/minecraft/world/entity/player/Player;ILnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V"
+      },
+      "net/sixik/sdmcrtplus/mixin/vanilla/generation/ChunkGeneratorMixin": {
+        "applyBiomeDecoration": "Lnet/minecraft/world/level/chunk/ChunkGenerator;m_213609_(Lnet/minecraft/world/level/WorldGenLevel;Lnet/minecraft/world/level/chunk/ChunkAccess;Lnet/minecraft/world/level/StructureManager;)V",
+        "createBiomes": "Lnet/minecraft/world/level/chunk/ChunkGenerator;m_213908_(Lnet/minecraft/core/Registry;Ljava/util/concurrent/Executor;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/levelgen/blending/Blender;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/chunk/ChunkAccess;)Ljava/util/concurrent/CompletableFuture;",
+        "Lnet/minecraft/world/level/StructureManager;startsForStructure(Lnet/minecraft/core/SectionPos;Lnet/minecraft/world/level/levelgen/structure/Structure;)Ljava/util/List;": "Lnet/minecraft/world/level/StructureManager;m_220504_(Lnet/minecraft/core/SectionPos;Lnet/minecraft/world/level/levelgen/structure/Structure;)Ljava/util/List;"
+      },
+      "net/sixik/sdmcrtplus/mixin/vanilla/ServerPlayerMixin": {
+        "sendChatMessage": "Lnet/minecraft/server/level/ServerPlayer;m_243093_(Lnet/minecraft/network/chat/OutgoingPlayerChatMessage;ZLnet/minecraft/network/chat/ChatType$Bound;)V"
+      },
+      "net/sixik/sdmcrtplus/mixin/vanilla/ChestBlockEntityMixin": {
+        "Lnet/minecraft/world/level/block/entity/ChestBlockEntity;startOpen(Lnet/minecraft/world/entity/player/Player;)V": "Lnet/minecraft/world/level/block/entity/ChestBlockEntity;m_5856_(Lnet/minecraft/world/entity/player/Player;)V",
+        "Lnet/minecraft/world/level/block/entity/ChestBlockEntity;stopOpen(Lnet/minecraft/world/entity/player/Player;)V": "Lnet/minecraft/world/level/block/entity/ChestBlockEntity;m_5785_(Lnet/minecraft/world/entity/player/Player;)V"
+      },
+      "net/sixik/sdmcrtplus/mixin/vanilla/generation/SurfaceSystemMixin": {
+        "buildSurface": "Lnet/minecraft/world/level/levelgen/SurfaceSystem;m_224648_(Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/biome/BiomeManager;Lnet/minecraft/core/Registry;ZLnet/minecraft/world/level/levelgen/WorldGenerationContext;Lnet/minecraft/world/level/chunk/ChunkAccess;Lnet/minecraft/world/level/levelgen/NoiseChunk;Lnet/minecraft/world/level/levelgen/SurfaceRules$RuleSource;)V"
+      },
+      "net/sixik/sdmcrtplus/mixin/vanilla/ChestLootGenMixin": {
+        "fill": "Lnet/minecraft/world/level/storage/loot/LootTable;m_79123_(Lnet/minecraft/world/Container;Lnet/minecraft/world/level/storage/loot/LootContext;)V"
+      },
+      "net/sixik/sdmcrtplus/mixin/vanilla/generation/PerlinNoiseMixin": {
+        "Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;getValue(DDDDDZ)D": "Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;m_75417_(DDDDDZ)D"
+      },
+      "net/sixik/sdmcrtplus/mixin/vanilla/generation/ChunkMapMixin": {
+        "Lnet/minecraft/server/level/ChunkMap;playerLoadedChunk(Lnet/minecraft/server/level/ServerPlayer;Lorg/apache/commons/lang3/mutable/MutableObject;Lnet/minecraft/world/level/chunk/LevelChunk;)V": "Lnet/minecraft/server/level/ChunkMap;m_183760_(Lnet/minecraft/server/level/ServerPlayer;Lorg/apache/commons/lang3/mutable/MutableObject;Lnet/minecraft/world/level/chunk/LevelChunk;)V"
+      },
+      "net/sixik/sdmcrtplus/mixin/vanilla/PotionItemMixin": {
+        "Lnet/minecraft/world/item/PotionItem;finishUsingItem(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/ItemStack;": "Lnet/minecraft/world/item/PotionItem;m_5922_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/entity/LivingEntity;)Lnet/minecraft/world/item/ItemStack;"
+      },
+      "net/sixik/sdmcrtplus/mixin/vanilla/generation/LevelChunkSectionMixin": {
+        "fillBiomesFromNoise": "Lnet/minecraft/world/level/chunk/LevelChunkSection;m_188003_(Lnet/minecraft/world/level/biome/BiomeResolver;Lnet/minecraft/world/level/biome/Climate$Sampler;II)V"
+      },
+      "net/sixik/sdmcrtplus/mixin/vanilla/generation/NoiseBasedChunkGeneratorMixin": {
+        "Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;buildSurface(Lnet/minecraft/server/level/WorldGenRegion;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/chunk/ChunkAccess;)V": "Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;m_214194_(Lnet/minecraft/server/level/WorldGenRegion;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/chunk/ChunkAccess;)V",
+        "fillFromNoise": "Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;m_213974_(Ljava/util/concurrent/Executor;Lnet/minecraft/world/level/levelgen/blending/Blender;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/chunk/ChunkAccess;)Ljava/util/concurrent/CompletableFuture;",
+        "applyCarvers": "Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;m_213679_(Lnet/minecraft/server/level/WorldGenRegion;JLnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/biome/BiomeManager;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/chunk/ChunkAccess;Lnet/minecraft/world/level/levelgen/GenerationStep$Carving;)V"
+      }
+    }
+  }
+}

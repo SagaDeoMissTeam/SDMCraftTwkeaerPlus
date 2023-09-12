@@ -1,0 +1,17 @@
+net/sixik/sdmcrtplus/mixin/vanilla/generation/ChunkGeneratorMixin featuresPerStep f_223020_
+net/sixik/sdmcrtplus/mixin/vanilla/generation/ChunkGeneratorMixin biomeSource f_62137_
+net/sixik/sdmcrtplus/mixin/vanilla/generation/ChunkGeneratorMixin generationSettingsGetter f_223021_
+net/sixik/sdmcrtplus/mixin/vanilla/generation/LevelChunkSectionMixin bottomBlockY f_62968_
+net/sixik/sdmcrtplus/mixin/vanilla/generation/LevelChunkSectionMixin biomes f_187995_
+net/sixik/sdmcrtplus/mixin/vanilla/generation/NoiseBasedChunkGeneratorMixin settings f_64318_
+net/sixik/sdmcrtplus/mixin/vanilla/generation/StructureStartMixin pieceContainer f_192654_
+net/sixik/sdmcrtplus/mixin/vanilla/generation/StructureStartMixin structure f_226844_
+net/sixik/sdmcrtplus/mixin/vanilla/generation/StructureStartMixin cachedBoundingBox f_163593_
+net/sixik/sdmcrtplus/mixin/vanilla/generation/StructureStartMixin references f_73568_
+net/sixik/sdmcrtplus/mixin/vanilla/RaidMixin raidMap f_37951_
+net/sixik/sdmcrtplus/mixin/vanilla/RaidMixin level f_37952_
+net/sixik/sdmcrtplus/mixin/vanilla/VillagerMixin lastTradedPlayer f_35375_
+net/sixik/sdmcrtplus/mixin/vanilla/generation/ChunkGeneratorMixin ensureStructuresGenerated (Lnet/minecraft/world/level/levelgen/RandomState;)V m_223100_
+net/sixik/sdmcrtplus/mixin/vanilla/generation/NoiseBasedChunkGeneratorMixin doFill (Lnet/minecraft/world/level/levelgen/blending/Blender;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/chunk/ChunkAccess;II)Lnet/minecraft/world/level/chunk/ChunkAccess; m_224284_
+net/sixik/sdmcrtplus/mixin/vanilla/generation/StructureStartMixin getStructure ()Lnet/minecraft/world/level/levelgen/structure/Structure; m_226861_
+net/sixik/sdmcrtplus/mixin/vanilla/VillagerMixin getVillagerData ()Lnet/minecraft/world/entity/npc/VillagerData; m_7141_
