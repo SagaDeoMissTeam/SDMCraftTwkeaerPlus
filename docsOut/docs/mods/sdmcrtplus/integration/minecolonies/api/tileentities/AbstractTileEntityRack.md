@@ -19,12 +19,12 @@ AbstractTileEntityRack extends [BlockEntity](/vanilla/api/block/entity/BlockEnti
 Return Type: int
 
 ```zenscript
-AbstractTileEntityRack.getCount(var1 as invalid) as int
+AbstractTileEntityRack.getCount(var1 as ItemStorage) as int
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | **invalid** |
+| Parameter |                                       Type                                        |
+|-----------|-----------------------------------------------------------------------------------|
+| var1      | [ItemStorage](/mods/sdmcrtplus/integration/minecolonies/api/crafting/ItemStorage) |
 
 
 :::

@@ -51,10 +51,10 @@ myIBuildingWorkerModule.getJobEntry();
 
 :::group{name=getPrimarySkill}
 
-Return Type: **invalid**
+Return Type: [Skill](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/Skill)
 
 ```zenscript
-// IBuildingWorkerModule.getPrimarySkill() as invalid
+// IBuildingWorkerModule.getPrimarySkill() as Skill
 
 myIBuildingWorkerModule.getPrimarySkill();
 ```
@@ -63,10 +63,10 @@ myIBuildingWorkerModule.getPrimarySkill();
 
 :::group{name=getSecondarySkill}
 
-Return Type: **invalid**
+Return Type: [Skill](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/Skill)
 
 ```zenscript
-// IBuildingWorkerModule.getSecondarySkill() as invalid
+// IBuildingWorkerModule.getSecondarySkill() as Skill
 
 myIBuildingWorkerModule.getSecondarySkill();
 ```

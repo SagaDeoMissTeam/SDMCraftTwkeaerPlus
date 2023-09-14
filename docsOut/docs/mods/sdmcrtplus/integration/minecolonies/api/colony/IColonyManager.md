@@ -32,14 +32,14 @@ IColonyManager.createColony(var1 as Level, var2 as BlockPos, var3 as Player, var
 :::group{name=deleteColonyByDimension}
 
 ```zenscript
-IColonyManager.deleteColonyByDimension(var1 as int, var2 as boolean, var3 as invalid)
+IColonyManager.deleteColonyByDimension(var1 as int, var2 as boolean, var3 as ResourceKey<Level>)
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | int         |
-| var2      | boolean     |
-| var3      | **invalid** |
+| Parameter |                                             Type                                              |
+|-----------|-----------------------------------------------------------------------------------------------|
+| var1      | int                                                                                           |
+| var2      | boolean                                                                                       |
+| var3      | [ResourceKey](/mods/sdmcrtplus/resource/ResourceKey)&lt;[Level](/vanilla/api/world/Level)&gt; |
 
 
 :::
@@ -92,13 +92,13 @@ IColonyManager.getBuilding(var1 as Level, var2 as BlockPos) as IBuilding
 Return Type: [IBuildingView](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/views/IBuildingView)
 
 ```zenscript
-IColonyManager.getBuildingView(var1 as invalid, var2 as BlockPos) as IBuildingView
+IColonyManager.getBuildingView(var1 as ResourceKey<Level>, var2 as BlockPos) as IBuildingView
 ```
 
-| Parameter |                    Type                     |
-|-----------|---------------------------------------------|
-| var1      | **invalid**                                 |
-| var2      | [BlockPos](/vanilla/api/util/math/BlockPos) |
+| Parameter |                                             Type                                              |
+|-----------|-----------------------------------------------------------------------------------------------|
+| var1      | [ResourceKey](/mods/sdmcrtplus/resource/ResourceKey)&lt;[Level](/vanilla/api/world/Level)&gt; |
+| var2      | [BlockPos](/vanilla/api/util/math/BlockPos)                                                   |
 
 
 :::
@@ -186,13 +186,13 @@ IColonyManager.getColoniesAbandonedSince(var1 as int) as stdlib.List<IColony>
 Return Type: [IColony](/mods/sdmcrtplus/integration/minecolonies/api/colony/IColony)?
 
 ```zenscript
-IColonyManager.getColonyByDimension(var1 as int, var2 as invalid) as IColony?
+IColonyManager.getColonyByDimension(var1 as int, var2 as ResourceKey<Level>) as IColony?
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | int         |
-| var2      | **invalid** |
+| Parameter |                                             Type                                              |
+|-----------|-----------------------------------------------------------------------------------------------|
+| var1      | int                                                                                           |
+| var2      | [ResourceKey](/mods/sdmcrtplus/resource/ResourceKey)&lt;[Level](/vanilla/api/world/Level)&gt; |
 
 
 :::
@@ -202,13 +202,13 @@ IColonyManager.getColonyByDimension(var1 as int, var2 as invalid) as IColony?
 Return Type: [IColony](/mods/sdmcrtplus/integration/minecolonies/api/colony/IColony)
 
 ```zenscript
-IColonyManager.getColonyByPosFromDim(var1 as invalid, var2 as BlockPos) as IColony
+IColonyManager.getColonyByPosFromDim(var1 as ResourceKey<Level>, var2 as BlockPos) as IColony
 ```
 
-| Parameter |                    Type                     |
-|-----------|---------------------------------------------|
-| var1      | **invalid**                                 |
-| var2      | [BlockPos](/vanilla/api/util/math/BlockPos) |
+| Parameter |                                             Type                                              |
+|-----------|-----------------------------------------------------------------------------------------------|
+| var1      | [ResourceKey](/mods/sdmcrtplus/resource/ResourceKey)&lt;[Level](/vanilla/api/world/Level)&gt; |
+| var2      | [BlockPos](/vanilla/api/util/math/BlockPos)                                                   |
 
 
 :::
@@ -250,13 +250,13 @@ IColonyManager.getColonyByWorld(var1 as int, var2 as Level) as IColony?
 Return Type: [IColonyView](/mods/sdmcrtplus/integration/minecolonies/api/colony/IColonyView)
 
 ```zenscript
-IColonyManager.getColonyView(var1 as int, var2 as invalid) as IColonyView
+IColonyManager.getColonyView(var1 as int, var2 as ResourceKey<Level>) as IColonyView
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | int         |
-| var2      | **invalid** |
+| Parameter |                                             Type                                              |
+|-----------|-----------------------------------------------------------------------------------------------|
+| var1      | int                                                                                           |
+| var2      | [ResourceKey](/mods/sdmcrtplus/resource/ResourceKey)&lt;[Level](/vanilla/api/world/Level)&gt; |
 
 
 :::
@@ -429,13 +429,13 @@ IColonyManager.openReactivationWindow(var1 as BlockPos)
 :::group{name=removeColonyView}
 
 ```zenscript
-IColonyManager.removeColonyView(var1 as int, var2 as invalid)
+IColonyManager.removeColonyView(var1 as int, var2 as ResourceKey<Level>)
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | int         |
-| var2      | **invalid** |
+| Parameter |                                             Type                                              |
+|-----------|-----------------------------------------------------------------------------------------------|
+| var1      | int                                                                                           |
+| var2      | [ResourceKey](/mods/sdmcrtplus/resource/ResourceKey)&lt;[Level](/vanilla/api/world/Level)&gt; |
 
 
 :::

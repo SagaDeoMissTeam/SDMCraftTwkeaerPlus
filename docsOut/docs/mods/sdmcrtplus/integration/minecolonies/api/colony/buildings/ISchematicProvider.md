@@ -210,21 +210,6 @@ myISchematicProvider.markDirty();
 
 :::
 
-:::group{name=onUpgradeSchematicTo}
-
-```zenscript
-ISchematicProvider.onUpgradeSchematicTo(var1 as string, var2 as string, var3 as invalid)
-```
-
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | string      |
-| var2      | string      |
-| var3      | **invalid** |
-
-
-:::
-
 :::group{name=setBlueprintPath}
 
 ```zenscript

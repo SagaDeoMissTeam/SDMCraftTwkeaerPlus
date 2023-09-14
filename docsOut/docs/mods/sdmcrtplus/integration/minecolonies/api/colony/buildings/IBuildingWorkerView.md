@@ -54,10 +54,10 @@ myIBuildingWorkerView.getJobName();
 
 :::group{name=getPrimarySkill}
 
-Return Type: **invalid**
+Return Type: [Skill](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/Skill)
 
 ```zenscript
-// IBuildingWorkerView.getPrimarySkill() as invalid
+// IBuildingWorkerView.getPrimarySkill() as Skill
 
 myIBuildingWorkerView.getPrimarySkill();
 ```
@@ -66,10 +66,10 @@ myIBuildingWorkerView.getPrimarySkill();
 
 :::group{name=getSecondarySkill}
 
-Return Type: **invalid**
+Return Type: [Skill](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/Skill)
 
 ```zenscript
-// IBuildingWorkerView.getSecondarySkill() as invalid
+// IBuildingWorkerView.getSecondarySkill() as Skill
 
 myIBuildingWorkerView.getSecondarySkill();
 ```
@@ -116,12 +116,12 @@ IBuildingWorkerView.removeWorkerId(var1 as int)
 :::group{name=setHiringMode}
 
 ```zenscript
-IBuildingWorkerView.setHiringMode(var1 as invalid)
+IBuildingWorkerView.setHiringMode(var1 as HiringMode)
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | **invalid** |
+| Parameter |                                          Type                                           |
+|-----------|-----------------------------------------------------------------------------------------|
+| var1      | [HiringMode](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/HiringMode) |
 
 
 :::

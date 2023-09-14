@@ -17,8 +17,8 @@ import org.openzen.zencode.java.ZenCodeType;
  * An event is called whenever a biome is created.
  */
 @ZenRegister
-@Document("mods/sdmcrtplus/events/generation/FillBiomesFromNoiseEvent")
-@NativeTypeRegistration(value = fillBiomesFromNoiseEvent.class, zenCodeName = "mods.sdmcrtplus.events.generation.FillBiomesFromNoiseEvent")
+@Document("mods/sdmcrtplus/events/level/generation/FillBiomesFromNoiseEvent")
+@NativeTypeRegistration(value = fillBiomesFromNoiseEvent.class, zenCodeName = "mods.sdmcrtplus.events.level.generation.FillBiomesFromNoiseEvent")
 public class ExpandFillBiomesFromNoiseEvent {
 
     @ZenCodeType.Method

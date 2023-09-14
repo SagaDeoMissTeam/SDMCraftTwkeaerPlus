@@ -15,6 +15,8 @@ import net.minecraft.world.level.levelgen.structure.Structure;
 import net.sixik.sdmcrtplus.source.events.StructureSpawnEvent;
 import org.openzen.zencode.java.ZenCodeType;
 
+import java.util.Objects;
+
 /**
  * The event can be canceled
  *
@@ -34,7 +36,7 @@ public class ExpandStructureSpawnEvent {
         Registry<Structure> registry = event.getLevel().registryAccess().registryOrThrow(Registry.STRUCTURE_REGISTRY);
         Structure st = null;
         for(Structure structure1 : registry){
-            if(registry.get(structure).equals(structure1)){
+            if(Objects.equals(registry.get(structure), structure1)){
                 st = structure1;
             }
         }

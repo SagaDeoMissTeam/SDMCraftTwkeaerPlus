@@ -39,13 +39,13 @@ myIRequester.getLocation();
 Return Type: [MutableComponent](/vanilla/api/text/MutableComponent)
 
 ```zenscript
-IRequester.getRequesterDisplayName(var1 as invalid, var2 as IRequest) as MutableComponent
+IRequester.getRequesterDisplayName(var1 as IRequestManager, var2 as IRequest) as MutableComponent
 ```
 
-| Parameter |                                              Type                                               |
-|-----------|-------------------------------------------------------------------------------------------------|
-| var1      | **invalid**                                                                                     |
-| var2      | [IRequest](/mods/sdmcrtplus/integration/minecolonies/api/colony/requestsystem/request/IRequest) |
+| Parameter |                                                    Type                                                     |
+|-----------|-------------------------------------------------------------------------------------------------------------|
+| var1      | [IRequestManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/IRequestManager) |
+| var2      | [IRequest](/mods/sdmcrtplus/integration/minecolonies/api/colony/requestsystem/request/IRequest)             |
 
 
 :::
@@ -53,13 +53,13 @@ IRequester.getRequesterDisplayName(var1 as invalid, var2 as IRequest) as Mutable
 :::group{name=onRequestedRequestCancelled}
 
 ```zenscript
-IRequester.onRequestedRequestCancelled(var1 as invalid, var2 as IRequest)
+IRequester.onRequestedRequestCancelled(var1 as IRequestManager, var2 as IRequest)
 ```
 
-| Parameter |                                              Type                                               |
-|-----------|-------------------------------------------------------------------------------------------------|
-| var1      | **invalid**                                                                                     |
-| var2      | [IRequest](/mods/sdmcrtplus/integration/minecolonies/api/colony/requestsystem/request/IRequest) |
+| Parameter |                                                    Type                                                     |
+|-----------|-------------------------------------------------------------------------------------------------------------|
+| var1      | [IRequestManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/IRequestManager) |
+| var2      | [IRequest](/mods/sdmcrtplus/integration/minecolonies/api/colony/requestsystem/request/IRequest)             |
 
 
 :::
@@ -67,13 +67,13 @@ IRequester.onRequestedRequestCancelled(var1 as invalid, var2 as IRequest)
 :::group{name=onRequestedRequestComplete}
 
 ```zenscript
-IRequester.onRequestedRequestComplete(var1 as invalid, var2 as IRequest)
+IRequester.onRequestedRequestComplete(var1 as IRequestManager, var2 as IRequest)
 ```
 
-| Parameter |                                              Type                                               |
-|-----------|-------------------------------------------------------------------------------------------------|
-| var1      | **invalid**                                                                                     |
-| var2      | [IRequest](/mods/sdmcrtplus/integration/minecolonies/api/colony/requestsystem/request/IRequest) |
+| Parameter |                                                    Type                                                     |
+|-----------|-------------------------------------------------------------------------------------------------------------|
+| var1      | [IRequestManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/IRequestManager) |
+| var2      | [IRequest](/mods/sdmcrtplus/integration/minecolonies/api/colony/requestsystem/request/IRequest)             |
 
 
 :::

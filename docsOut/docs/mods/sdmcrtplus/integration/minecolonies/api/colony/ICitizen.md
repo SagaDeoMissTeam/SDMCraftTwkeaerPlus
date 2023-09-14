@@ -36,10 +36,10 @@ myICitizen.getId();
 
 :::group{name=getInventory}
 
-Return Type: **invalid**
+Return Type: [InventoryCitizen](/mods/sdmcrtplus/integration/minecolonies/api/inventory/InventoryCitizen)
 
 ```zenscript
-// ICitizen.getInventory() as invalid
+// ICitizen.getInventory() as InventoryCitizen
 
 myICitizen.getInventory();
 ```

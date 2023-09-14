@@ -86,10 +86,10 @@ myIBuildingWorker.getHandlers();
 
 :::group{name=getHiringMode}
 
-Return Type: **invalid**
+Return Type: [HiringMode](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/HiringMode)
 
 ```zenscript
-// IBuildingWorker.getHiringMode() as invalid
+// IBuildingWorker.getHiringMode() as HiringMode
 
 myIBuildingWorker.getHiringMode();
 ```
@@ -122,10 +122,10 @@ myIBuildingWorker.getMaxToolLevel();
 
 :::group{name=getPrimarySkill}
 
-Return Type: **invalid**
+Return Type: [Skill](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/Skill)
 
 ```zenscript
-// IBuildingWorker.getPrimarySkill() as invalid
+// IBuildingWorker.getPrimarySkill() as Skill
 
 myIBuildingWorker.getPrimarySkill();
 ```
@@ -134,10 +134,10 @@ myIBuildingWorker.getPrimarySkill();
 
 :::group{name=getRecipeImprovementSkill}
 
-Return Type: **invalid**
+Return Type: [Skill](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/Skill)
 
 ```zenscript
-// IBuildingWorker.getRecipeImprovementSkill() as invalid
+// IBuildingWorker.getRecipeImprovementSkill() as Skill
 
 myIBuildingWorker.getRecipeImprovementSkill();
 ```
@@ -146,10 +146,10 @@ myIBuildingWorker.getRecipeImprovementSkill();
 
 :::group{name=getSecondarySkill}
 
-Return Type: **invalid**
+Return Type: [Skill](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/Skill)
 
 ```zenscript
-// IBuildingWorker.getSecondarySkill() as invalid
+// IBuildingWorker.getSecondarySkill() as Skill
 
 myIBuildingWorker.getSecondarySkill();
 ```
@@ -174,12 +174,12 @@ IBuildingWorker.isItemStackInRequest(var1 as ItemStack?) as boolean
 :::group{name=setHiringMode}
 
 ```zenscript
-IBuildingWorker.setHiringMode(var1 as invalid)
+IBuildingWorker.setHiringMode(var1 as HiringMode)
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | **invalid** |
+| Parameter |                                          Type                                           |
+|-----------|-----------------------------------------------------------------------------------------|
+| var1      | [HiringMode](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/HiringMode) |
 
 
 :::

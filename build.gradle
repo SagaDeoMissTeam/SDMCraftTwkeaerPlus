@@ -130,6 +130,10 @@ mixin {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
+
+     flatDir {
+         dir 'libs'
+     }
     maven { // Forge
         name 'ForgeFS'
         url 'https://files.minecraftforge.net/maven'
@@ -190,12 +194,18 @@ dependencies {
     implementation fg.deobf("curse.maven:multi-piston-303278:4128597")
     implementation fg.deobf("curse.maven:structurize-298744:4716727")
 
+    implementation fg.deobf("curse.maven:the-impossible-library-661115:4742104")
+    implementation fg.deobf("curse.maven:music-triggers-518410:4742124")
+
     annotationProcessor ctDep
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     implementation fg.deobf("curse.maven:project-mmo-353935:4680174")
 
     implementation fg.deobf("curse.maven:open-parties-and-claims-636608:4686628")
+
+//    implementation files('libs/JobsPlus+1.19.2-0.9.2.jar')
+//    implementation files('libs/jei-1.19.2-forge-11.6.0.1018.jar')
 }
 
 // This block of code expands all declared replace properties in the specified resource targets.

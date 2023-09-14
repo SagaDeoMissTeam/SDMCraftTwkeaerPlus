@@ -224,10 +224,10 @@ myIColonyView.getCitizens();
 
 :::group{name=getDimension}
 
-Return Type: **invalid**
+Return Type: [ResourceKey](/mods/sdmcrtplus/resource/ResourceKey)&lt;[Level](/vanilla/api/world/Level)&gt;
 
 ```zenscript
-// IColonyView.getDimension() as invalid
+// IColonyView.getDimension() as ResourceKey<Level>
 
 myIColonyView.getDimension();
 ```
@@ -383,10 +383,10 @@ myIColonyView.getPlayers();
 
 :::group{name=getRequestManager}
 
-Return Type: **invalid**
+Return Type: [IRequestManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/IRequestManager)
 
 ```zenscript
-// IColonyView.getRequestManager() as invalid
+// IColonyView.getRequestManager() as IRequestManager
 
 myIColonyView.getRequestManager();
 ```
@@ -422,10 +422,10 @@ myIColonyView.getStructurePack();
 
 :::group{name=getTeam}
 
-Return Type: **invalid**
+Return Type: [PlayerTeam](/mods/sdmcrtplus/world/scores/PlayerTeam)
 
 ```zenscript
-// IColonyView.getTeam() as invalid
+// IColonyView.getTeam() as PlayerTeam
 
 myIColonyView.getTeam();
 ```

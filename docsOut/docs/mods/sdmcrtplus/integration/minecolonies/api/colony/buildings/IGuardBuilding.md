@@ -31,12 +31,12 @@ IGuardBuilding.addPatrolTargets(var1 as BlockPos)
 :::group{name=arrivedAtPatrolPoint}
 
 ```zenscript
-IGuardBuilding.arrivedAtPatrolPoint(var1 as invalid)
+IGuardBuilding.arrivedAtPatrolPoint(var1 as AbstractEntityCitizen)
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | **invalid** |
+| Parameter |                                                    Type                                                     |
+|-----------|-------------------------------------------------------------------------------------------------------------|
+| var1      | [AbstractEntityCitizen](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/AbstractEntityCitizen) |
 
 
 :::

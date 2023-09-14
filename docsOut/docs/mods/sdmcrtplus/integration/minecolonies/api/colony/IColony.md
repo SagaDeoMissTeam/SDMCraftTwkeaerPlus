@@ -39,13 +39,13 @@ IColony.addFreePosition(var1 as BlockPos)
 :::group{name=addGuardToAttackers}
 
 ```zenscript
-IColony.addGuardToAttackers(var1 as invalid, var2 as Player)
+IColony.addGuardToAttackers(var1 as AbstractEntityCitizen, var2 as Player)
 ```
 
-| Parameter |                       Type                       |
-|-----------|--------------------------------------------------|
-| var1      | **invalid**                                      |
-| var2      | [Player](/vanilla/api/entity/type/player/Player) |
+| Parameter |                                                    Type                                                     |
+|-----------|-------------------------------------------------------------------------------------------------------------|
+| var1      | [AbstractEntityCitizen](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/AbstractEntityCitizen) |
+| var2      | [Player](/vanilla/api/entity/type/player/Player)                                                            |
 
 
 :::
@@ -117,10 +117,10 @@ myIColony.canMoveIn();
 
 :::group{name=getBuildingManager}
 
-Return Type: **invalid**
+Return Type: [IRegisteredStructureManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/IRegisteredStructureManager)
 
 ```zenscript
-// IColony.getBuildingManager() as invalid
+// IColony.getBuildingManager() as IRegisteredStructureManager
 
 myIColony.getBuildingManager();
 ```
@@ -156,10 +156,10 @@ IColony.getCitizen(var1 as int) as ICitizen
 
 :::group{name=getCitizenManager}
 
-Return Type: **invalid**
+Return Type: [ICitizen](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/ICitizen)
 
 ```zenscript
-// IColony.getCitizenManager() as invalid
+// IColony.getCitizenManager() as ICitizen
 
 myIColony.getCitizenManager();
 ```
@@ -168,10 +168,10 @@ myIColony.getCitizenManager();
 
 :::group{name=getCitizenNameFile}
 
-Return Type: **invalid**
+Return Type: [CitizenNameFile](/mods/sdmcrtplus/integration/minecolonies/api/colony/CitizenNameFile)
 
 ```zenscript
-// IColony.getCitizenNameFile() as invalid
+// IColony.getCitizenNameFile() as CitizenNameFile
 
 myIColony.getCitizenNameFile();
 ```
@@ -216,10 +216,10 @@ myIColony.getDay();
 
 :::group{name=getDimension}
 
-Return Type: **invalid**
+Return Type: [ResourceKey](/mods/sdmcrtplus/resource/ResourceKey)&lt;[Level](/vanilla/api/world/Level)&gt;
 
 ```zenscript
-// IColony.getDimension() as invalid
+// IColony.getDimension() as ResourceKey<Level>
 
 myIColony.getDimension();
 ```
@@ -243,10 +243,10 @@ IColony.getDistanceSquared(var1 as BlockPos) as long
 
 :::group{name=getEventDescriptionManager}
 
-Return Type: **invalid**
+Return Type: [IEventDescriptionManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/IEventDescriptionManager)
 
 ```zenscript
-// IColony.getEventDescriptionManager() as invalid
+// IColony.getEventDescriptionManager() as IEventDescriptionManager
 
 myIColony.getEventDescriptionManager();
 ```
@@ -255,10 +255,10 @@ myIColony.getEventDescriptionManager();
 
 :::group{name=getEventManager}
 
-Return Type: **invalid**
+Return Type: [IEventManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/IEventManager)
 
 ```zenscript
-// IColony.getEventManager() as invalid
+// IColony.getEventManager() as IEventManager
 
 myIColony.getEventManager();
 ```
@@ -267,10 +267,10 @@ myIColony.getEventManager();
 
 :::group{name=getGraveManager}
 
-Return Type: **invalid**
+Return Type: [IGraveManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/IGraveManager)
 
 ```zenscript
-// IColony.getGraveManager() as invalid
+// IColony.getGraveManager() as IGraveManager
 
 myIColony.getGraveManager();
 ```
@@ -399,10 +399,10 @@ myIColony.getOverallHappiness();
 
 :::group{name=getPackageManager}
 
-Return Type: **invalid**
+Return Type: [IColonyPackageManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/IColonyPackageManager)
 
 ```zenscript
-// IColony.getPackageManager() as invalid
+// IColony.getPackageManager() as IColonyPackageManager
 
 myIColony.getPackageManager();
 ```
@@ -423,10 +423,10 @@ myIColony.getPermissions();
 
 :::group{name=getProgressManager}
 
-Return Type: **invalid**
+Return Type: [IProgressManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/IProgressManager)
 
 ```zenscript
-// IColony.getProgressManager() as invalid
+// IColony.getProgressManager() as IProgressManager
 
 myIColony.getProgressManager();
 ```
@@ -435,10 +435,10 @@ myIColony.getProgressManager();
 
 :::group{name=getQuestManager}
 
-Return Type: **invalid**
+Return Type: [IQuestManager](/mods/sdmcrtplus/integration/minecolonies/api/quests/IQuestManager)
 
 ```zenscript
-// IColony.getQuestManager() as invalid
+// IColony.getQuestManager() as IQuestManager
 
 myIColony.getQuestManager();
 ```
@@ -447,10 +447,10 @@ myIColony.getQuestManager();
 
 :::group{name=getRaiderManager}
 
-Return Type: **invalid**
+Return Type: [IRaiderManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/IRaiderManager)
 
 ```zenscript
-// IColony.getRaiderManager() as invalid
+// IColony.getRaiderManager() as IRaiderManager
 
 myIColony.getRaiderManager();
 ```
@@ -459,10 +459,10 @@ myIColony.getRaiderManager();
 
 :::group{name=getReproductionManager}
 
-Return Type: **invalid**
+Return Type: [IReproductionManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/IReproductionManager)
 
 ```zenscript
-// IColony.getReproductionManager() as invalid
+// IColony.getReproductionManager() as IReproductionManager
 
 myIColony.getReproductionManager();
 ```
@@ -471,10 +471,10 @@ myIColony.getReproductionManager();
 
 :::group{name=getRequestManager}
 
-Return Type: **invalid**
+Return Type: [IRequestManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/IRequestManager)
 
 ```zenscript
-// IColony.getRequestManager() as invalid
+// IColony.getRequestManager() as IRequestManager
 
 myIColony.getRequestManager();
 ```
@@ -498,10 +498,10 @@ IColony.getRequesterBuildingForPosition(var1 as BlockPos) as IRequester
 
 :::group{name=getResearchManager}
 
-Return Type: **invalid**
+Return Type: [IResearchManager](/mods/sdmcrtplus/integration/minecolonies/api/research/IResearchManager)
 
 ```zenscript
-// IColony.getResearchManager() as invalid
+// IColony.getResearchManager() as IResearchManager
 
 myIColony.getResearchManager();
 ```
@@ -510,10 +510,10 @@ myIColony.getResearchManager();
 
 :::group{name=getState}
 
-Return Type: **invalid**
+Return Type: [ColonyState](/mods/sdmcrtplus/integration/minecolonies/api/colony/ColonyState)
 
 ```zenscript
-// IColony.getState() as invalid
+// IColony.getState() as ColonyState
 
 myIColony.getState();
 ```
@@ -522,10 +522,10 @@ myIColony.getState();
 
 :::group{name=getStatisticsManager}
 
-Return Type: **invalid**
+Return Type: [IStatisticsManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/IStatisticsManager)
 
 ```zenscript
-// IColony.getStatisticsManager() as invalid
+// IColony.getStatisticsManager() as IStatisticsManager
 
 myIColony.getStatisticsManager();
 ```
@@ -546,10 +546,10 @@ myIColony.getStructurePack();
 
 :::group{name=getTeam}
 
-Return Type: **invalid**
+Return Type: [PlayerTeam](/mods/sdmcrtplus/world/scores/PlayerTeam)
 
 ```zenscript
-// IColony.getTeam() as invalid
+// IColony.getTeam() as PlayerTeam
 
 myIColony.getTeam();
 ```
@@ -606,10 +606,10 @@ myIColony.getTicketedChunks();
 
 :::group{name=getVisitorManager}
 
-Return Type: **invalid**
+Return Type: [IVisitorManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/managers/interfaces/IVisitorManager)
 
 ```zenscript
-// IColony.getVisitorManager() as invalid
+// IColony.getVisitorManager() as IVisitorManager
 
 myIColony.getVisitorManager();
 ```
@@ -802,12 +802,12 @@ myIColony.isRemote();
 Return Type: boolean
 
 ```zenscript
-IColony.isValidAttackingGuard(var1 as invalid) as boolean
+IColony.isValidAttackingGuard(var1 as AbstractEntityCitizen) as boolean
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | **invalid** |
+| Parameter |                                                    Type                                                     |
+|-----------|-------------------------------------------------------------------------------------------------------------|
+| var1      | [AbstractEntityCitizen](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/AbstractEntityCitizen) |
 
 
 :::

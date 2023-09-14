@@ -16,10 +16,10 @@ TileEntityRack extends [AbstractTileEntityRack](/mods/sdmcrtplus/integration/min
 
 :::group{name=getAllContent}
 
-Return Type: **invalid**
+Return Type: int?[[ItemStorage](/mods/sdmcrtplus/integration/minecolonies/api/crafting/ItemStorage)]
 
 ```zenscript
-// TileEntityRack.getAllContent() as invalid
+// TileEntityRack.getAllContent() as int?[ItemStorage]
 
 myTileEntityRack.getAllContent();
 ```
@@ -31,12 +31,12 @@ myTileEntityRack.getAllContent();
 Return Type: int
 
 ```zenscript
-TileEntityRack.getCount(storage as invalid) as int
+TileEntityRack.getCount(storage as ItemStorage) as int
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| storage   | **invalid** |
+| Parameter |                                       Type                                        |
+|-----------|-----------------------------------------------------------------------------------|
+| storage   | [ItemStorage](/mods/sdmcrtplus/integration/minecolonies/api/crafting/ItemStorage) |
 
 
 :::

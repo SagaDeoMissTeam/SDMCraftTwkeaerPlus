@@ -6,6 +6,8 @@
   "refmap": "sdmcrtplus.refmap.json",
   "plugin": "net.sixik.sdmcrtplus.mixin.SDMMixinPlugin",
   "mixins": [
+    "mods.apotheosis.BossEventsMixin",
+    "mods.apotheosis.BossItemMixin",
     "mods.enhancedcelestials.LunarForecastMixin",
     "vanilla.ChestBlockEntityMixin",
     "vanilla.ChestLootGenMixin",

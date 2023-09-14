@@ -218,8 +218,8 @@ public class ExpandIBuilding {
         return iBuilding.getRequester();
     }
     @ZenCodeType.Method
-   public static Optional<ICitizenData> getCitizenForRequest(IBuilding iBuilding, IToken<?> var1){
-        return iBuilding.getCitizenForRequest(var1);
+   public static ICitizenData getCitizenForRequest(IBuilding iBuilding, IToken<?> var1){
+        return iBuilding.getCitizenForRequest(var1).get();
     }
     @ZenCodeType.Method
    public static Map<ItemStorage, Integer> reservedStacksExcluding(IBuilding iBuilding, IRequest<? extends IDeliverable> var1){

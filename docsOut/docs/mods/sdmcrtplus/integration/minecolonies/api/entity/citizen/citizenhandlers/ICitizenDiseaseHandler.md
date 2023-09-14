@@ -59,12 +59,12 @@ myICitizenDiseaseHandler.isSick();
 :::group{name=onCollission}
 
 ```zenscript
-ICitizenDiseaseHandler.onCollission(var1 as invalid)
+ICitizenDiseaseHandler.onCollission(var1 as AbstractEntityCitizen)
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | **invalid** |
+| Parameter |                                                    Type                                                     |
+|-----------|-------------------------------------------------------------------------------------------------------------|
+| var1      | [AbstractEntityCitizen](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/AbstractEntityCitizen) |
 
 
 :::

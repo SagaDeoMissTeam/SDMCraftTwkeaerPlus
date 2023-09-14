@@ -13,12 +13,12 @@ import mods.sdmcrtplus.integration.api.entity.citizen.citizenhandlers.ICitizenHa
 :::group{name=addModifier}
 
 ```zenscript
-ICitizenHappinessHandler.addModifier(var1 as invalid)
+ICitizenHappinessHandler.addModifier(var1 as IHappinessModifier)
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | **invalid** |
+| Parameter |                                                  Type                                                   |
+|-----------|---------------------------------------------------------------------------------------------------------|
+| var1      | [IHappinessModifier](/mods/sdmcrtplus/integration/minecolonies/api/entity/happiness/IHappinessModifier) |
 
 
 :::
@@ -41,10 +41,10 @@ ICitizenHappinessHandler.getHappiness(var1 as IColony, var2 as ICitizenData) as 
 
 :::group{name=getModifier}
 
-Return Type: **invalid**
+Return Type: [IHappinessModifier](/mods/sdmcrtplus/integration/minecolonies/api/entity/happiness/IHappinessModifier)
 
 ```zenscript
-ICitizenHappinessHandler.getModifier(var1 as string) as invalid
+ICitizenHappinessHandler.getModifier(var1 as string) as IHappinessModifier
 ```
 
 | Parameter |  Type  |

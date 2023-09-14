@@ -69,15 +69,15 @@ ICitizenData.doesLiveWith(var1 as ICitizenData) as boolean
 :::group{name=generateName}
 
 ```zenscript
-ICitizenData.generateName(var1 as Random, var2 as string, var3 as string, var4 as invalid)
+ICitizenData.generateName(var1 as Random, var2 as string, var3 as string, var4 as CitizenNameFile)
 ```
 
-| Parameter |                  Type                   |
-|-----------|-----------------------------------------|
-| var1      | [Random](/vanilla/api/util/math/Random) |
-| var2      | string                                  |
-| var3      | string                                  |
-| var4      | **invalid**                             |
+| Parameter |                                          Type                                           |
+|-----------|-----------------------------------------------------------------------------------------|
+| var1      | [Random](/vanilla/api/util/math/Random)                                                 |
+| var2      | string                                                                                  |
+| var3      | string                                                                                  |
+| var4      | [CitizenNameFile](/mods/sdmcrtplus/integration/minecolonies/api/colony/CitizenNameFile) |
 
 
 :::

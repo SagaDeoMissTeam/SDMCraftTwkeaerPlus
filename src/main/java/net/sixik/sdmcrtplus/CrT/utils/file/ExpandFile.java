@@ -16,7 +16,8 @@ import java.io.Writer;
 @NativeTypeRegistration(value = File.class, zenCodeName = "mods.sdmcrtplus.utils.file.File",
         constructors = @NativeConstructor(value = {@NativeConstructor.ConstructorParameter(
                 name = "path", type = String.class
-        )}))
+        )}
+        ))
 
 public class ExpandFile {
 

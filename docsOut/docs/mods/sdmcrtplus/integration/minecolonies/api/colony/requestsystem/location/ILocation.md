@@ -12,10 +12,10 @@ import mods.sdmcrtplus.integration.api.colony.requestsystem.location.ILocation;
 
 :::group{name=getDimension}
 
-Return Type: **invalid**
+Return Type: [ResourceKey](/mods/sdmcrtplus/resource/ResourceKey)&lt;[Level](/vanilla/api/world/Level)&gt;
 
 ```zenscript
-// ILocation.getDimension() as invalid
+// ILocation.getDimension() as ResourceKey<Level>
 
 myILocation.getDimension();
 ```

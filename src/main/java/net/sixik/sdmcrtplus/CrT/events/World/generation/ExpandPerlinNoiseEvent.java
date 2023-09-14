@@ -14,8 +14,8 @@ import org.openzen.zencode.java.ZenCodeType;
  * Event is called every time the perlin noise is called . In 90% of cases, these are terrain generation.
  */
 @ZenRegister
-@Document("mods/sdmcrtplus/events/generation/PernilNoiseEvent")
-@NativeTypeRegistration(value = PernilNoiseEvent.class, zenCodeName = "mods.sdmcrtplus.events.generation.PernilNoiseEvent")
+@Document("mods/sdmcrtplus/events/level/generation/PernilNoiseEvent")
+@NativeTypeRegistration(value = PernilNoiseEvent.class, zenCodeName = "mods.sdmcrtplus.events.level.generation.PernilNoiseEvent")
 public class ExpandPerlinNoiseEvent {
 
     @ZenCodeType.Method

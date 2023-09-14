@@ -22,14 +22,14 @@ IBuilding implements the following interfaces. That means all methods defined in
 Return Type: int
 
 ```zenscript
-IBuilding.buildingRequiresCertainAmountOfItem(stack as ItemStack, localAlreadyKept as stdlib.List, inventory as boolean) as int
+IBuilding.buildingRequiresCertainAmountOfItem(stack as ItemStack, localAlreadyKept as stdlib.List<ItemStorage>, inventory as boolean) as int
 ```
 
-|    Parameter     |                   Type                   |
-|------------------|------------------------------------------|
-| stack            | [ItemStack](/vanilla/api/item/ItemStack) |
-| localAlreadyKept | stdlib.List                              |
-| inventory        | boolean                                  |
+|    Parameter     |                                                 Type                                                 |
+|------------------|------------------------------------------------------------------------------------------------------|
+| stack            | [ItemStack](/vanilla/api/item/ItemStack)                                                             |
+| localAlreadyKept | stdlib.List&lt;[ItemStorage](/mods/sdmcrtplus/integration/minecolonies/api/crafting/ItemStorage)&gt; |
+| inventory        | boolean                                                                                              |
 
 
 :::
@@ -39,15 +39,15 @@ IBuilding.buildingRequiresCertainAmountOfItem(stack as ItemStack, localAlreadyKe
 Return Type: int
 
 ```zenscript
-IBuilding.buildingRequiresCertainAmountOfItem(var1 as ItemStack, var2 as stdlib.List, var3 as boolean, var4 as JobEntry?) as int
+IBuilding.buildingRequiresCertainAmountOfItem(var1 as ItemStack, var2 as stdlib.List<ItemStorage>, var3 as boolean, var4 as JobEntry?) as int
 ```
 
-| Parameter |                                      Type                                       |
-|-----------|---------------------------------------------------------------------------------|
-| var1      | [ItemStack](/vanilla/api/item/ItemStack)                                        |
-| var2      | stdlib.List                                                                     |
-| var3      | boolean                                                                         |
-| var4      | [JobEntry](/mods/sdmcrtplus/integration/minecolonies/api/colony/jobs/JobEntry)? |
+| Parameter |                                                 Type                                                 |
+|-----------|------------------------------------------------------------------------------------------------------|
+| var1      | [ItemStack](/vanilla/api/item/ItemStack)                                                             |
+| var2      | stdlib.List&lt;[ItemStorage](/mods/sdmcrtplus/integration/minecolonies/api/crafting/ItemStorage)&gt; |
+| var3      | boolean                                                                                              |
+| var4      | [JobEntry](/mods/sdmcrtplus/integration/minecolonies/api/colony/jobs/JobEntry)?                      |
 
 
 :::
@@ -206,10 +206,10 @@ myIBuilding.getBuildingDisplayName();
 
 :::group{name=getBuildingType}
 
-Return Type: **invalid**
+Return Type: [BuildingEntry](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/registry/BuildingEntry)
 
 ```zenscript
-// IBuilding.getBuildingType() as invalid
+// IBuilding.getBuildingType() as BuildingEntry
 
 myIBuilding.getBuildingType();
 ```
@@ -218,10 +218,10 @@ myIBuilding.getBuildingType();
 
 :::group{name=getCitizenForRequest}
 
-Return Type: **invalid**
+Return Type: [ICitizenData](/mods/sdmcrtplus/integration/minecolonies/api/colony/ICitizenData)
 
 ```zenscript
-IBuilding.getCitizenForRequest(var1 as IToken) as invalid
+IBuilding.getCitizenForRequest(var1 as IToken) as ICitizenData
 ```
 
 | Parameter |                                           Type                                            |
@@ -769,10 +769,10 @@ IBuilding.requestUpgrade(var1 as Player, var2 as BlockPos)
 
 :::group{name=reservedStacksExcluding}
 
-Return Type: **invalid**
+Return Type: int?[[ItemStorage](/mods/sdmcrtplus/integration/minecolonies/api/crafting/ItemStorage)]
 
 ```zenscript
-IBuilding.reservedStacksExcluding(var1 as IRequest) as invalid
+IBuilding.reservedStacksExcluding(var1 as IRequest) as int?[ItemStorage]
 ```
 
 | Parameter |                                              Type                                               |
@@ -795,12 +795,12 @@ myIBuilding.resetGuardBuildingNear();
 :::group{name=setBuildingType}
 
 ```zenscript
-IBuilding.setBuildingType(var1 as invalid)
+IBuilding.setBuildingType(var1 as BuildingEntry)
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | **invalid** |
+| Parameter |                                                  Type                                                  |
+|-----------|--------------------------------------------------------------------------------------------------------|
+| var1      | [BuildingEntry](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/registry/BuildingEntry) |
 
 
 :::

@@ -41,10 +41,10 @@ myIBuildingView.getAllAssignedCitizens();
 
 :::group{name=getAllModuleViews}
 
-Return Type: stdlib.List
+Return Type: stdlib.List&lt;[IBuildingModuleView](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/registry/IBuildingModuleView)&gt;
 
 ```zenscript
-// IBuildingView.getAllModuleViews() as stdlib.List
+// IBuildingView.getAllModuleViews() as stdlib.List<IBuildingModuleView>
 
 myIBuildingView.getAllModuleViews();
 ```
@@ -89,10 +89,10 @@ myIBuildingView.getBuildingMaxLevel();
 
 :::group{name=getBuildingType}
 
-Return Type: **invalid**
+Return Type: [BuildingEntry](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/registry/BuildingEntry)
 
 ```zenscript
-// IBuildingView.getBuildingType() as invalid
+// IBuildingView.getBuildingType() as BuildingEntry
 
 myIBuildingView.getBuildingType();
 ```
@@ -369,12 +369,12 @@ myIBuildingView.isRepairing();
 :::group{name=registerModule}
 
 ```zenscript
-IBuildingView.registerModule(var1 as invalid)
+IBuildingView.registerModule(var1 as IBuildingModuleView)
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | **invalid** |
+| Parameter |                                                        Type                                                        |
+|-----------|--------------------------------------------------------------------------------------------------------------------|
+| var1      | [IBuildingModuleView](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/registry/IBuildingModuleView) |
 
 
 :::
@@ -382,12 +382,12 @@ IBuildingView.registerModule(var1 as invalid)
 :::group{name=setBuildingType}
 
 ```zenscript
-IBuildingView.setBuildingType(var1 as invalid)
+IBuildingView.setBuildingType(var1 as BuildingEntry)
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | **invalid** |
+| Parameter |                                                  Type                                                  |
+|-----------|--------------------------------------------------------------------------------------------------------|
+| var1      | [BuildingEntry](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/registry/BuildingEntry) |
 
 
 :::

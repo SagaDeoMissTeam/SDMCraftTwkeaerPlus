@@ -12,10 +12,10 @@ import mods.sdmcrtplus.integration.api.colony.buildings.ModBuildings;
 
 :::group{name=getBuilding}
 
-Return Type: **invalid**?
+Return Type: [BuildingEntry](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/registry/BuildingEntry)?
 
 ```zenscript
-ModBuildings.getBuilding(name as string) as invalid?
+ModBuildings.getBuilding(name as string) as BuildingEntry?
 ```
 
 | Parameter |  Type  |

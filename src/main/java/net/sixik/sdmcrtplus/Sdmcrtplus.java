@@ -24,6 +24,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.RegisterEvent;
 import net.sixik.sdmcrtplus.source.EventListener;
 import net.sixik.sdmcrtplus.source.integration.ftbquest.FTBQuestIntegration;
+import net.sixik.sdmcrtplus.source.integration.ftbteam.FTBTeamsIntegration;
 import org.openzen.zenscript.javabytecode.JavaBytecodeRunUnit;
 import org.slf4j.Logger;
 
@@ -44,6 +45,7 @@ public class Sdmcrtplus {
         MinecraftForge.EVENT_BUS.addListener(CustomParameters::modReload);
 
         if(Services.PLATFORM.isModLoaded("ftbquest")) FTBQuestIntegration.init();
+        if(Services.PLATFORM.isModLoaded("ftbteams")) FTBTeamsIntegration.init();
         modEventBus.addListener(EventPriority.LOW, this::register);
     }
 

@@ -112,8 +112,8 @@ public class ExpandISchematicProvider {
    public static void setDeconstructed(ISchematicProvider iSchematicProvider){
         iSchematicProvider.setDeconstructed();
     }
-    @ZenCodeType.Method
-   public static void onUpgradeSchematicTo(ISchematicProvider iSchematicProvider,String var1, String var2, IBlueprintDataProviderBE var3){
-        iSchematicProvider.onUpgradeSchematicTo(var2,var2,var3);
-    }
+//    @ZenCodeType.Method
+//   public static void onUpgradeSchematicTo(ISchematicProvider iSchematicProvider,String var1, String var2, IBlueprintDataProviderBE var3){
+//        iSchematicProvider.onUpgradeSchematicTo(var2,var2,var3);
+//    }
 }

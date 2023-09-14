@@ -13,12 +13,12 @@ import mods.sdmcrtplus.integration.api.entity.citizen.citizenhandlers.ICitizenSk
 :::group{name=addXpToSkill}
 
 ```zenscript
-ICitizenSkillHandler.addXpToSkill(var1 as invalid, var2 as double, var4 as ICitizenData)
+ICitizenSkillHandler.addXpToSkill(var1 as Skill, var2 as double, var4 as ICitizenData)
 ```
 
 | Parameter |                                       Type                                        |
 |-----------|-----------------------------------------------------------------------------------|
-| var1      | **invalid**                                                                       |
+| var1      | [Skill](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/Skill)       |
 | var2      | double                                                                            |
 | var4      | [ICitizenData](/mods/sdmcrtplus/integration/minecolonies/api/colony/ICitizenData) |
 
@@ -30,22 +30,22 @@ ICitizenSkillHandler.addXpToSkill(var1 as invalid, var2 as double, var4 as ICiti
 Return Type: int
 
 ```zenscript
-ICitizenSkillHandler.getLevel(var1 as invalid) as int
+ICitizenSkillHandler.getLevel(var1 as Skill) as int
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | **invalid** |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| var1      | [Skill](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/Skill) |
 
 
 :::
 
 :::group{name=getSkills}
 
-Return Type: **invalid**
+Return Type: double?[int?][[Skill](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/Skill)]
 
 ```zenscript
-// ICitizenSkillHandler.getSkills() as invalid
+// ICitizenSkillHandler.getSkills() as double?[int?][Skill]
 
 myICitizenSkillHandler.getSkills();
 ```
@@ -67,13 +67,13 @@ myICitizenSkillHandler.getTotalXP();
 :::group{name=incrementLevel}
 
 ```zenscript
-ICitizenSkillHandler.incrementLevel(var1 as invalid, var2 as int)
+ICitizenSkillHandler.incrementLevel(var1 as Skill, var2 as int)
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | **invalid** |
-| var2      | int         |
+| Parameter |                                    Type                                     |
+|-----------|-----------------------------------------------------------------------------|
+| var1      | [Skill](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/Skill) |
+| var2      | int                                                                         |
 
 
 :::
@@ -123,12 +123,12 @@ ICitizenSkillHandler.levelUp(var1 as ICitizenData)
 :::group{name=removeXpFromSkill}
 
 ```zenscript
-ICitizenSkillHandler.removeXpFromSkill(var1 as invalid, var2 as double, var4 as ICitizenData)
+ICitizenSkillHandler.removeXpFromSkill(var1 as Skill, var2 as double, var4 as ICitizenData)
 ```
 
 | Parameter |                                       Type                                        |
 |-----------|-----------------------------------------------------------------------------------|
-| var1      | **invalid**                                                                       |
+| var1      | [Skill](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/Skill)       |
 | var2      | double                                                                            |
 | var4      | [ICitizenData](/mods/sdmcrtplus/integration/minecolonies/api/colony/ICitizenData) |
 

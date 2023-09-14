@@ -208,12 +208,12 @@ IJob.incrementActionsDone(var1 as int)
 :::group{name=initEntityValues}
 
 ```zenscript
-IJob.initEntityValues(citizen as invalid)
+IJob.initEntityValues(citizen as AbstractEntityCitizen)
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| citizen   | **invalid** |
+| Parameter |                                                    Type                                                     |
+|-----------|-------------------------------------------------------------------------------------------------------------|
+| citizen   | [AbstractEntityCitizen](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/AbstractEntityCitizen) |
 
 
 :::
@@ -377,13 +377,13 @@ IJob.triggerActivityChangeAction(newState as boolean)
 :::group{name=triggerDeathAchievement}
 
 ```zenscript
-IJob.triggerDeathAchievement(var1 as DamageSource, var2 as invalid)
+IJob.triggerDeathAchievement(var1 as DamageSource, var2 as AbstractEntityCitizen)
 ```
 
-| Parameter |                      Type                       |
-|-----------|-------------------------------------------------|
-| var1      | [DamageSource](/vanilla/api/world/DamageSource) |
-| var2      | **invalid**                                     |
+| Parameter |                                                    Type                                                     |
+|-----------|-------------------------------------------------------------------------------------------------------------|
+| var1      | [DamageSource](/vanilla/api/world/DamageSource)                                                             |
+| var2      | [AbstractEntityCitizen](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/AbstractEntityCitizen) |
 
 
 :::

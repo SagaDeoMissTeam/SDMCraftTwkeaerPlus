@@ -159,12 +159,12 @@ ICivilianData.onResponseTriggered(var1 as Component, var2 as int, var3 as Player
 :::group{name=setEntity}
 
 ```zenscript
-ICivilianData.setEntity(var1 as invalid?)
+ICivilianData.setEntity(var1 as AbstractCivilianEntity?)
 ```
 
-| Parameter |     Type     |
-|-----------|--------------|
-| var1      | **invalid**? |
+| Parameter |                                                      Type                                                      |
+|-----------|----------------------------------------------------------------------------------------------------------------|
+| var1      | [AbstractCivilianEntity](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/AbstractCivilianEntity)? |
 
 
 :::

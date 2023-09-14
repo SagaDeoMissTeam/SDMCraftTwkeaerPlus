@@ -13,7 +13,8 @@ import java.io.*;
 @NativeTypeRegistration(
         value = InputStreamReader.class,
         zenCodeName = "mods.sdmcrtplus.file.utils.streams.InputStreamReader",
-        constructors = {@NativeConstructor(value = {@NativeConstructor.ConstructorParameter(
+        constructors =
+                {@NativeConstructor(value = {@NativeConstructor.ConstructorParameter(
                 name = "in", type = InputStream.class
         ), @NativeConstructor.ConstructorParameter(
                 name = "charsetName", type = String.class
