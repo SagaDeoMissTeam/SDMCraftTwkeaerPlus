@@ -13,12 +13,13 @@ import mods.sdmcrtplus.integration.api.research.effects.IResearchEffectManager;
 :::group{name=applyEffect}
 
 ```zenscript
-IResearchEffectManager.applyEffect(var1 as IResearchEffect)
+IResearchEffectManager.applyEffect<T : Object>(var1 as IResearchEffect<T>)
 ```
 
-| Parameter |                                               Type                                                |
-|-----------|---------------------------------------------------------------------------------------------------|
-| var1      | [IResearchEffect](/mods/sdmcrtplus/integration/minecolonies/api/research/effects/IResearchEffect) |
+| Parameter |                                                    Type                                                    |
+|-----------|------------------------------------------------------------------------------------------------------------|
+| var1      | [IResearchEffect](/mods/sdmcrtplus/integration/minecolonies/api/research/effects/IResearchEffect)&lt;T&gt; |
+| T         | Object                                                                                                     |
 
 
 :::

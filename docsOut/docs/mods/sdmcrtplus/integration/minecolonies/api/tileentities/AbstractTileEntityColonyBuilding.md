@@ -28,7 +28,7 @@ myAbstractTileEntityColonyBuilding.getPositionedTags();
 
 :::group{name=getSchematicCorners}
 
-Return Type: [Tuple](/mods/sdmcrtplus/Tuple)&lt;[BlockPos](/vanilla/api/util/math/BlockPos),[BlockPos](/vanilla/api/util/math/BlockPos)&gt;
+Return Type: [Tuple](/mods/sdmcrtplus/utils/core/Tuple)&lt;[BlockPos](/vanilla/api/util/math/BlockPos),[BlockPos](/vanilla/api/util/math/BlockPos)&gt;
 
 ```zenscript
 // AbstractTileEntityColonyBuilding.getSchematicCorners() as Tuple<BlockPos,BlockPos>

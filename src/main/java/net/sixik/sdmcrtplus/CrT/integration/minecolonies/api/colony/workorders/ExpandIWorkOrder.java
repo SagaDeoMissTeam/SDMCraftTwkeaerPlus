@@ -22,6 +22,16 @@ import org.openzen.zencode.java.ZenCodeType;
 @NativeTypeRegistration(value = IWorkOrder.class, zenCodeName = "mods.sdmcrtplus.integration.api.colony.workorders.IWorkOrder")
 public class ExpandIWorkOrder {
 
+
+    @ZenCodeType.Method
+   public static void read(IWorkOrder iWorkOrder, CompoundTag var1, IWorkManager var2){
+       iWorkOrder.read(var1,var2);
+   }
+
+   @ZenCodeType.Method
+   public static void write(IWorkOrder iWorkOrder, CompoundTag var1){
+       iWorkOrder.write(var1);
+   }
     @ZenCodeType.Method
     public static int getID(IWorkOrder iWorkOrder){
         return iWorkOrder.getID();

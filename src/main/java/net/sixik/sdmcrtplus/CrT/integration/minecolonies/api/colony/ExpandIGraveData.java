@@ -13,14 +13,14 @@ import org.openzen.zencode.java.ZenCodeType;
 @NativeTypeRegistration(value = IGraveData.class, zenCodeName = "mods.sdmcrtplus.integration.api.colony.IGraveData")
 public class ExpandIGraveData {
 
-//    @ZenCodeType.Method
-//    @ZenCodeType.Nullable CompoundTag getCitizenDataNBT(IGraveData iGraveData){
-//        return iGraveData.getCitizenDataNBT();
-//    }
-//    @ZenCodeType.Method
-//    void setCitizenDataNBT(IGraveData iGraveData,@ZenCodeType.Nullable CompoundTag var1){
-//        iGraveData.setCitizenDataNBT(var1);
-//    }
+    @ZenCodeType.Method
+    @ZenCodeType.Nullable public static CompoundTag getCitizenDataNBT(IGraveData iGraveData){
+        return iGraveData.getCitizenDataNBT();
+    }
+    @ZenCodeType.Method
+    public static void setCitizenDataNBT(IGraveData iGraveData,@ZenCodeType.Nullable CompoundTag var1){
+        iGraveData.setCitizenDataNBT(var1);
+    }
     @ZenCodeType.Method
     public static @ZenCodeType.Nullable String getCitizenName(IGraveData iGraveData){
         return iGraveData.getCitizenName();

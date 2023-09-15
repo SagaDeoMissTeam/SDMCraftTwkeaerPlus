@@ -7,6 +7,7 @@ import com.minecolonies.api.colony.ICitizenData;
 import com.minecolonies.api.colony.IColony;
 import com.minecolonies.api.colony.managers.interfaces.IGraveManager;
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
@@ -50,5 +51,15 @@ public class ExpandIGraveManager {
     @ZenCodeType.Method
    public static void removeGrave(IGraveManager iGraveManager, BlockPos var1){
        iGraveManager.removeGrave(var1);
+   }
+
+    @ZenCodeType.Method
+   public static void read(IGraveManager iGraveManager, CompoundTag var1){
+        iGraveManager.read(var1);
+   }
+
+   @ZenCodeType.Method
+   public static void write(IGraveManager iGraveManager, CompoundTag var1){
+        iGraveManager.write(var1);
    }
 }

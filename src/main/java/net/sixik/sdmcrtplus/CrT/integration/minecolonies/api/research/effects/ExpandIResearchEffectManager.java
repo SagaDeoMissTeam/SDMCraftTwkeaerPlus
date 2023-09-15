@@ -15,7 +15,7 @@ import org.openzen.zencode.java.ZenCodeType;
 public class ExpandIResearchEffectManager {
 
     @ZenCodeType.Method
-   public static <W extends IResearchEffect<?>> W getEffect(IResearchEffectManager iResearchEffectManager, ResourceLocation var1, @NotNull Class<W> var2){
+   public static <W extends IResearchEffect<?>> W getEffect(IResearchEffectManager iResearchEffectManager, ResourceLocation var1, Class<W> var2){
        return iResearchEffectManager.getEffect(var1,var2);
    }
     @ZenCodeType.Method
@@ -23,7 +23,7 @@ public class ExpandIResearchEffectManager {
        return iResearchEffectManager.getEffectStrength(var1);
    }
     @ZenCodeType.Method
-   public static void applyEffect(IResearchEffectManager iResearchEffectManager,IResearchEffect<?> var1){
+   public static <T> void applyEffect(IResearchEffectManager iResearchEffectManager,IResearchEffect<T> var1){
        iResearchEffectManager.applyEffect(var1);
    }
     @ZenCodeType.Method

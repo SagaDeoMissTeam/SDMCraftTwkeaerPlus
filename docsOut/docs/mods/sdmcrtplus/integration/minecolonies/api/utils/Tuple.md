@@ -1,4 +1,4 @@
-# Tuple
+# Tuple&LT;A : Object, B : Object&GT;
 
 ## Importing the class
 
@@ -12,25 +12,33 @@ import mods.sdmcrtplus.integration.api.utils.Tuple;
 
 :::group{name=getA}
 
-Return Type: Object
+Return Type: A
 
 ```zenscript
-// Tuple.getA() as Object
-
-myTuple.getA();
+Tuple.getA<A : Object, B : Object>() as A
 ```
+
+| Parameter |  Type  |
+|-----------|--------|
+| A         | Object |
+| B         | Object |
+
 
 :::
 
 :::group{name=getB}
 
-Return Type: Object
+Return Type: B
 
 ```zenscript
-// Tuple.getB() as Object
-
-myTuple.getB();
+Tuple.getB<A : Object, B : Object>() as B
 ```
+
+| Parameter |  Type  |
+|-----------|--------|
+| A         | Object |
+| B         | Object |
+
 
 :::
 

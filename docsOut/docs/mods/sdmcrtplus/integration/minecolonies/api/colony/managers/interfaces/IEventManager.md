@@ -125,6 +125,19 @@ IEventManager.onTileEntityBreak(var1 as int, var2 as BlockEntity)
 
 :::
 
+:::group{name=readFromNBT}
+
+```zenscript
+IEventManager.readFromNBT(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 :::group{name=registerEntity}
 
 ```zenscript
@@ -149,6 +162,19 @@ IEventManager.unregisterEntity(var1 as Entity, var2 as int)
 |-----------|--------------------------------------|
 | var1      | [Entity](/vanilla/api/entity/Entity) |
 | var2      | int                                  |
+
+
+:::
+
+:::group{name=writeToNBT}
+
+```zenscript
+IEventManager.writeToNBT(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
 
 
 :::

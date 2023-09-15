@@ -216,6 +216,19 @@ IRaiderManager.raiderEvent(var1 as string)
 
 :::
 
+:::group{name=read}
+
+```zenscript
+IRaiderManager.read(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 :::group{name=setCanHaveRaiderEvents}
 
 ```zenscript
@@ -291,6 +304,19 @@ Return Type: boolean
 
 myIRaiderManager.willRaidTonight();
 ```
+
+:::
+
+:::group{name=write}
+
+```zenscript
+IRaiderManager.write(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
 
 :::
 

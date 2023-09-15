@@ -40,10 +40,10 @@ ICivilianData.decreaseSaturation(var1 as double)
 
 :::group{name=getEntity}
 
-Return Type: **invalid**
+Return Type: [Optional](/mods/sdmcrtplus/utils/core/Optional)
 
 ```zenscript
-// ICivilianData.getEntity() as invalid
+// ICivilianData.getEntity() as Optional
 
 myICivilianData.getEntity();
 ```

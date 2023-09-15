@@ -6,17 +6,21 @@ import com.blamejared.crafttweaker_annotations.annotations.NativeTypeRegistratio
 import com.minecolonies.api.util.Tuple;
 import org.openzen.zencode.java.ZenCodeType;
 
+/**
+ * @param <A>
+ * @param <B>
+ */
 @ZenRegister(modDeps = "minecolonies")
 @Document("mods/sdmcrtplus/integration/minecolonies/api/utils/Tuple")
 @NativeTypeRegistration(value = Tuple.class, zenCodeName = "mods.sdmcrtplus.integration.api.utils.Tuple")
-public class ExpandTuple {
+public class ExpandTuple<A, B> {
 
     @ZenCodeType.Method
-    public static Object getA(Tuple tuple){
+    public static <A, B> A getA(Tuple<A, B> tuple){
         return tuple.getA();
     }
     @ZenCodeType.Method
-    public static Object getB(Tuple tuple){
+    public static <A, B> B getB(Tuple<A,B> tuple){
         return tuple.getB();
     }
 }

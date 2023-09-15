@@ -14,7 +14,14 @@ import org.openzen.zencode.java.ZenCodeType;
 @Document("mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/citizenhandlers/ICitizenDiseaseHandler")
 @NativeTypeRegistration(value = ICitizenDiseaseHandler.class, zenCodeName = "mods.sdmcrtplus.integration.api.entity.citizen.citizenhandlers.ICitizenDiseaseHandler")
 public class ExpandICitizenDiseaseHandler {
-
+    @ZenCodeType.Method
+    public static void write(ICitizenDiseaseHandler iCitizenDiseaseHandler, CompoundTag var1){
+        iCitizenDiseaseHandler.write(var1);
+    }
+    @ZenCodeType.Method
+    public static void read(ICitizenDiseaseHandler iCitizenDiseaseHandler, CompoundTag var1){
+        iCitizenDiseaseHandler.read(var1);
+    }
     @ZenCodeType.Method
     public static void tick(ICitizenDiseaseHandler internal){
         internal.tick();

@@ -37,7 +37,15 @@ import java.util.*;
 @Document("mods/sdmcrtplus/integration/minecolonies/api/colony/IColony")
 @NativeTypeRegistration(value = IColony.class, zenCodeName = "mods.sdmcrtplus.integration.api.colony.IColony")
 public class ExpandIColony {
+    @ZenCodeType.Method
+   public static CompoundTag write(IColony iColony, CompoundTag var1){
+      return iColony.write(var1);
+   }
 
+   @ZenCodeType.Method
+   public static void read(IColony iColony, CompoundTag var1){
+       iColony.read(var1);
+   }
     @ZenCodeType.Method
     public static IWorkManager getWorkManager(IColony iColony){
         return iColony.getWorkManager();

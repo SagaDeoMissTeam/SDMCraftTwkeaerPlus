@@ -23,6 +23,16 @@ import java.util.function.Predicate;
 public class ExpandIWorkManager {
 
     @ZenCodeType.Method
+   public static void write(IWorkManager iWorkManager, CompoundTag var1){
+        iWorkManager.write(var1);
+    }
+
+    @ZenCodeType.Method
+   public static void read(IWorkManager iWorkManager, CompoundTag var1){
+        iWorkManager.read(var1);
+    }
+
+    @ZenCodeType.Method
     public static void removeWorkOrder(IWorkManager iWorkManager, IWorkOrder var1){
         iWorkManager.removeWorkOrder(var1);
     }

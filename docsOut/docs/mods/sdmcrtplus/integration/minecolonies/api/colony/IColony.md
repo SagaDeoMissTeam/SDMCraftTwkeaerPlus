@@ -192,10 +192,10 @@ myIColony.getColonyFlag();
 
 :::group{name=getColonyTag}
 
-Return Type: **invalid**
+Return Type: [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag)
 
 ```zenscript
-// IColony.getColonyTag() as invalid
+// IColony.getColonyTag() as CompoundTag
 
 myIColony.getColonyTag();
 ```
@@ -837,6 +837,19 @@ myIColony.markDirty();
 
 :::
 
+:::group{name=read}
+
+```zenscript
+IColony.read(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 :::group{name=removeFreeBlock}
 
 ```zenscript
@@ -1051,6 +1064,21 @@ IColony.useAdditionalChildTime(var1 as int) as boolean
 
 myIColony.usedMercenaries();
 ```
+
+:::
+
+:::group{name=write}
+
+Return Type: [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag)
+
+```zenscript
+IColony.write(var1 as CompoundTag) as CompoundTag
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
 
 :::
 

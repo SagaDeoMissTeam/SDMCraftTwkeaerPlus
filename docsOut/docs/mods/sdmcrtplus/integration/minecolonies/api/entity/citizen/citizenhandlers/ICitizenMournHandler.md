@@ -57,6 +57,19 @@ myICitizenMournHandler.isMourning();
 
 :::
 
+:::group{name=read}
+
+```zenscript
+ICitizenMournHandler.read(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 :::group{name=removeDeceasedCitizen}
 
 ```zenscript
@@ -92,6 +105,19 @@ Return Type: boolean
 
 myICitizenMournHandler.shouldMourn();
 ```
+
+:::
+
+:::group{name=write}
+
+```zenscript
+ICitizenMournHandler.write(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
 
 :::
 

@@ -180,6 +180,19 @@ IWorkManager.onColonyTick(var1 as IColony)
 
 :::
 
+:::group{name=read}
+
+```zenscript
+IWorkManager.read(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 :::group{name=removeWorkOrder}
 
 ```zenscript
@@ -215,6 +228,19 @@ IWorkManager.setDirty(var1 as boolean)
 | Parameter |  Type   |
 |-----------|---------|
 | var1      | boolean |
+
+
+:::
+
+:::group{name=write}
+
+```zenscript
+IWorkManager.write(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
 
 
 :::

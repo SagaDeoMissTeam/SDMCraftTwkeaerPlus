@@ -69,6 +69,19 @@ ICitizenDiseaseHandler.onCollission(var1 as AbstractEntityCitizen)
 
 :::
 
+:::group{name=read}
+
+```zenscript
+ICitizenDiseaseHandler.read(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 :::group{name=setSleepsAtHospital}
 
 ```zenscript
@@ -98,6 +111,19 @@ myICitizenDiseaseHandler.sleepsAtHospital();
 
 myICitizenDiseaseHandler.tick();
 ```
+
+:::
+
+:::group{name=write}
+
+```zenscript
+ICitizenDiseaseHandler.write(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
 
 :::
 

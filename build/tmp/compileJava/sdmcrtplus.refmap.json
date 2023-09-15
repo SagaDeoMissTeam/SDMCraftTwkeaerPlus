@@ -45,6 +45,14 @@
     "net/sixik/sdmcrtplus/mixin/vanilla/generation/PerlinNoiseMixin": {
       "Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;getValue(DDDDDZ)D": "Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;m_75417_(DDDDDZ)D"
     },
+    "net/sixik/sdmcrtplus/mixin/accessor/AbstractArrowAccessor": {
+      "piercedAndKilledEntities": "f_36702_:Ljava/util/List;",
+      "inGround": "f_36703_:Z",
+      "inGroundTime": "f_36704_:I",
+      "knockback": "f_36699_:I",
+      "lastState": "f_36696_:Lnet/minecraft/world/level/block/state/BlockState;",
+      "life": "f_36697_:I"
+    },
     "net/sixik/sdmcrtplus/mixin/vanilla/generation/ChunkMapMixin": {
       "Lnet/minecraft/server/level/ChunkMap;playerLoadedChunk(Lnet/minecraft/server/level/ServerPlayer;Lorg/apache/commons/lang3/mutable/MutableObject;Lnet/minecraft/world/level/chunk/LevelChunk;)V": "Lnet/minecraft/server/level/ChunkMap;m_183760_(Lnet/minecraft/server/level/ServerPlayer;Lorg/apache/commons/lang3/mutable/MutableObject;Lnet/minecraft/world/level/chunk/LevelChunk;)V"
     },
@@ -53,6 +61,11 @@
     },
     "net/sixik/sdmcrtplus/mixin/vanilla/generation/LevelChunkSectionMixin": {
       "fillBiomesFromNoise": "Lnet/minecraft/world/level/chunk/LevelChunkSection;m_188003_(Lnet/minecraft/world/level/biome/BiomeResolver;Lnet/minecraft/world/level/biome/Climate$Sampler;II)V"
+    },
+    "net/sixik/sdmcrtplus/mixin/accessor/MobAccessor": {
+      "leashHolder": "f_21357_:Lnet/minecraft/world/entity/Entity;",
+      "canPickUpLoot": "f_21352_:Z",
+      "xpReward": "f_21364_:I"
     },
     "net/sixik/sdmcrtplus/mixin/vanilla/generation/NoiseBasedChunkGeneratorMixin": {
       "Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;buildSurface(Lnet/minecraft/server/level/WorldGenRegion;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/chunk/ChunkAccess;)V": "Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;m_214194_(Lnet/minecraft/server/level/WorldGenRegion;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/chunk/ChunkAccess;)V",
@@ -107,6 +120,14 @@
       "net/sixik/sdmcrtplus/mixin/vanilla/generation/PerlinNoiseMixin": {
         "Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;getValue(DDDDDZ)D": "Lnet/minecraft/world/level/levelgen/synth/PerlinNoise;m_75417_(DDDDDZ)D"
       },
+      "net/sixik/sdmcrtplus/mixin/accessor/AbstractArrowAccessor": {
+        "piercedAndKilledEntities": "f_36702_:Ljava/util/List;",
+        "inGround": "f_36703_:Z",
+        "inGroundTime": "f_36704_:I",
+        "knockback": "f_36699_:I",
+        "lastState": "f_36696_:Lnet/minecraft/world/level/block/state/BlockState;",
+        "life": "f_36697_:I"
+      },
       "net/sixik/sdmcrtplus/mixin/vanilla/generation/ChunkMapMixin": {
         "Lnet/minecraft/server/level/ChunkMap;playerLoadedChunk(Lnet/minecraft/server/level/ServerPlayer;Lorg/apache/commons/lang3/mutable/MutableObject;Lnet/minecraft/world/level/chunk/LevelChunk;)V": "Lnet/minecraft/server/level/ChunkMap;m_183760_(Lnet/minecraft/server/level/ServerPlayer;Lorg/apache/commons/lang3/mutable/MutableObject;Lnet/minecraft/world/level/chunk/LevelChunk;)V"
       },
@@ -115,6 +136,11 @@
       },
       "net/sixik/sdmcrtplus/mixin/vanilla/generation/LevelChunkSectionMixin": {
         "fillBiomesFromNoise": "Lnet/minecraft/world/level/chunk/LevelChunkSection;m_188003_(Lnet/minecraft/world/level/biome/BiomeResolver;Lnet/minecraft/world/level/biome/Climate$Sampler;II)V"
+      },
+      "net/sixik/sdmcrtplus/mixin/accessor/MobAccessor": {
+        "leashHolder": "f_21357_:Lnet/minecraft/world/entity/Entity;",
+        "canPickUpLoot": "f_21352_:Z",
+        "xpReward": "f_21364_:I"
       },
       "net/sixik/sdmcrtplus/mixin/vanilla/generation/NoiseBasedChunkGeneratorMixin": {
         "Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;buildSurface(Lnet/minecraft/server/level/WorldGenRegion;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/chunk/ChunkAccess;)V": "Lnet/minecraft/world/level/levelgen/NoiseBasedChunkGenerator;m_214194_(Lnet/minecraft/server/level/WorldGenRegion;Lnet/minecraft/world/level/StructureManager;Lnet/minecraft/world/level/levelgen/RandomState;Lnet/minecraft/world/level/chunk/ChunkAccess;)V",

@@ -120,6 +120,19 @@ ICitizenSkillHandler.levelUp(var1 as ICitizenData)
 
 :::
 
+:::group{name=read}
+
+```zenscript
+ICitizenSkillHandler.read(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 :::group{name=removeXpFromSkill}
 
 ```zenscript
@@ -147,6 +160,18 @@ ICitizenSkillHandler.tryLevelUpIntelligence(var1 as Random, var2 as double, var4
 | var2      | double                                                                            |
 | var4      | [ICitizenData](/mods/sdmcrtplus/integration/minecolonies/api/colony/ICitizenData) |
 
+
+:::
+
+:::group{name=write}
+
+Return Type: [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag)
+
+```zenscript
+// ICitizenSkillHandler.write() as CompoundTag
+
+myICitizenSkillHandler.write();
+```
 
 :::
 

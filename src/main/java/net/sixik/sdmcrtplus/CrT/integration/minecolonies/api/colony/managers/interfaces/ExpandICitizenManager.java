@@ -7,7 +7,9 @@ import com.minecolonies.api.colony.ICitizenData;
 import com.minecolonies.api.colony.managers.interfaces.ICitizenManager;
 import com.minecolonies.api.entity.citizen.happiness.IHappinessModifier;
 import net.minecraft.core.BlockPos;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.level.Level;
+import org.jetbrains.annotations.NotNull;
 import org.openzen.zencode.java.ZenCodeType;
 
 import java.util.List;
@@ -104,5 +106,10 @@ public class ExpandICitizenManager {
     @ZenCodeType.Method
    public static void onWakeUp(ICitizenManager iCitizenManager){
        iCitizenManager.onWakeUp();
+   }
+
+   @ZenCodeType.Method
+    public static ICitizenData resurrectCivilianData(ICitizenManager iCitizenManager, CompoundTag var1, boolean var2, Level var3, BlockPos var4){
+        return iCitizenManager.resurrectCivilianData(var1,var2,var3,var4);
    }
 }

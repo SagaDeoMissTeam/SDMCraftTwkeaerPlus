@@ -426,6 +426,19 @@ IColonyManager.openReactivationWindow(var1 as BlockPos)
 
 :::
 
+:::group{name=read}
+
+```zenscript
+IColonyManager.read(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 :::group{name=removeColonyView}
 
 ```zenscript
@@ -459,6 +472,19 @@ IColonyManager.setSchematicDownloaded(var1 as boolean)
 | Parameter |  Type   |
 |-----------|---------|
 | var1      | boolean |
+
+
+:::
+
+:::group{name=write}
+
+```zenscript
+IColonyManager.write(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
 
 
 :::

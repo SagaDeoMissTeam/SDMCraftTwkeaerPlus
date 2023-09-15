@@ -42,6 +42,19 @@ IBuildingContainer.alterPickUpPriority(var1 as int)
 
 :::
 
+:::group{name=deserializeNBT}
+
+```zenscript
+IBuildingContainer.deserializeNBT(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 :::group{name=getContainers}
 
 Return Type: stdlib.List&lt;[BlockPos](/vanilla/api/util/math/BlockPos)&gt;
@@ -118,6 +131,18 @@ IBuildingContainer.removeContainerPosition(var1 as BlockPos)
 |-----------|---------------------------------------------|
 | var1      | [BlockPos](/vanilla/api/util/math/BlockPos) |
 
+
+:::
+
+:::group{name=serializeNBT}
+
+Return Type: [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag)
+
+```zenscript
+// IBuildingContainer.serializeNBT() as CompoundTag
+
+myIBuildingContainer.serializeNBT();
+```
 
 :::
 

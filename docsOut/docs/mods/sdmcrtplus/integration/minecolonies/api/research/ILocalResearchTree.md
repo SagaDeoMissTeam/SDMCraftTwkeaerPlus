@@ -125,4 +125,31 @@ ILocalResearchTree.hasCompletedResearch(var1 as ResourceLocation) as boolean
 
 :::
 
+:::group{name=readFromNBT}
+
+```zenscript
+ILocalResearchTree.readFromNBT(var1 as CompoundTag, var2 as IResearchEffectManager)
+```
+
+| Parameter |                                                      Type                                                       |
+|-----------|-----------------------------------------------------------------------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag)                                                                 |
+| var2      | [IResearchEffectManager](/mods/sdmcrtplus/integration/minecolonies/api/research/effects/IResearchEffectManager) |
+
+
+:::
+
+:::group{name=writeToNBT}
+
+```zenscript
+ILocalResearchTree.writeToNBT(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 

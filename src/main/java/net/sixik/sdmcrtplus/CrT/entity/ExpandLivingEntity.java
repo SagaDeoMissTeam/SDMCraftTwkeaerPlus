@@ -223,5 +223,4 @@ public class ExpandLivingEntity {
     public static int getArmorValue(LivingEntity entity){
         return entity.getArmorValue();
     }
-
 }

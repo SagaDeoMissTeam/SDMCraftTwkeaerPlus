@@ -59,4 +59,30 @@ myIResearchManager.getResearchTree();
 
 :::
 
+:::group{name=readFromNBT}
+
+```zenscript
+IResearchManager.readFromNBT(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
+:::group{name=writeToNBT}
+
+```zenscript
+IResearchManager.writeToNBT(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 

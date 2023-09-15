@@ -16,10 +16,15 @@ import org.openzen.zencode.java.ZenCodeType;
 @Document("mods/sdmcrtplus/integration/minecolonies/api/research/IResearchManager")
 @NativeTypeRegistration(value = IResearchManager.class, zenCodeName = "mods.sdmcrtplus.integration.api.research.IResearchManager")
 public class ExpandIResearchManager {
+    @ZenCodeType.Method
+   public static void readFromNBT(IResearchManager iResearchManager, CompoundTag var1){
+       iResearchManager.readFromNBT(var1);
+   }
 
-//   public static void readFromNBT(IResearchManager iResearchManager, CompoundTag var1);
-//
-//   public static void writeToNBT(IResearchManager iResearchManager, CompoundTag var1);
+   @ZenCodeType.Method
+   public static void writeToNBT(IResearchManager iResearchManager, CompoundTag var1){
+       iResearchManager.writeToNBT(var1);
+   }
 
     @ZenCodeType.Method
    public static ILocalResearchTree getResearchTree(IResearchManager iResearchManager){

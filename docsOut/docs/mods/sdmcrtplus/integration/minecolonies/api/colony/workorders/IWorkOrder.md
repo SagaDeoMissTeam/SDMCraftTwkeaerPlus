@@ -377,6 +377,20 @@ IWorkOrder.onRemoved(var1 as IColony)
 
 :::
 
+:::group{name=read}
+
+```zenscript
+IWorkOrder.read(var1 as CompoundTag, var2 as IWorkManager)
+```
+
+| Parameter |                                             Type                                             |
+|-----------|----------------------------------------------------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag)                                              |
+| var2      | [IWorkManager](/mods/sdmcrtplus/integration/minecolonies/api/colony/workorders/IWorkManager) |
+
+
+:::
+
 :::group{name=resetChange}
 
 ```zenscript
@@ -503,6 +517,19 @@ IWorkOrder.tooFarFromAnyBuilder(var1 as IColony, var2 as int) as boolean
 |-----------|-------------------------------------------------------------------------|
 | var1      | [IColony](/mods/sdmcrtplus/integration/minecolonies/api/colony/IColony) |
 | var2      | int                                                                     |
+
+
+:::
+
+:::group{name=write}
+
+```zenscript
+IWorkOrder.write(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
 
 
 :::

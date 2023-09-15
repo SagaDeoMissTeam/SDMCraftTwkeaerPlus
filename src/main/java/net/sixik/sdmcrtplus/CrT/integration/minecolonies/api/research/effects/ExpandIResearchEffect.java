@@ -5,6 +5,7 @@ import com.blamejared.crafttweaker_annotations.annotations.Document;
 import com.blamejared.crafttweaker_annotations.annotations.NativeTypeRegistration;
 import com.minecolonies.api.research.effects.IResearchEffect;
 import com.minecolonies.api.research.effects.registry.ResearchEffectEntry;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.contents.TranslatableContents;
 import net.minecraft.resources.ResourceLocation;
 import org.openzen.zencode.java.ZenCodeType;
@@ -15,33 +16,36 @@ import org.openzen.zencode.java.ZenCodeType;
 public class ExpandIResearchEffect<T> {
 
     @ZenCodeType.Method
-   public static Object getEffect(IResearchEffect<?> iResearchEffect){
+   public static <T> T getEffect(IResearchEffect<T> iResearchEffect){
        return iResearchEffect.getEffect();
    }
     @ZenCodeType.Method
-   public static void setEffect(IResearchEffect<Object> iResearchEffect, Object var1){
+   public static <T> void setEffect(IResearchEffect<T> iResearchEffect, T var1){
        iResearchEffect.setEffect(var1);
    }
     @ZenCodeType.Method
-   public static ResourceLocation getId(IResearchEffect<?> iResearchEffect){
+   public static <T> ResourceLocation getId(IResearchEffect<T> iResearchEffect){
        return iResearchEffect.getId();
    }
     @ZenCodeType.Method
-   public static TranslatableContents getDesc(IResearchEffect<?> iResearchEffect){
+   public static <T> TranslatableContents getDesc(IResearchEffect<T> iResearchEffect){
        return iResearchEffect.getDesc();
    }
     @ZenCodeType.Method
-   public static TranslatableContents getSubtitle(IResearchEffect<?> iResearchEffect){
+   public static <T> TranslatableContents getSubtitle(IResearchEffect<T> iResearchEffect){
        return iResearchEffect.getSubtitle();
    }
     @ZenCodeType.Method
-   public static boolean overrides(IResearchEffect<?> iResearchEffect, IResearchEffect<?> var1){
+   public static <T> boolean overrides(IResearchEffect<T> iResearchEffect, IResearchEffect<T> var1){
        return iResearchEffect.overrides(var1);
    }
     @ZenCodeType.Method
-   public static ResearchEffectEntry getRegistryEntry(IResearchEffect<?> iResearchEffect){
+   public static <T> ResearchEffectEntry getRegistryEntry(IResearchEffect<T> iResearchEffect){
        return iResearchEffect.getRegistryEntry();
    }
 
-//   public static CompoundTag writeToNBT(IResearchEffect iResearchEffect);
+   @ZenCodeType.Method
+   public static <T> CompoundTag writeToNBT(IResearchEffect<T> iResearchEffect){
+        return iResearchEffect.writeToNBT();
+   }
 }

@@ -3,8 +3,8 @@ Specification-Title: sdmcrtplus
 Specification-Vendor: 
 Specification-Version: 1
 Implementation-Title: sdmcrtplus
-Implementation-Version: 1.19.2-V0.7
+Implementation-Version: 1.19.2-V0.8
 Implementation-Vendor: 
-Implementation-Timestamp: 2023-09-14T16:06:12+0300
+Implementation-Timestamp: 2023-09-15T18:45:43+0300
 MixinConfigs: sdmcrtplus.mixins.json
 

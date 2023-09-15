@@ -326,7 +326,7 @@ IBuilding.getOpenRequests(var1 as int) as Collection<IRequest>
 
 :::group{name=getOpenRequestsByRequestableType}
 
-Return Type: Collection&lt;[IToken](/mods/sdmcrtplus/integration/minecolonies/api/colony/requestsystem/token/IToken)&gt;[[TypeToken](/mods/sdmcrtplus/TypeToken)]
+Return Type: Collection&lt;[IToken](/mods/sdmcrtplus/integration/minecolonies/api/colony/requestsystem/token/IToken)&gt;[[TypeToken](/mods/sdmcrtplus/utils/core/TypeToken)]
 
 ```zenscript
 // IBuilding.getOpenRequestsByRequestableType() as Collection<IToken>[TypeToken]
@@ -350,7 +350,7 @@ myIBuilding.getRequester();
 
 :::group{name=getRequiredItemsAndAmount}
 
-Return Type: [Tuple](/mods/sdmcrtplus/Tuple)&lt;int?,bool?&gt;[Predicate&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt;]
+Return Type: [Tuple](/mods/sdmcrtplus/utils/core/Tuple)&lt;int?,bool?&gt;[Predicate&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt;]
 
 ```zenscript
 // IBuilding.getRequiredItemsAndAmount() as Tuple<int?,bool?>[Predicate<ItemStack>]

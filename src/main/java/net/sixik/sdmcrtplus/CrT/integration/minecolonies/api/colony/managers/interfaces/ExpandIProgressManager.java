@@ -50,11 +50,15 @@ public class ExpandIProgressManager {
       iProgressManager.togglePrintProgress();
    }
 
-//   public static void read(IProgressManager iProgressManager, CompoundTag var1){
-//
-//   }
-//
-//   public static void write(IProgressManager iProgressManager, CompoundTag var1);
+   @ZenCodeType.Method
+   public static void read(IProgressManager iProgressManager, CompoundTag var1){
+      iProgressManager.read(var1);
+   }
+
+   @ZenCodeType.Method
+   public static void write(IProgressManager iProgressManager, CompoundTag var1){
+      iProgressManager.write(var1);
+   }
 @ZenCodeType.Method
    public static boolean isPrintingProgress(IProgressManager iProgressManager){
       return iProgressManager.isPrintingProgress();

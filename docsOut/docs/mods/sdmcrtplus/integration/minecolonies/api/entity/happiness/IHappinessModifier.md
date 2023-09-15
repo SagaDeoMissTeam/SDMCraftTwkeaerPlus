@@ -49,4 +49,30 @@ myIHappinessModifier.getWeight();
 
 :::
 
+:::group{name=read}
+
+```zenscript
+IHappinessModifier.read(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
+:::group{name=write}
+
+```zenscript
+IHappinessModifier.write(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 

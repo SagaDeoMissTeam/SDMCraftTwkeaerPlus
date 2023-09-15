@@ -10,7 +10,7 @@ import org.openzen.zencode.java.ZenCodeType;
 @ZenRegister
 @Document("mods/sdmcrtplus/resource/ResourceKey")
 @NativeTypeRegistration(value = ResourceKey.class, zenCodeName = "mods.sdmcrtplus.resource.ResourceKey")
-public class ExpandResourceKey<T>{
+public class ExpandResourceKey<T extends Class<T>>{
 
     @ZenCodeType.Method
     public static ResourceLocation getRegistry(ResourceKey<?> resourceKey){

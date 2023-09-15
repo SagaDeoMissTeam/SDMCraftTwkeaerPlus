@@ -100,6 +100,19 @@ IProgressManager.progressWorkOrderPlacement(var1 as IWorkOrder)
 
 :::
 
+:::group{name=read}
+
+```zenscript
+IProgressManager.read(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 :::group{name=togglePrintProgress}
 
 ```zenscript
@@ -119,6 +132,19 @@ IProgressManager.trigger(var1 as ColonyProgressType)
 | Parameter |                                             Type                                              |
 |-----------|-----------------------------------------------------------------------------------------------|
 | var1      | [ColonyProgressType](/mods/sdmcrtplus/integration/minecolonies/api/colony/ColonyProgressType) |
+
+
+:::
+
+:::group{name=write}
+
+```zenscript
+IProgressManager.write(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
 
 
 :::

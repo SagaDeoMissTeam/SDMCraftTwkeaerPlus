@@ -71,6 +71,42 @@ Mob.canTakeItem(itemStack as IItemStack) as boolean
 
 :::
 
+:::group{name=getLeashHolder}
+
+Return Type: [Entity](/vanilla/api/entity/Entity)
+
+```zenscript
+// Mob.getLeashHolder() as Entity
+
+myMob.getLeashHolder();
+```
+
+:::
+
+:::group{name=getTarget}
+
+Return Type: [LivingEntity](/vanilla/api/entity/LivingEntity)
+
+```zenscript
+// Mob.getTarget() as LivingEntity
+
+myMob.getTarget();
+```
+
+:::
+
+:::group{name=getXpReward}
+
+Return Type: int
+
+```zenscript
+// Mob.getXpReward() as int
+
+myMob.getXpReward();
+```
+
+:::
+
 :::group{name=isWithinRestriction}
 
 Return Type: boolean
@@ -107,6 +143,19 @@ Return Type: boolean
 
 myMob.requiresCustomPersistence();
 ```
+
+:::
+
+:::group{name=setTarget}
+
+```zenscript
+Mob.setTarget(target as LivingEntity)
+```
+
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| target    | [LivingEntity](/vanilla/api/entity/LivingEntity) |
+
 
 :::
 

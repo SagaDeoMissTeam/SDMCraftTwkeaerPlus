@@ -15,6 +15,14 @@ import java.util.Set;
 public class ExpandICitizenMournHandler {
 
     @ZenCodeType.Method
+    public static void read(ICitizenMournHandler iCitizenMournHandler, CompoundTag var1){
+        iCitizenMournHandler.read(var1);
+    }
+    @ZenCodeType.Method
+    public static void write(ICitizenMournHandler iCitizenMournHandler,CompoundTag var1){
+        iCitizenMournHandler.write(var1);
+    }
+    @ZenCodeType.Method
    public static void addDeceasedCitizen(ICitizenMournHandler iCitizenMournHandler, String var1){
        iCitizenMournHandler.addDeceasedCitizen(var1);
    }

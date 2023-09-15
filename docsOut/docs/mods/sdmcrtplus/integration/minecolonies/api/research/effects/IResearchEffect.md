@@ -15,22 +15,28 @@ import mods.sdmcrtplus.integration.api.research.effects.IResearchEffect;
 Return Type: [TranslatableContents](/vanilla/api/text/content/type/TranslatableContents)
 
 ```zenscript
-// IResearchEffect.getDesc() as TranslatableContents
-
-myIResearchEffect.getDesc();
+IResearchEffect.getDesc<T : Object>() as TranslatableContents
 ```
+
+| Parameter |  Type  |
+|-----------|--------|
+| T         | Object |
+
 
 :::
 
 :::group{name=getEffect}
 
-Return Type: Object
+Return Type: T
 
 ```zenscript
-// IResearchEffect.getEffect() as Object
-
-myIResearchEffect.getEffect();
+IResearchEffect.getEffect<T : Object>() as T
 ```
+
+| Parameter |  Type  |
+|-----------|--------|
+| T         | Object |
+
 
 :::
 
@@ -39,10 +45,13 @@ myIResearchEffect.getEffect();
 Return Type: [ResourceLocation](/vanilla/api/resource/ResourceLocation)
 
 ```zenscript
-// IResearchEffect.getId() as ResourceLocation
-
-myIResearchEffect.getId();
+IResearchEffect.getId<T : Object>() as ResourceLocation
 ```
+
+| Parameter |  Type  |
+|-----------|--------|
+| T         | Object |
+
 
 :::
 
@@ -51,10 +60,13 @@ myIResearchEffect.getId();
 Return Type: **invalid**
 
 ```zenscript
-// IResearchEffect.getRegistryEntry() as invalid
-
-myIResearchEffect.getRegistryEntry();
+IResearchEffect.getRegistryEntry<T : Object>() as invalid
 ```
+
+| Parameter |  Type  |
+|-----------|--------|
+| T         | Object |
+
 
 :::
 
@@ -63,10 +75,13 @@ myIResearchEffect.getRegistryEntry();
 Return Type: [TranslatableContents](/vanilla/api/text/content/type/TranslatableContents)
 
 ```zenscript
-// IResearchEffect.getSubtitle() as TranslatableContents
-
-myIResearchEffect.getSubtitle();
+IResearchEffect.getSubtitle<T : Object>() as TranslatableContents
 ```
+
+| Parameter |  Type  |
+|-----------|--------|
+| T         | Object |
+
 
 :::
 
@@ -75,12 +90,13 @@ myIResearchEffect.getSubtitle();
 Return Type: boolean
 
 ```zenscript
-IResearchEffect.overrides(var1 as IResearchEffect) as boolean
+IResearchEffect.overrides<T : Object>(var1 as IResearchEffect<T>) as boolean
 ```
 
-| Parameter |                                               Type                                                |
-|-----------|---------------------------------------------------------------------------------------------------|
-| var1      | [IResearchEffect](/mods/sdmcrtplus/integration/minecolonies/api/research/effects/IResearchEffect) |
+| Parameter |                                                    Type                                                    |
+|-----------|------------------------------------------------------------------------------------------------------------|
+| var1      | [IResearchEffect](/mods/sdmcrtplus/integration/minecolonies/api/research/effects/IResearchEffect)&lt;T&gt; |
+| T         | Object                                                                                                     |
 
 
 :::
@@ -88,12 +104,28 @@ IResearchEffect.overrides(var1 as IResearchEffect) as boolean
 :::group{name=setEffect}
 
 ```zenscript
-IResearchEffect.setEffect(var1 as Object)
+IResearchEffect.setEffect<T : Object>(var1 as T)
 ```
 
 | Parameter |  Type  |
 |-----------|--------|
-| var1      | Object |
+| var1      | T      |
+| T         | Object |
+
+
+:::
+
+:::group{name=writeToNBT}
+
+Return Type: [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag)
+
+```zenscript
+IResearchEffect.writeToNBT<T : Object>() as CompoundTag
+```
+
+| Parameter |  Type  |
+|-----------|--------|
+| T         | Object |
 
 
 :::

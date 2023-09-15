@@ -7,7 +7,9 @@ import com.minecolonies.api.colony.ICitizenData;
 import com.minecolonies.api.colony.IColony;
 import com.minecolonies.api.entity.citizen.Skill;
 import com.minecolonies.api.entity.citizen.citizenhandlers.ICitizenSkillHandler;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.Tuple;
+import org.jetbrains.annotations.NotNull;
 import org.openzen.zencode.java.ZenCodeType;
 
 import java.util.*;
@@ -17,6 +19,15 @@ import java.util.*;
 @NativeTypeRegistration(value = ICitizenSkillHandler.class, zenCodeName = "mods.sdmcrtplus.integration.api.entity.citizen.citizenhandlers.ICitizenSkillHandler")
 public class ExpandICitizenSkillHandler {
 
+    @ZenCodeType.Method
+    public static CompoundTag write(ICitizenSkillHandler iCitizenSkillHandler){
+       return iCitizenSkillHandler.write();
+    }
+
+    @ZenCodeType.Method
+    public static void read(ICitizenSkillHandler iCitizenSkillHandler, CompoundTag var1){
+        iCitizenSkillHandler.read(var1);
+    }
     @ZenCodeType.Method
    public static void init(ICitizenSkillHandler iCitizenSkillHandler, int var1){
        iCitizenSkillHandler.init(var1);

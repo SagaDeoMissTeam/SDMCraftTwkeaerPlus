@@ -6,6 +6,8 @@
   "refmap": "sdmcrtplus.refmap.json",
   "plugin": "net.sixik.sdmcrtplus.mixin.SDMMixinPlugin",
   "mixins": [
+    "accessor.AbstractArrowAccessor",
+    "accessor.MobAccessor",
     "mods.apotheosis.BossEventsMixin",
     "mods.apotheosis.BossItemMixin",
     "mods.enhancedcelestials.LunarForecastMixin",

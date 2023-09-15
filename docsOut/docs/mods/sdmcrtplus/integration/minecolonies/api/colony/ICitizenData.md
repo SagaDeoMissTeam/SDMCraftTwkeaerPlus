@@ -144,10 +144,10 @@ myICitizenData.getCitizenSkillHandler();
 
 :::group{name=getEntity}
 
-Return Type: **invalid**
+Return Type: [Optional](/mods/sdmcrtplus/utils/core/Optional)&lt;[AbstractEntityCitizen](/mods/sdmcrtplus/integration/minecolonies/api/entity/citizen/AbstractEntityCitizen)&gt;
 
 ```zenscript
-// ICitizenData.getEntity() as invalid
+// ICitizenData.getEntity() as Optional<AbstractEntityCitizen>
 
 myICitizenData.getEntity();
 ```

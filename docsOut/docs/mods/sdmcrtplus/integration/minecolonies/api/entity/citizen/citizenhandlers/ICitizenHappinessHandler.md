@@ -79,6 +79,19 @@ ICitizenHappinessHandler.processDailyHappiness(var1 as ICitizenData)
 
 :::
 
+:::group{name=read}
+
+```zenscript
+ICitizenHappinessHandler.read(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 :::group{name=resetModifier}
 
 ```zenscript
@@ -88,6 +101,19 @@ ICitizenHappinessHandler.resetModifier(var1 as string)
 | Parameter |  Type  |
 |-----------|--------|
 | var1      | string |
+
+
+:::
+
+:::group{name=write}
+
+```zenscript
+ICitizenHappinessHandler.write(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
 
 
 :::

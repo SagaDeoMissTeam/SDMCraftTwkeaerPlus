@@ -25,9 +25,14 @@ import java.util.List;
 @NativeTypeRegistration(value = IBuildingContainer.class, zenCodeName = "mods.sdmcrtplus.integration.api.colony.buildings.IBuildingContainer")
 public class ExpandIBuildingContainer {
 
-//    void deserializeNBT(CompoundTag var1);
-//
-//    CompoundTag serializeNBT();
+    @ZenCodeType.Method
+    public static void deserializeNBT(IBuildingContainer iBuildingContainer, CompoundTag var1){
+        iBuildingContainer.deserializeNBT(var1);
+    }
+    @ZenCodeType.Method
+    public static CompoundTag serializeNBT(IBuildingContainer iBuildingContainer){
+        return iBuildingContainer.serializeNBT();
+    }
 
     @ZenCodeType.Method
    public static int getPickUpPriority(IBuildingContainer iBuildingContainer){

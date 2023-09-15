@@ -37,13 +37,13 @@ import java.util.function.Predicate;
 @NativeTypeRegistration(value = IRegisteredStructureManager.class, zenCodeName = "mods.sdmcrtplus.integration.api.colony.managers.interfaces.IRegisteredStructureManager")
 public class ExpandIRegisteredStructureManager {
 
-//   @ZenCodeType.Method public static void read(IRegisteredStructureManager ism, CompoundTag var1){
-//
-//   }
-//
-//   @ZenCodeType.Method public static void write(IRegisteredStructureManager ism, CompoundTag var1){
-//
-//   }
+   @ZenCodeType.Method public static void read(IRegisteredStructureManager ism, CompoundTag var1){
+        ism.read(var1);
+   }
+
+   @ZenCodeType.Method public static void write(IRegisteredStructureManager ism, CompoundTag var1){
+        ism.write(var1);
+   }
     
    @ZenCodeType.Method public static void clearDirty(IRegisteredStructureManager ism){
        ism.clearDirty();

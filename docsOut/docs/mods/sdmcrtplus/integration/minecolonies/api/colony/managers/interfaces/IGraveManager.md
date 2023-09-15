@@ -65,6 +65,19 @@ IGraveManager.onColonyTick(var1 as IColony)
 
 :::
 
+:::group{name=read}
+
+```zenscript
+IGraveManager.read(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 :::group{name=removeGrave}
 
 ```zenscript
@@ -114,6 +127,19 @@ IGraveManager.unReserveGrave(var1 as BlockPos)
 | Parameter |                    Type                     |
 |-----------|---------------------------------------------|
 | var1      | [BlockPos](/vanilla/api/util/math/BlockPos) |
+
+
+:::
+
+:::group{name=write}
+
+```zenscript
+IGraveManager.write(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
 
 
 :::

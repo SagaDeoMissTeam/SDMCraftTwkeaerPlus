@@ -108,4 +108,15 @@ public class ExpandIRaiderManager {
    public static int getLostCitizen(IRaiderManager iRaiderManager){
        return iRaiderManager.getLostCitizen();
    }
+
+
+    @ZenCodeType.Method
+   public static void write(IRaiderManager iRaiderManager, CompoundTag var1){
+        iRaiderManager.write(var1);
+   }
+
+   @ZenCodeType.Method
+   public static void read(IRaiderManager iRaiderManager, CompoundTag var1){
+        iRaiderManager.read(var1);
+   }
 }

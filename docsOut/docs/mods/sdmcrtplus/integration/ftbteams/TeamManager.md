@@ -12,7 +12,7 @@ import mods.sdmcrtplus.integration.ftbteams.TeamManager;
 
 :::group{name=createParty}
 
-Return Type: [Pair](/mods/sdmcrtplus/Tuple)
+Return Type: [Pair](/mods/sdmcrtplus/utils/core/Pair)
 
 ```zenscript
 TeamManager.createParty(player as ServerPlayer, name as string) as Pair
@@ -28,7 +28,7 @@ TeamManager.createParty(player as ServerPlayer, name as string) as Pair
 
 :::group{name=createParty}
 
-Return Type: [Pair](/mods/sdmcrtplus/Tuple)
+Return Type: [Pair](/mods/sdmcrtplus/utils/core/Pair)
 
 ```zenscript
 TeamManager.createParty(player as ServerPlayer, name as string, description as string?, color4I as Color4I) as Pair

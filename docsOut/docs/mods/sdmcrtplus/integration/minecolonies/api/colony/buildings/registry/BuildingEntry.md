@@ -24,7 +24,7 @@ myBuildingEntry.getBuildingBlock();
 
 :::group{name=getModuleProducers}
 
-Return Type: stdlib.List&lt;Supplier&gt;
+Return Type: stdlib.List&lt;[Supplier](/mods/sdmcrtplus/utils/Supplier)&gt;
 
 ```zenscript
 // BuildingEntry.getModuleProducers() as stdlib.List<Supplier>
@@ -36,7 +36,7 @@ myBuildingEntry.getModuleProducers();
 
 :::group{name=getModuleViewProducers}
 
-Return Type: stdlib.List&lt;Supplier&lt;Supplier&lt;[IBuildingModuleView](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/registry/IBuildingModuleView)&gt;&gt;&gt;
+Return Type: stdlib.List&lt;[Supplier](/mods/sdmcrtplus/utils/Supplier)&lt;[Supplier](/mods/sdmcrtplus/utils/Supplier)&lt;[IBuildingModuleView](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/registry/IBuildingModuleView)&gt;&gt;&gt;
 
 ```zenscript
 // BuildingEntry.getModuleViewProducers() as stdlib.List<Supplier<Supplier<IBuildingModuleView>>>

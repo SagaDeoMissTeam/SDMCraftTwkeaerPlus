@@ -187,10 +187,10 @@ IRegisteredStructureManager.getClosestWarehouseInColony(var1 as BlockPos) as IWa
 
 :::group{name=getField}
 
-Return Type: **invalid**
+Return Type: [Optional](/mods/sdmcrtplus/utils/core/Optional)
 
 ```zenscript
-IRegisteredStructureManager.getField(var1 as Predicate) as invalid
+IRegisteredStructureManager.getField(var1 as Predicate) as Optional
 ```
 
 | Parameter |   Type    |
@@ -456,6 +456,19 @@ IRegisteredStructureManager.onColonyTick(var1 as IColony)
 
 :::
 
+:::group{name=read}
+
+```zenscript
+IRegisteredStructureManager.read(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 :::group{name=removeBuilding}
 
 ```zenscript
@@ -573,6 +586,19 @@ IRegisteredStructureManager.trackBuildingLevelUp(var1 as BuildingEntry, var2 as 
 |-----------|--------------------------------------------------------------------------------------------------------|
 | var1      | [BuildingEntry](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/registry/BuildingEntry) |
 | var2      | [IQuestInstance](/mods/sdmcrtplus/integration/minecolonies/api/quests/IQuestInstance)                  |
+
+
+:::
+
+:::group{name=write}
+
+```zenscript
+IRegisteredStructureManager.write(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
 
 
 :::

@@ -174,6 +174,24 @@ myICitizen.onWakeUp();
 
 :::
 
+:::group{name=resurrectCivilianData}
+
+Return Type: [ICitizenData](/mods/sdmcrtplus/integration/minecolonies/api/colony/ICitizenData)
+
+```zenscript
+ICitizen.resurrectCivilianData(var1 as CompoundTag, var2 as boolean, var3 as Level, var4 as BlockPos) as ICitizenData
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+| var2      | boolean                                         |
+| var3      | [Level](/vanilla/api/world/Level)               |
+| var4      | [BlockPos](/vanilla/api/util/math/BlockPos)     |
+
+
+:::
+
 :::group{name=setMaxCitizens}
 
 ```zenscript

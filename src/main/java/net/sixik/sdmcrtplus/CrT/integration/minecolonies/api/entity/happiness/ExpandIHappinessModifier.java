@@ -27,5 +27,13 @@ public class ExpandIHappinessModifier {
    public static double getWeight(IHappinessModifier iHappinessModifier){
        return iHappinessModifier.getWeight();
    }
+    @ZenCodeType.Method
+    public static void read(IHappinessModifier iHappinessModifier,CompoundTag var1){
+        iHappinessModifier.read(var1);
+    }
+    @ZenCodeType.Method
+    public static void write(IHappinessModifier iHappinessModifier,CompoundTag var1){
+        iHappinessModifier.write(var1);
+    }
 
 }

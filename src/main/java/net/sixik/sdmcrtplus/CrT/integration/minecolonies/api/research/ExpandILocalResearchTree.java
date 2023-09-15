@@ -54,7 +54,12 @@ public class ExpandILocalResearchTree {
        iLocalResearchTree.attemptResetResearch(var1,var2,var3);
    }
 
-//   public static void writeToNBT(CompoundTag var1);
-//
-//   public static void readFromNBT(CompoundTag var1, IResearchEffectManager var2);
+   @ZenCodeType.Method
+   public static void writeToNBT(ILocalResearchTree iLocalResearchTree,CompoundTag var1){
+        iLocalResearchTree.writeToNBT(var1);
+   }
+    @ZenCodeType.Method
+   public static void readFromNBT(ILocalResearchTree iLocalResearchTree,CompoundTag var1, IResearchEffectManager var2){
+        iLocalResearchTree.readFromNBT(var1,var2);
+   }
 }

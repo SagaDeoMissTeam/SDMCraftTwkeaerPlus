@@ -10,6 +10,18 @@ import mods.sdmcrtplus.integration.api.colony.IGraveData;
 
 ## Methods
 
+:::group{name=getCitizenDataNBT}
+
+Return Type: [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag)?
+
+```zenscript
+// IGraveData.getCitizenDataNBT() as CompoundTag?
+
+myIGraveData.getCitizenDataNBT();
+```
+
+:::
+
 :::group{name=getCitizenJobName}
 
 Return Type: string?
@@ -31,6 +43,19 @@ Return Type: string?
 
 myIGraveData.getCitizenName();
 ```
+
+:::
+
+:::group{name=setCitizenDataNBT}
+
+```zenscript
+IGraveData.setCitizenDataNBT(var1 as CompoundTag?)
+```
+
+| Parameter |                       Type                       |
+|-----------|--------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag)? |
+
 
 :::
 

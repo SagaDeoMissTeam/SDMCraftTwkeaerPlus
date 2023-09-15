@@ -58,7 +58,7 @@ myISchematicProvider.getChildren();
 
 :::group{name=getCorners}
 
-Return Type: [Tuple](/mods/sdmcrtplus/Tuple)&lt;[BlockPos](/vanilla/api/util/math/BlockPos),[BlockPos](/vanilla/api/util/math/BlockPos)&gt;
+Return Type: [Tuple](/mods/sdmcrtplus/utils/core/Tuple)&lt;[BlockPos](/vanilla/api/util/math/BlockPos),[BlockPos](/vanilla/api/util/math/BlockPos)&gt;
 
 ```zenscript
 // ISchematicProvider.getCorners() as Tuple<BlockPos,BlockPos>

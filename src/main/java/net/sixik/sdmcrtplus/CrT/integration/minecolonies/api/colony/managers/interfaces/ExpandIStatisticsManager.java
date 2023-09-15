@@ -39,9 +39,14 @@ public class ExpandIStatisticsManager {
 
 //   public static void deserialize(IStatisticsManager iStatisticsManager, FriendlyByteBuf var1);
 
-//   public static void readFromNBT(IStatisticsManager iStatisticsManager, CompoundTag var1);
-//
-//   public static void writeToNBT(IStatisticsManager iStatisticsManager, CompoundTag var1);
+    @ZenCodeType.Method
+   public static void readFromNBT(IStatisticsManager iStatisticsManager, CompoundTag var1){
+        iStatisticsManager.readFromNBT(var1);
+   }
+    @ZenCodeType.Method
+   public static void writeToNBT(IStatisticsManager iStatisticsManager, CompoundTag var1){
+        iStatisticsManager.writeToNBT(var1);
+   }
 
     @ZenCodeType.Method
    public static Set<String> getStatTypes(IStatisticsManager iStatisticsManager){

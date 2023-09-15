@@ -31,6 +31,15 @@ import java.util.UUID;
 public class ExpandIColonyManager {
 
     @ZenCodeType.Method
+    public static void write(IColonyManager iColonyManager, CompoundTag var1){
+        iColonyManager.write(var1);
+    }
+    @ZenCodeType.Method
+    public static void read(IColonyManager iColonyManager, CompoundTag var1){
+        iColonyManager.read(var1);
+    }
+
+    @ZenCodeType.Method
     public static @ZenCodeType.Nullable IColony createColony(IColonyManager iColonyManager, Level var1, BlockPos var2, Player var3,  String var4,  String var5){
         return iColonyManager.createColony(var1,var2,var3,var4,var5);
     }

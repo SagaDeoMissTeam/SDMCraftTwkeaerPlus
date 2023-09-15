@@ -63,9 +63,15 @@ public class ExpandIEventManager {
         return  iEventManager.getEvents();
    }
 
-//   public static void readFromNBT(IEventManager iEventManager, CompoundTag var1);
-//
-//   public static void writeToNBT(IEventManager iEventManager, CompoundTag var1);
+    @ZenCodeType.Method
+   public static void readFromNBT(IEventManager iEventManager, CompoundTag var1){
+        iEventManager.readFromNBT(var1);
+   }
+
+   @ZenCodeType.Method
+   public static void writeToNBT(IEventManager iEventManager, CompoundTag var1){
+        iEventManager.writeToNBT(var1);
+   }
     @ZenCodeType.Method
    public static IEventStructureManager getStructureManager(IEventManager iEventManager){
         return iEventManager.getStructureManager();

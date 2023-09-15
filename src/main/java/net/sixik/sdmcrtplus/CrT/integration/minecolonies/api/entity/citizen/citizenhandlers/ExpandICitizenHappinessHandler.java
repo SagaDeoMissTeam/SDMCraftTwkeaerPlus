@@ -17,6 +17,15 @@ import java.util.List;
 @NativeTypeRegistration(value = ICitizenHappinessHandler.class, zenCodeName = "mods.sdmcrtplus.integration.api.entity.citizen.citizenhandlers.ICitizenHappinessHandler")
 public class ExpandICitizenHappinessHandler {
     @ZenCodeType.Method
+    public static void read(ICitizenHappinessHandler iCitizenHappinessHandler, CompoundTag var1){
+        iCitizenHappinessHandler.read(var1);
+    }
+
+    @ZenCodeType.Method
+    public static void write(ICitizenHappinessHandler iCitizenHappinessHandler,CompoundTag var1){
+        iCitizenHappinessHandler.write(var1);
+    }
+    @ZenCodeType.Method
    public static void addModifier(ICitizenHappinessHandler iCitizenHappinessHandler,IHappinessModifier var1){
        iCitizenHappinessHandler.addModifier(var1);
    }

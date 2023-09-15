@@ -81,4 +81,30 @@ IStatisticsManager.incrementBy(var1 as string, var2 as int)
 
 :::
 
+:::group{name=readFromNBT}
+
+```zenscript
+IStatisticsManager.readFromNBT(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
+:::group{name=writeToNBT}
+
+```zenscript
+IStatisticsManager.writeToNBT(var1 as CompoundTag)
+```
+
+| Parameter |                      Type                       |
+|-----------|-------------------------------------------------|
+| var1      | [CompoundTag](/mods/sdmcrtplus/nbt/CompoundTag) |
+
+
+:::
+
 

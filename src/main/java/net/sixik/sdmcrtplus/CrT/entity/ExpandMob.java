@@ -4,8 +4,12 @@ import com.blamejared.crafttweaker.api.annotation.ZenRegister;
 import com.blamejared.crafttweaker.api.item.IItemStack;
 import com.blamejared.crafttweaker_annotations.annotations.Document;
 import com.blamejared.crafttweaker_annotations.annotations.NativeTypeRegistration;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.player.Player;
+import net.sixik.sdmcrtplus.mixin.accessor.MobAccessor;
 import org.openzen.zencode.java.ZenCodeType;
 
 @ZenRegister
@@ -49,4 +53,29 @@ public class ExpandMob {
     public static boolean isWithinRestriction(Mob mob){
         return mob.isWithinRestriction();
     }
+    @ZenCodeType.Method
+    public static LivingEntity getTarget(Mob mob){
+        return mob.getTarget();
+    }
+    @ZenCodeType.Method
+    public static void setTarget(Mob mob, LivingEntity target){
+         mob.setTarget(target);
+    }
+
+    @ZenCodeType.Method
+    public static Entity getLeashHolder(Mob mob){
+       return ((MobAccessor)mob).getLeashHolder();
+    }
+//    @ZenCodeType.Method
+//    public static ResourceLocation getLootTable(Mob mob){
+//       return ((MobAccessor)mob).getLootTable();
+//    }
+    @ZenCodeType.Method
+    public static int getXpReward(Mob mob){
+       return ((MobAccessor)mob).getXpReward();
+    }
+//    @ZenCodeType.Method
+//    public static void setLootTable(Mob mob, ResourceLocation lootTable){
+//      ((MobAccessor)mob).setLootTable(lootTable);
+//    }
 }
