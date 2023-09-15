@@ -2,6 +2,7 @@ package net.sixik.sdmcrtplus.mixin;
 
 import com.blamejared.crafttweaker.platform.Services;
 import com.google.common.collect.ImmutableMap;
+import net.sixik.sdmcrtplus.Sdmcrtplus;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
@@ -17,11 +18,11 @@ public final class SDMMixinPlugin implements IMixinConfigPlugin {
     private static final Map<String, Supplier<Boolean>> CONDITIONS = ImmutableMap.of(
             "mods.enhancedcelestials.LunarForecastMixin", () -> Services.PLATFORM.isModLoaded("enhancedcelestials"),
             "mods.apotheosis.BossEventsMixin", () -> Services.PLATFORM.isModLoaded("apotheosis"),
-            "mods.apotheosis.BossItemMixin", () -> Services.PLATFORM.isModLoaded("apotheosis")
+            "mods.majruszsdifficulty.UndeadArmyManagerMixin", ()  -> Services.PLATFORM.isModLoaded("majruszsdifficulty")
     );
     @Override
     public void onLoad(String mixinPackage) {
-
+        Sdmcrtplus.LOGGER.debug(mixinPackage + " is loaded !");
     }
 
     @Override

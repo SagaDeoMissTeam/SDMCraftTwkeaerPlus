@@ -18,10 +18,10 @@ import org.openzen.zencode.java.ZenCodeType;
 @NativeTypeRegistration(value = Color4I.class, zenCodeName = "mods.sdmcrtplus.integration.ftblibrary.icon.Color4I")
 public class ExpandColor4I {
 
-//    @ZenCodeType.Method
-//    public static Color4I copy(Color4I color4I, float h, float s, float b){
-//        return Color4I.hsb(h,s,b);
-//    }
+    @ZenCodeType.Method
+    public static Color4I copy(Color4I color4I, float h, float s, float b){
+        return color4I.copy();
+    }
 //    @ZenCodeType.Method
 //    public static Color4I withAlpha(Color4I color4I, int alpha){
 //        return color4I.withAlpha(alpha);

@@ -25,23 +25,6 @@ LibraryUtils.addBrightness(string as string) as Color4I
 
 :::
 
-:::group{name=copy}
-
-Return Type: [Color4I](/mods/sdmcrtplus/integration/ftblibrary/icon/Color4I)
-
-```zenscript
-LibraryUtils.copy(h as float, s as float, b as float) as Color4I
-```
-
-| Parameter | Type  |
-|-----------|-------|
-| h         | float |
-| s         | float |
-| b         | float |
-
-
-:::
-
 :::group{name=get256}
 
 Return Type: [Color4I](/mods/sdmcrtplus/integration/ftblibrary/icon/Color4I)
@@ -53,6 +36,23 @@ LibraryUtils.get256(id as int) as Color4I
 | Parameter | Type |
 |-----------|------|
 | id        | int  |
+
+
+:::
+
+:::group{name=hsb}
+
+Return Type: [Color4I](/mods/sdmcrtplus/integration/ftblibrary/icon/Color4I)
+
+```zenscript
+LibraryUtils.hsb(h as float, s as float, b as float) as Color4I
+```
+
+| Parameter | Type  |
+|-----------|-------|
+| h         | float |
+| s         | float |
+| b         | float |
 
 
 :::

@@ -165,8 +165,8 @@ dependencies {
     annotationProcessor 'com.blamejared.crafttweaker:Crafttweaker_Annotation_Processors:3.0.0.15'
     implementation fg.deobf("curse.maven:curios-309927:4523009")
     implementation fg.deobf("curse.maven:the-twilight-forest-227639:4389567")
-//    implementation fg.deobf("curse.maven:majrusz-library-437409:4709662")
-//    implementation fg.deobf("curse.maven:majruszs-progressive-difficulty-430642:4709668")
+    implementation fg.deobf("curse.maven:majrusz-library-437409:4709662")
+    implementation fg.deobf("curse.maven:majruszs-progressive-difficulty-430642:4709668")
     implementation fg.deobf("curse.maven:corgilib-693313:4554111")
 
     implementation fg.deobf("curse.maven:ftb-library-forge-404465:4500548")
@@ -185,7 +185,6 @@ dependencies {
 
     implementation fg.deobf("curse.maven:apotheosis-313970:4730358")
     implementation fg.deobf("curse.maven:enigmatic-legacy-336184:4392950")
-
 
     implementation fg.deobf("curse.maven:minecolonies-245506:4735228")
 

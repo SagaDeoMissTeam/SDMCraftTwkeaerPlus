@@ -14,7 +14,7 @@ import org.openzen.zencode.java.ZenCodeType;
 public class LibraryUtils {
 
     @ZenCodeType.Method
-    public static Color4I copy(float h, float s, float b){
+    public static Color4I hsb(float h, float s, float b){
         return Color4I.hsb(h,s,b);
     }
     @ZenCodeType.Method
