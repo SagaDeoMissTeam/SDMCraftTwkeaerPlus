@@ -72,13 +72,13 @@ UndeadArmyManager.tryToSpawn(player as Player) as boolean
 Return Type: boolean
 
 ```zenscript
-UndeadArmyManager.tryToSpawn(position as BlockPos, direction as invalid) as boolean
+UndeadArmyManager.tryToSpawn(position as BlockPos, direction as Direction) as boolean
 ```
 
-| Parameter |                    Type                     |
-|-----------|---------------------------------------------|
-| position  | [BlockPos](/vanilla/api/util/math/BlockPos) |
-| direction | **invalid**                                 |
+| Parameter |                                  Type                                  |
+|-----------|------------------------------------------------------------------------|
+| position  | [BlockPos](/vanilla/api/util/math/BlockPos)                            |
+| direction | [Direction](/mods/sdmcrtplus/integration/majruszsdifficulty/Direction) |
 
 
 :::

@@ -6,13 +6,12 @@ import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.world.level.levelgen.structure.Structure;
-import net.minecraft.world.level.levelgen.structure.StructureStart;
 import net.minecraftforge.server.ServerLifecycleHooks;
 import org.openzen.zencode.java.ZenCodeType;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
+import java.util.UUID;
 
 @ZenRegister
 @Document("mods/sdmcrtplus/utils/GlobalUtils")
@@ -44,5 +43,19 @@ public class GlobalUtils {
             strucutres.add(structure);
         }
         return strucutres;
+    }
+
+    @ZenCodeType.Method
+    public static String UUIDToString(UUID uuid){
+        return uuid.toString();
+    }
+
+    @ZenCodeType.Method
+    public static UUID UUIDFromString(String uuid){
+        return UUID.fromString(uuid);
+    }
+    @ZenCodeType.Method
+    public static UUID UUIDRandomUUID(){
+        return UUID.randomUUID();
     }
 }

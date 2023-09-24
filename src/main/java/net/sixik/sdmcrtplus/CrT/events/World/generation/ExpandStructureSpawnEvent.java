@@ -34,13 +34,7 @@ public class ExpandStructureSpawnEvent {
     @ZenCodeType.Method
     public static void setStructure(StructureSpawnEvent event, ResourceLocation structure){
         Registry<Structure> registry = event.getLevel().registryAccess().registryOrThrow(Registry.STRUCTURE_REGISTRY);
-        Structure st = null;
-        for(Structure structure1 : registry){
-            if(Objects.equals(registry.get(structure), structure1)){
-                st = structure1;
-            }
-        }
-        event.setStructure(st != null ? st : event.getStructure());
+        event.setStructure(registry.get(structure) != null ? registry.get(structure) : event.getStructure());
     }
 
     @ZenCodeType.Method

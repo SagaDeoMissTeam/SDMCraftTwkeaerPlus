@@ -6,6 +6,9 @@ import com.blamejared.crafttweaker_annotations.annotations.NativeTypeRegistratio
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import dev.ftb.mods.ftbteams.data.Team;
 import dev.ftb.mods.ftbteams.data.TeamManager;
+import dev.ftb.mods.ftbteams.data.TeamMessage;
+import dev.ftb.mods.ftbteams.net.SendMessageResponseMessage;
+import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import org.openzen.zencode.java.ZenCodeType;
 
@@ -39,5 +42,12 @@ public class ExpandTeam {
         } catch (CommandSyntaxException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    @ZenCodeType.Method
+    public static void sendMessage(Team team, ServerPlayer player, String message){
+        team.addMessage(new TeamMessage(player.getUUID(), System.currentTimeMillis(),Component.literal(message)));
+        (new SendMessageResponseMessage(player.getUUID(), Component.literal(message))).sendTo(player);
+        team.save();
     }
 }

@@ -7,19 +7,13 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.level.ChunkHolder;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.util.Mth;
-import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.ai.Brain;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.levelgen.structure.Structure;
-import net.minecraft.world.level.levelgen.structure.StructureStart;
-import net.minecraft.world.phys.Vec3;
-import net.minecraftforge.registries.ForgeRegistries;
 import org.openzen.zencode.java.ZenCodeType;
-import xaero.pac.common.server.claims.protection.group.ChunkProtectionExceptionGroupLoader;
 
 import java.util.*;
 
@@ -222,5 +216,11 @@ public class ExpandLivingEntity {
     @ZenCodeType.Method
     public static int getArmorValue(LivingEntity entity){
         return entity.getArmorValue();
+    }
+
+    @ZenCodeType.Getter("brain")
+    @ZenCodeType.Method
+    public static Brain<?> getBrain(LivingEntity entity){
+        return entity.getBrain();
     }
 }

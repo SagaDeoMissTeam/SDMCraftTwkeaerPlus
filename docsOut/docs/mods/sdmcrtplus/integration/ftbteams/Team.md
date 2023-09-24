@@ -78,4 +78,18 @@ Team.msg(player as ServerPlayer, message as string) as int
 
 :::
 
+:::group{name=sendMessage}
+
+```zenscript
+Team.sendMessage(player as ServerPlayer, message as string)
+```
+
+| Parameter |                             Type                             |
+|-----------|--------------------------------------------------------------|
+| player    | [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer) |
+| message   | string                                                       |
+
+
+:::
+
 

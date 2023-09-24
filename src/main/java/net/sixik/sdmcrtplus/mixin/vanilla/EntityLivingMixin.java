@@ -2,6 +2,7 @@ package net.sixik.sdmcrtplus.mixin.vanilla;
 
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.ItemEntity;
+import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.common.MinecraftForge;
 import net.sixik.sdmcrtplus.source.events.LivingEntityTickEvent;
 import net.sixik.sdmcrtplus.source.events.LivingEntityXpDropEvent;
@@ -11,6 +12,7 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 import org.spongepowered.asm.mixin.injection.callback.LocalCapture;
+
 
 @Mixin(LivingEntity.class)
 public class EntityLivingMixin {

@@ -11,9 +11,9 @@ import com.mojang.authlib.GameProfile;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 import org.openzen.zencode.java.ZenCodeType;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
@@ -92,6 +92,10 @@ public class ExpandIPermissions {
     public static boolean alterPermission(IPermissions iPermissions,Rank var1, Rank var2,  Action var3, boolean var4){
         return iPermissions.alterPermission(var1,var2,var3,var4);
     }
+
+    /**
+     * @return Map.Entry<UUID, {$link ColonyPlayer}>
+     */
     @ZenCodeType.Method
     public static Map.@ZenCodeType.Nullable Entry<UUID, ColonyPlayer> getOwnerEntry(IPermissions iPermissions){
         return iPermissions.getOwnerEntry();
@@ -108,14 +112,26 @@ public class ExpandIPermissions {
     public static void setOwnerAbandoned(IPermissions iPermissions){
         iPermissions.setOwnerAbandoned();
     }
+
+    /**
+     * @return UUID
+     */
     @ZenCodeType.Method
-    public static String getOwner(IPermissions iPermissions){
-        return iPermissions.getOwner().toString();
+    public static UUID getOwner(IPermissions iPermissions){
+        return iPermissions.getOwner();
     }
+
+    /**
+     * @return Map<UUID, {$link ColonyPlayer}>
+     */
     @ZenCodeType.Method
     public static  Map<UUID, ColonyPlayer> getPlayers(IPermissions iPermissions){
         return iPermissions.getPlayers();
     }
+
+    /**
+     * @param var1 UUID
+     */
     @ZenCodeType.Method
     public static boolean setPlayerRank(IPermissions iPermissions,UUID var1, Rank var2, Level var3){
         return iPermissions.setPlayerRank(var1,var2,var3);
@@ -124,6 +140,11 @@ public class ExpandIPermissions {
     public static boolean addPlayer(IPermissions iPermissions, GameProfile var1, Rank var2){
         return iPermissions.addPlayer(var1,var2);
     }
+
+    /**
+     * @param var1 UUID
+     * @return
+     */
     @ZenCodeType.Method
     public static  Rank getRank(IPermissions iPermissions,UUID var1){
         return iPermissions.getRank(var1);
@@ -140,6 +161,10 @@ public class ExpandIPermissions {
     public static boolean setPermission(IPermissions iPermissions,Rank var1, Action var2, boolean var3){
         return iPermissions.setPermission(var1,var2,var3);
     }
+
+    /**
+     * @param var1 UUID
+     */
     @ZenCodeType.Method
     public static boolean removePlayer(IPermissions iPermissions,UUID var1){
         return iPermissions.removePlayer(var1);

@@ -125,10 +125,13 @@ IPermissions.getFilteredPlayers(var1 as Predicate<Rank>) as Set<ColonyPlayer>
 
 :::group{name=getOwner}
 
-Return Type: string
+
+
+Returns: UUID  
+Return Type: **invalid**
 
 ```zenscript
-// IPermissions.getOwner() as string
+// IPermissions.getOwner() as invalid
 
 myIPermissions.getOwner();
 ```
@@ -137,6 +140,9 @@ myIPermissions.getOwner();
 
 :::group{name=getOwnerEntry}
 
+
+
+Returns: Map.Entry<UUID, {$link ColonyPlayer}>  
 Return Type: **invalid**?
 
 ```zenscript
@@ -161,6 +167,9 @@ myIPermissions.getOwnerName();
 
 :::group{name=getPlayers}
 
+
+
+Returns: Map<UUID, {$link ColonyPlayer}>  
 Return Type: **invalid**
 
 ```zenscript
@@ -218,15 +227,17 @@ IPermissions.getRank(var1 as int) as Rank
 
 :::group{name=getRank}
 
+
+
 Return Type: [Rank](/mods/sdmcrtplus/integration/minecolonies/api/colony/permissions/Rank)
 
 ```zenscript
 IPermissions.getRank(var1 as invalid) as Rank
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | **invalid** |
+| Parameter |    Type     | Description |
+|-----------|-------------|-------------|
+| var1      | **invalid** | UUID        |
 
 
 :::
@@ -382,15 +393,17 @@ IPermissions.isSubscriber(var1 as Player) as boolean
 
 :::group{name=removePlayer}
 
+
+
 Return Type: boolean
 
 ```zenscript
 IPermissions.removePlayer(var1 as invalid) as boolean
 ```
 
-| Parameter |    Type     |
-|-----------|-------------|
-| var1      | **invalid** |
+| Parameter |    Type     | Description |
+|-----------|-------------|-------------|
+| var1      | **invalid** | UUID        |
 
 
 :::
@@ -462,17 +475,19 @@ IPermissions.setPermission(var1 as Rank, var2 as Action, var3 as boolean) as boo
 
 :::group{name=setPlayerRank}
 
+
+
 Return Type: boolean
 
 ```zenscript
 IPermissions.setPlayerRank(var1 as invalid, var2 as Rank, var3 as Level) as boolean
 ```
 
-| Parameter |                                     Type                                      |
-|-----------|-------------------------------------------------------------------------------|
-| var1      | **invalid**                                                                   |
-| var2      | [Rank](/mods/sdmcrtplus/integration/minecolonies/api/colony/permissions/Rank) |
-| var3      | [Level](/vanilla/api/world/Level)                                             |
+| Parameter |                                     Type                                      | Description |
+|-----------|-------------------------------------------------------------------------------|-------------|
+| var1      | **invalid**                                                                   | UUID        |
+| var2      | [Rank](/mods/sdmcrtplus/integration/minecolonies/api/colony/permissions/Rank) |             |
+| var3      | [Level](/vanilla/api/world/Level)                                             |             |
 
 
 :::

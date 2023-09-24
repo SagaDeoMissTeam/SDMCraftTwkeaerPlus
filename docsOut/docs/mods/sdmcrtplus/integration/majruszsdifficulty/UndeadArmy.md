@@ -61,10 +61,10 @@ myUndeadArmy.getCurrentWave();
 
 :::group{name=getDirection}
 
-Return Type: **invalid**
+Return Type: [Direction](/mods/sdmcrtplus/integration/majruszsdifficulty/Direction)
 
 ```zenscript
-// UndeadArmy.getDirection() as invalid
+// UndeadArmy.getDirection() as Direction
 
 myUndeadArmy.getDirection();
 ```
@@ -246,13 +246,13 @@ UndeadArmy.setState(state as PhaseState, ticksLeft as int)
 :::group{name=start}
 
 ```zenscript
-UndeadArmy.start(positionToAttack as BlockPos, direction as invalid)
+UndeadArmy.start(positionToAttack as BlockPos, direction as Direction)
 ```
 
-|    Parameter     |                    Type                     |
-|------------------|---------------------------------------------|
-| positionToAttack | [BlockPos](/vanilla/api/util/math/BlockPos) |
-| direction        | **invalid**                                 |
+|    Parameter     |                                  Type                                  |
+|------------------|------------------------------------------------------------------------|
+| positionToAttack | [BlockPos](/vanilla/api/util/math/BlockPos)                            |
+| direction        | [Direction](/mods/sdmcrtplus/integration/majruszsdifficulty/Direction) |
 
 
 :::
@@ -276,7 +276,7 @@ myUndeadArmy.tick();
 | boss              | [Entity](/vanilla/api/entity/Entity)                                                  | true       | false      |
 | components        | **invalid**                                                                           | true       | false      |
 | currentWave       | int                                                                                   | true       | false      |
-| direction         | **invalid**                                                                           | true       | false      |
+| direction         | [Direction](/mods/sdmcrtplus/integration/majruszsdifficulty/Direction)                | true       | false      |
 | hasFinished       | boolean                                                                               | true       | false      |
 | isLastWave        | boolean                                                                               | true       | false      |
 | level             | [ServerLevel](/vanilla/api/world/ServerLevel)                                         | true       | false      |

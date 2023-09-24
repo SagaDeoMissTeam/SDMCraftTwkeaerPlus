@@ -5,6 +5,7 @@ import com.blamejared.crafttweaker.api.item.IItemStack;
 import com.blamejared.crafttweaker.api.item.MCItemStack;
 import com.blamejared.crafttweaker_annotations.annotations.Document;
 import com.blamejared.crafttweaker_annotations.annotations.NativeTypeRegistration;
+import net.minecraft.nbt.ListTag;
 import net.minecraft.world.inventory.PlayerEnderChestContainer;
 import org.openzen.zencode.java.ZenCodeType;
 

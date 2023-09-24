@@ -111,12 +111,8 @@ public abstract class ChunkGeneratorMixin {
                                 MinecraftForge.EVENT_BUS.post(event);
                                 if (!event.isCanceled()){
                                     worldGenLevel.setCurrentlyGenerating(supplier);
-                                    Structure structure1 = null;
-                                    for(Structure st : worldGenLevel.registryAccess().registryOrThrow(Registry.STRUCTURE_REGISTRY)){
-                                        if(st.equals(event.getStructure())){
-                                            structure1 = st;
-                                        }
-                                    }
+                                    Structure structure1 =  event.getStructure();
+
                                     structureManager.startsForStructure(sectionpos, structure1 != null ? structure1 : structure).forEach((p_223086_) -> {
                                         p_223086_.placeInChunk(worldGenLevel, structureManager, ((ChunkGenerator) (Object) this), worldgenrandom, getWritableArea(chunkAccess), chunkpos);
                                     });
