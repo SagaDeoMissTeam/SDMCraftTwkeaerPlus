@@ -350,7 +350,7 @@ myIBuilding.getRequester();
 
 :::group{name=getRequiredItemsAndAmount}
 
-Return Type: [Tuple](/mods/sdmcrtplus/utils/core/Tuple)&lt;int?,bool?&gt;[Predicate&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt;]
+Return Type: [Tuple](/mods/sdmcrtplus/utils/core/Tuple)&lt;int?,bool?&gt;[[Predicate](/mods/sdmcrtplus/utils/core/Predicate)&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt;]
 
 ```zenscript
 // IBuilding.getRequiredItemsAndAmount() as Tuple<int?,bool?>[Predicate<ItemStack>]
@@ -452,10 +452,10 @@ Return Type: boolean
 IBuilding.hasWorkerOpenRequestsFiltered(var1 as int, var2 as Predicate<IRequest>) as boolean
 ```
 
-| Parameter |                                                       Type                                                       |
-|-----------|------------------------------------------------------------------------------------------------------------------|
-| var1      | int                                                                                                              |
-| var2      | Predicate&lt;[IRequest](/mods/sdmcrtplus/integration/minecolonies/api/colony/requestsystem/request/IRequest)&gt; |
+| Parameter |                                                                           Type                                                                            |
+|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| var1      | int                                                                                                                                                       |
+| var2      | [Predicate](/mods/sdmcrtplus/utils/core/Predicate)&lt;[IRequest](/mods/sdmcrtplus/integration/minecolonies/api/colony/requestsystem/request/IRequest)&gt; |
 
 
 :::

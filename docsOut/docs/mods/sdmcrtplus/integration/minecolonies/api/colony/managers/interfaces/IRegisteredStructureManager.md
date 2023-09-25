@@ -193,9 +193,9 @@ Return Type: [Optional](/mods/sdmcrtplus/utils/core/Optional)
 IRegisteredStructureManager.getField(var1 as Predicate) as Optional
 ```
 
-| Parameter |   Type    |
-|-----------|-----------|
-| var1      | Predicate |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| var1      | [Predicate](/mods/sdmcrtplus/utils/core/Predicate) |
 
 
 :::
@@ -208,9 +208,9 @@ Return Type: stdlib.List
 IRegisteredStructureManager.getFields(var1 as Predicate) as stdlib.List
 ```
 
-| Parameter |   Type    |
-|-----------|-----------|
-| var1      | Predicate |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| var1      | [Predicate](/mods/sdmcrtplus/utils/core/Predicate) |
 
 
 :::
@@ -223,9 +223,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)?
 IRegisteredStructureManager.getFirstBuildingMatching(var1 as Predicate<IBuilding>) as BlockPos?
 ```
 
-| Parameter |                                                  Type                                                  |
-|-----------|--------------------------------------------------------------------------------------------------------|
-| var1      | Predicate&lt;[IBuilding](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/IBuilding)&gt; |
+| Parameter |                                                                      Type                                                                       |
+|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| var1      | [Predicate](/mods/sdmcrtplus/utils/core/Predicate)&lt;[IBuilding](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/IBuilding)&gt; |
 
 
 :::
@@ -286,9 +286,9 @@ Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
 IRegisteredStructureManager.getRandomBuilding(var1 as Predicate<IBuilding>) as BlockPos
 ```
 
-| Parameter |                                                  Type                                                  |
-|-----------|--------------------------------------------------------------------------------------------------------|
-| var1      | Predicate&lt;[IBuilding](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/IBuilding)&gt; |
+| Parameter |                                                                      Type                                                                       |
+|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| var1      | [Predicate](/mods/sdmcrtplus/utils/core/Predicate)&lt;[IBuilding](/mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/IBuilding)&gt; |
 
 
 :::
@@ -489,9 +489,9 @@ IRegisteredStructureManager.removeBuilding(var1 as IBuilding, var2 as Set<Server
 IRegisteredStructureManager.removeField(var1 as Predicate)
 ```
 
-| Parameter |   Type    |
-|-----------|-----------|
-| var1      | Predicate |
+| Parameter |                        Type                        |
+|-----------|----------------------------------------------------|
+| var1      | [Predicate](/mods/sdmcrtplus/utils/core/Predicate) |
 
 
 :::

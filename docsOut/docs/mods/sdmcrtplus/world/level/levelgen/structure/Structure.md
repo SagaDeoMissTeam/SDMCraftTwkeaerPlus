@@ -33,18 +33,18 @@ Return Type: [StructureStart](/mods/sdmcrtplus/world/level/levelgen/structure/St
 Structure.generate(registryAccess as invalid, chunkGenerator as invalid, biomeSource as invalid, randomState as invalid, structureTemplateManager as StructureTemplateManager, l as long, chunkPos as ChunkPos, i as int, levelHeightAccessor as LevelHeightAccessor, holderPredicate as Predicate<Holder<Biome>>) as StructureStart
 ```
 
-|        Parameter         |                                                        Type                                                         |
-|--------------------------|---------------------------------------------------------------------------------------------------------------------|
-| registryAccess           | **invalid**                                                                                                         |
-| chunkGenerator           | **invalid**                                                                                                         |
-| biomeSource              | **invalid**                                                                                                         |
-| randomState              | **invalid**                                                                                                         |
-| structureTemplateManager | [StructureTemplateManager](/mods/sdmcrtplus/world/level/levelgen/structure/templatesystem/StructureTemplateManager) |
-| l                        | long                                                                                                                |
-| chunkPos                 | [ChunkPos](/mods/sdmcrtplus/world/level/ChunkPos)                                                                   |
-| i                        | int                                                                                                                 |
-| levelHeightAccessor      | [LevelHeightAccessor](/mods/sdmcrtplus/world/level/LevelHeightAccessor)                                             |
-| holderPredicate          | Predicate&lt;[Holder](/mods/sdmcrtplus/utils/core/Holder)&lt;[Biome](/vanilla/api/world/biome/Biome)&gt;&gt;        |
+|        Parameter         |                                                                         Type                                                                          |
+|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
+| registryAccess           | **invalid**                                                                                                                                           |
+| chunkGenerator           | **invalid**                                                                                                                                           |
+| biomeSource              | **invalid**                                                                                                                                           |
+| randomState              | **invalid**                                                                                                                                           |
+| structureTemplateManager | [StructureTemplateManager](/mods/sdmcrtplus/world/level/levelgen/structure/templatesystem/StructureTemplateManager)                                   |
+| l                        | long                                                                                                                                                  |
+| chunkPos                 | [ChunkPos](/mods/sdmcrtplus/world/level/ChunkPos)                                                                                                     |
+| i                        | int                                                                                                                                                   |
+| levelHeightAccessor      | [LevelHeightAccessor](/mods/sdmcrtplus/world/level/LevelHeightAccessor)                                                                               |
+| holderPredicate          | [Predicate](/mods/sdmcrtplus/utils/core/Predicate)&lt;[Holder](/mods/sdmcrtplus/utils/core/Holder)&lt;[Biome](/vanilla/api/world/biome/Biome)&gt;&gt; |
 
 
 :::

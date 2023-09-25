@@ -61,9 +61,9 @@ Return Type: int
 TileEntityRack.getItemCount(predicate as Predicate<ItemStack>) as int
 ```
 
-| Parameter |                           Type                            |
-|-----------|-----------------------------------------------------------|
-| predicate | Predicate&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; |
+| Parameter |                                                Type                                                |
+|-----------|----------------------------------------------------------------------------------------------------|
+| predicate | [Predicate](/mods/sdmcrtplus/utils/core/Predicate)&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; |
 
 
 :::
@@ -100,9 +100,9 @@ Return Type: boolean
 TileEntityRack.hasItemStack(itemStackSelectionPredicate as Predicate<ItemStack>) as boolean
 ```
 
-|          Parameter          |                           Type                            |
-|-----------------------------|-----------------------------------------------------------|
-| itemStackSelectionPredicate | Predicate&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; |
+|          Parameter          |                                                Type                                                |
+|-----------------------------|----------------------------------------------------------------------------------------------------|
+| itemStackSelectionPredicate | [Predicate](/mods/sdmcrtplus/utils/core/Predicate)&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; |
 
 
 :::

@@ -116,9 +116,9 @@ Return Type: Set&lt;[ColonyPlayer](/mods/sdmcrtplus/integration/minecolonies/api
 IPermissions.getFilteredPlayers(var1 as Predicate<Rank>) as Set<ColonyPlayer>
 ```
 
-| Parameter |                                              Type                                              |
-|-----------|------------------------------------------------------------------------------------------------|
-| var1      | Predicate&lt;[Rank](/mods/sdmcrtplus/integration/minecolonies/api/colony/permissions/Rank)&gt; |
+| Parameter |                                                                  Type                                                                   |
+|-----------|-----------------------------------------------------------------------------------------------------------------------------------------|
+| var1      | [Predicate](/mods/sdmcrtplus/utils/core/Predicate)&lt;[Rank](/mods/sdmcrtplus/integration/minecolonies/api/colony/permissions/Rank)&gt; |
 
 
 :::

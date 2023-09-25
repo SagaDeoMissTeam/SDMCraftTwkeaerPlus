@@ -8,7 +8,7 @@ import net.sixik.sdmcrtplus.source.events.players.PlayerChunkEvents;
 import org.openzen.zencode.java.ZenCodeType;
 
 @ZenRegister
-//@Document("mods/sdmcrtplus/events/entity/player/PlayerAfterLoadedChunkEvent")
+@Document("mods/sdmcrtplus/events/entity/player/PlayerAfterLoadedChunkEvent")
 @NativeTypeRegistration(value = PlayerChunkEvents.PlayerAfterLoadedChunkEvent.class, zenCodeName = "mods.sdmcrtplus.events.entity.player.PlayerAfterLoadedChunkEvent")
 public class ExpandPlayerAfterLoadedChunkEvent {
 

@@ -78,9 +78,9 @@ Return Type: int
 AbstractTileEntityRack.getItemCount(var1 as Predicate<ItemStack>) as int
 ```
 
-| Parameter |                           Type                            |
-|-----------|-----------------------------------------------------------|
-| var1      | Predicate&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; |
+| Parameter |                                                Type                                                |
+|-----------|----------------------------------------------------------------------------------------------------|
+| var1      | [Predicate](/mods/sdmcrtplus/utils/core/Predicate)&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; |
 
 
 :::
@@ -117,9 +117,9 @@ Return Type: boolean
 AbstractTileEntityRack.hasItemStack(var1 as Predicate<ItemStack>) as boolean
 ```
 
-| Parameter |                           Type                            |
-|-----------|-----------------------------------------------------------|
-| var1      | Predicate&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; |
+| Parameter |                                                Type                                                |
+|-----------|----------------------------------------------------------------------------------------------------|
+| var1      | [Predicate](/mods/sdmcrtplus/utils/core/Predicate)&lt;[ItemStack](/vanilla/api/item/ItemStack)&gt; |
 
 
 :::

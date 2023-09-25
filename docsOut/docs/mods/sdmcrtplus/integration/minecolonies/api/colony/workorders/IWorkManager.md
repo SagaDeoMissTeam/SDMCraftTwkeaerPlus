@@ -73,10 +73,10 @@ Return Type: stdlib.List&lt;[IWorkOrder](/mods/sdmcrtplus/integration/minecoloni
 IWorkManager.getOrderedList(var1 as Predicate<IWorkOrder>, var2 as BlockPos) as stdlib.List<IWorkOrder>
 ```
 
-| Parameter |                                                   Type                                                    |
-|-----------|-----------------------------------------------------------------------------------------------------------|
-| var1      | Predicate&lt;[IWorkOrder](/mods/sdmcrtplus/integration/minecolonies/api/colony/workorders/IWorkOrder)&gt; |
-| var2      | [BlockPos](/vanilla/api/util/math/BlockPos)                                                               |
+| Parameter |                                                                        Type                                                                        |
+|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------|
+| var1      | [Predicate](/mods/sdmcrtplus/utils/core/Predicate)&lt;[IWorkOrder](/mods/sdmcrtplus/integration/minecolonies/api/colony/workorders/IWorkOrder)&gt; |
+| var2      | [BlockPos](/vanilla/api/util/math/BlockPos)                                                                                                        |
 
 
 :::
