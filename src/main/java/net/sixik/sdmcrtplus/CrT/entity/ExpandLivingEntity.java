@@ -12,6 +12,7 @@ import net.minecraft.util.Mth;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.Brain;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import org.openzen.zencode.java.ZenCodeType;
 
@@ -97,14 +98,21 @@ public class ExpandLivingEntity {
      */
     @ZenCodeType.Method
     public static boolean changeDimension(LivingEntity entity, ResourceLocation dimension){
-        for(ResourceKey<Level> levelKey : entity.getServer().levelKeys()){
-            if(levelKey.registry().equals(dimension) || levelKey.registry() == dimension){
-                entity.changeDimension(entity.getServer().getLevel(levelKey));
-                return true;
-            }
-
+        Map<ResourceKey<Level>, ServerLevel> map = ((ServerLevel)entity.level).getServer().forgeGetWorldMap();
+        ResourceKey<Level> worldKey = ResourceKey.create(ResourceKey.createRegistryKey(new ResourceLocation("minecraft", "dimension")), dimension);
+        if(map.containsKey(worldKey)){
+            entity.changeDimension(entity.getServer().getLevel(worldKey));
+            return true;
         }
         return false;
+//        for(ResourceKey<Level> levelKey : entity.getServer().levelKeys()){
+//            if(levelKey.registry().equals(dimension) || levelKey.registry() == dimension){
+//                entity.changeDimension(entity.getServer().getLevel(levelKey));
+//                return true;
+//            }
+//
+//        }
+//        return false;
     }
 
     /**

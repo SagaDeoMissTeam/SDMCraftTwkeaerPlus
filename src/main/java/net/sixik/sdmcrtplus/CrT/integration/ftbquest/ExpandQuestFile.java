@@ -25,27 +25,27 @@ public class ExpandQuestFile {
         return questFile.isServerSide();
     }
     @ZenCodeType.Method
-    public static @Nullable Quest getQuest(QuestFile questFile, long id){
+    public static @ZenCodeType.Nullable Quest getQuest(QuestFile questFile, long id){
         return questFile.getQuest(id);
     }
     @ZenCodeType.Method
-    public static @Nullable QuestObject getObject(QuestFile questFile, long id){
+    public static @ZenCodeType.Nullable QuestObject getObject(QuestFile questFile, long id){
         return questFile.get(id);
     }
     @ZenCodeType.Method
-    public static @Nullable Chapter getChapter(QuestFile questFile, long id){
+    public static @ZenCodeType.Nullable Chapter getChapter(QuestFile questFile, long id){
         return questFile.getChapter(id);
     }
     @ZenCodeType.Method
-    public static @Nullable QuestObjectBase getBase(QuestFile questFile, long id){
+    public static @ZenCodeType.Nullable QuestObjectBase getBase(QuestFile questFile, long id){
         return questFile.getBase(id);
     }
     @ZenCodeType.Method
-    public static @Nullable ChapterGroup getChapterGroup(QuestFile questFile, long id){
+    public static @ZenCodeType.Nullable ChapterGroup getChapterGroup(QuestFile questFile, long id){
         return questFile.getChapterGroup(id);
     }
     @ZenCodeType.Method
-    public static @Nullable Reward getReward(QuestFile questFile, long id){
+    public static @ZenCodeType.Nullable Reward getReward(QuestFile questFile, long id){
         return questFile.getReward(id);
     }
     @ZenCodeType.Method

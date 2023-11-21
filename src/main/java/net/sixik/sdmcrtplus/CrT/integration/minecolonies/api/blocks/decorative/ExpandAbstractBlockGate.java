@@ -11,6 +11,9 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import org.openzen.zencode.java.ZenCodeType;
 
+/**
+ * This class is responsible for any gate in fashion.
+ */
 @ZenRegister(modDeps = "minecolonies")
 @Document("mods/sdmcrtplus/integration/minecolonies/api/blocks/decorative/AbstractBlockGate")
 @NativeTypeRegistration(value = AbstractBlockGate.class, zenCodeName = "mods.sdmcrtplus.integration.api.blocks.decorative.AbstractBlockGate")

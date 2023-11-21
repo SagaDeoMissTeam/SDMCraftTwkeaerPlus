@@ -1,6 +1,7 @@
 package net.sixik.sdmcrtplus.CrT.integration.ftbteam;
 
 import com.blamejared.crafttweaker.api.annotation.ZenRegister;
+import com.blamejared.crafttweaker.api.data.MapData;
 import com.blamejared.crafttweaker_annotations.annotations.Document;
 import com.blamejared.crafttweaker_annotations.annotations.NativeTypeRegistration;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
@@ -8,6 +9,7 @@ import dev.ftb.mods.ftbteams.data.Team;
 import dev.ftb.mods.ftbteams.data.TeamManager;
 import dev.ftb.mods.ftbteams.data.TeamMessage;
 import dev.ftb.mods.ftbteams.net.SendMessageResponseMessage;
+import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import org.openzen.zencode.java.ZenCodeType;
@@ -27,6 +29,12 @@ public class ExpandTeam {
     public static List<ServerPlayer> getOnlineMembers(Team team){
         return team.getOnlineMembers();
     }
+
+    @ZenCodeType.Method
+    public static MapData getData(Team team){
+        return new MapData(team.serializeNBT());
+    }
+
     @ZenCodeType.Method
     public static String getOwner(Team team){
         return team.getOwner().toString();

@@ -1,11 +1,13 @@
 package net.sixik.sdmcrtplus.source.integration.ftbquest;
 
+import com.blamejared.crafttweaker.api.CraftTweakerAPI;
 import dev.architectury.event.EventResult;
 import dev.ftb.mods.ftbquests.events.CustomRewardEvent;
 import dev.ftb.mods.ftbquests.events.CustomTaskEvent;
 import dev.ftb.mods.ftbquests.events.ObjectCompletedEvent;
 import dev.ftb.mods.ftbquests.events.ObjectStartedEvent;
 import net.minecraftforge.common.MinecraftForge;
+import net.sixik.sdmcrtplus.Sdmcrtplus;
 import net.sixik.sdmcrtplus.source.integration.ftbquest.events.*;
 
 public class FTBQuestIntegration {
@@ -19,6 +21,7 @@ public class FTBQuestIntegration {
         ObjectStartedEvent.QUEST.register(FTBQuestIntegration::onQuestStartedEvent);
         ObjectStartedEvent.CHAPTER.register(FTBQuestIntegration::onChapterStartedEvent);
         ObjectStartedEvent.TASK.register(FTBQuestIntegration::onTaskStartedEvent);
+        CraftTweakerAPI.LOGGER.info("FTB Quest LOADED !");
     }
 
     private static EventResult onTaskCompletedEvent(ObjectCompletedEvent.TaskEvent event) {

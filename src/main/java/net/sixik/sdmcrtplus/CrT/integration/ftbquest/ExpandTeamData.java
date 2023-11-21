@@ -4,6 +4,7 @@ import com.blamejared.crafttweaker.api.annotation.ZenRegister;
 import com.blamejared.crafttweaker_annotations.annotations.Document;
 import com.blamejared.crafttweaker_annotations.annotations.NativeTypeRegistration;
 import dev.ftb.mods.ftbquests.quest.*;
+import dev.ftb.mods.ftbquests.quest.reward.Reward;
 import dev.ftb.mods.ftbquests.quest.task.Task;
 import net.minecraft.server.level.ServerPlayer;
 import org.jetbrains.annotations.Nullable;
@@ -48,6 +49,20 @@ public class ExpandTeamData {
     @ZenCodeType.Method
     public static long getProgress(TeamData teamData, long quest){
         return teamData.getProgress(quest);
+    }
+
+    @ZenCodeType.Method
+    public static void setCompleted(TeamData teamData, long id){
+        teamData.setCompleted(id, new Date());
+    }
+    @ZenCodeType.Method
+    public static void resetProgress(TeamData teamData, long id, ServerPlayer player){
+        for (Task sa : FTBUtils.getQuestFile(false).getQuest(id).tasks) {
+            teamData.resetProgress(sa);
+        }
+        for(Reward rw : FTBUtils.getQuestFile(false).getQuest(id).rewards){
+            teamData.resetReward(player.getUUID(), rw);
+        }
     }
     @ZenCodeType.Method
     public static void addProgress(TeamData teamData, Task task,long progress){

@@ -15,6 +15,10 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import org.jetbrains.annotations.NotNull;
 import org.openzen.zencode.java.ZenCodeType;
 
+
+/**
+ * This class is responsible for displaying schematics in the book. To be honest, I don't fucking know what to do with it at all.
+ */
 @ZenRegister(modDeps = "minecolonies")
 @Document("mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/registry/IBuildingModuleView")
 @NativeTypeRegistration(value = IBuildingModuleView.class, zenCodeName = "mods.sdmcrtplus.integration.api.colony.buildings.registry.IBuildingModuleView")

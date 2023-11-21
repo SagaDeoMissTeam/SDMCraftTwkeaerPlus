@@ -20,15 +20,27 @@ import java.util.List;
 import java.util.function.BiFunction;
 import java.util.function.Supplier;
 
+
+
+/**
+ * This class is responsible for all blocks that can store items or change in some way (such as a Piston, Chest, Funnel, etc.)
+ */
 @ZenRegister(modDeps = "minecolonies")
 @Document("mods/sdmcrtplus/integration/minecolonies/api/colony/buildings/registry/BuildingEntry")
 @NativeTypeRegistration(value = BuildingEntry.class, zenCodeName = "mods.sdmcrtplus.integration.api.colony.buildings.registry.BuildingEntry")
 public class ExpandBuildingEntry {
 
+    /**
+     * Allows you to get a Regular block from the Entity Block.
+     */
     @ZenCodeType.Method
     public static AbstractBlockMinecolonies<?> getBuildingBlock(BuildingEntry buildingEntry){
         return buildingEntry.getBuildingBlock();
     }
+
+    /**
+     * This is a synchronization module with the server.
+     */
     @ZenCodeType.Method
     public static List<Supplier<IBuildingModule>> getModuleProducers(BuildingEntry buildingEntry){
         return buildingEntry.getModuleProducers();

@@ -1,5 +1,6 @@
 package net.sixik.sdmcrtplus.source.integration.ftbteam;
 
+import com.blamejared.crafttweaker.api.CraftTweakerAPI;
 import dev.architectury.event.EventResult;
 import dev.ftb.mods.ftbteams.event.*;
 import net.minecraftforge.common.MinecraftForge;
@@ -17,6 +18,7 @@ public class FTBTeamsIntegration {
         TeamEvent.PROPERTIES_CHANGED.register(FTBTeamsIntegration::PROPERTIES_CHANGED);
         TeamEvent.PLAYER_LOGGED_IN.register(FTBTeamsIntegration::PLAYER_LOGGED_IN);
 //        TeamEvent.REMOVE_ALLY.register();
+        CraftTweakerAPI.LOGGER.info("FTB Teams LOADED !");
     }
 
     private static EventResult ADD_ALLY_Event(TeamAllyEvent event){

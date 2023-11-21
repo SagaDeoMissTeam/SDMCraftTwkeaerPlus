@@ -5,6 +5,7 @@ import com.blamejared.crafttweaker_annotations.annotations.Document;
 import com.blamejared.crafttweaker_annotations.annotations.NativeTypeRegistration;
 import dev.ftb.mods.ftbquests.quest.QuestFile;
 import dev.ftb.mods.ftbquests.quest.QuestObjectBase;
+import dev.ftb.mods.ftbquests.quest.QuestObjectType;
 import net.minecraft.world.item.ItemStack;
 import org.openzen.zencode.java.ZenCodeType;
 
@@ -32,6 +33,11 @@ public class ExpandQuestObjectBase {
     @ZenCodeType.Method
     public static long getParentID(QuestObjectBase chapter){
         return chapter.getParentID();
+    }
+
+    @ZenCodeType.Method
+    public static QuestObjectType getObjectType(QuestObjectBase questObjectBase){
+        return questObjectBase.getObjectType();
     }
 
     @ZenCodeType.Method

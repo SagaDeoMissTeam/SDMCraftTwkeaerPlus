@@ -7,15 +7,21 @@ import com.blamejared.crafttweaker.platform.Services;
 import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.AddReloadListenerEvent;
 import net.minecraftforge.eventbus.api.EventPriority;
 import net.minecraftforge.fml.DistExecutor;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLPaths;
 import net.minecraftforge.network.NetworkRegistry;
 import net.minecraftforge.network.simple.SimpleChannel;
 import net.minecraftforge.registries.RegisterEvent;
+import net.sixik.sdmcrtplus.configs.ConfigBase;
+import net.sixik.sdmcrtplus.configs.ConfigInit;
 import net.sixik.sdmcrtplus.source.EventListener;
 import net.sixik.sdmcrtplus.source.integration.ftbquest.FTBQuestIntegration;
 import net.sixik.sdmcrtplus.source.integration.ftbteam.FTBTeamsIntegration;
@@ -23,6 +29,8 @@ import net.sixik.sdmcrtplus.source.lore.network.PacketPlayLoreQuote;
 import net.sixik.sdmcrtplus.source.proxy.SDMClientProxy;
 import net.sixik.sdmcrtplus.source.proxy.SDMCommonProxy;
 import net.sixik.sdmcrtplus.source.register.ModSounds;
+import net.sixik.sdmcrtplus.source.sixikrpg.events.LivingEntityEvents;
+import net.sixik.sdmcrtplus.source.sixikrpg.register.EntityRegisters;
 import net.sixik.sdmcrtplus.source.timer.SDMTimer;
 import org.slf4j.Logger;
 
@@ -35,6 +43,7 @@ public class Sdmcrtplus {
     public static final SDMCommonProxy PROXY = DistExecutor.unsafeRunForDist(() -> SDMClientProxy::new, () -> SDMCommonProxy::new);
     public static SimpleChannel packetInstance;
     public Sdmcrtplus() {
+        ConfigInit.init();
 
         ModSounds.register(FMLJavaModLoadingContext.get().getModEventBus());
 
@@ -47,13 +56,18 @@ public class Sdmcrtplus {
         MinecraftForge.EVENT_BUS.register(this);
         MinecraftForge.EVENT_BUS.register(PROXY);
         MinecraftForge.EVENT_BUS.register(SDMTimer.class);
+        MinecraftForge.EVENT_BUS.register(LivingEntityEvents.class);
         MinecraftForge.EVENT_BUS.register(EventListener.class);
         MinecraftForge.EVENT_BUS.addListener(CustomParameters::modReload);
+        MinecraftForge.EVENT_BUS.addListener(this::reload);
 
-        if(Services.PLATFORM.isModLoaded("ftbquest")) FTBQuestIntegration.init();
+        if(Services.PLATFORM.isModLoaded("ftbquests")) FTBQuestIntegration.init();
         if(Services.PLATFORM.isModLoaded("ftbteams")) FTBTeamsIntegration.init();
     }
 
+    private void reload(AddReloadListenerEvent event){
+        event.addListener(EntityRegisters.INSTANCE);
+    }
 
     private void setup(FMLCommonSetupEvent event){
         packetInstance = NetworkRegistry.ChannelBuilder.named(new ResourceLocation(MODID, "main")).networkProtocolVersion(() -> {

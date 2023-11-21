@@ -5,21 +5,27 @@ import com.blamejared.crafttweaker.api.annotation.ZenRegister;
 import com.blamejared.crafttweaker_annotations.annotations.Document;
 import net.minecraft.commands.arguments.ResourceLocationArgument;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.core.Registry;
 import net.minecraft.network.protocol.game.ClientboundCustomSoundPacket;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerPlayerGameMode;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import org.openzen.zencode.java.ZenCodeType;
 
+import java.util.Map;
 import java.util.Objects;
+import java.util.Optional;
 
 /**
  * @docParam this serverPlayer
@@ -39,12 +45,15 @@ public class ExpandServerPlayer {
      * @return
      */
     @ZenCodeType.Method
-    public static boolean setRespawnPosition(ServerPlayer player, BlockPos position, ResourceLocation dimension, int respawnAngle, boolean respawnForced, boolean sendSetSpawnMessage){
-        for(ResourceKey<Level> levelKey : player.getServer().levelKeys()){
-            if(levelKey.registry().equals(dimension) || levelKey.registry() == dimension){
-                player.setRespawnPosition(levelKey, position, respawnAngle, respawnForced, sendSetSpawnMessage);
-                return true;
-            }
+    public static boolean setRespawnPosition(ServerPlayer player, ResourceLocation dimension, @ZenCodeType.Nullable BlockPos position, int respawnAngle, boolean respawnForced, boolean sendSetSpawnMessage){
+        @SuppressWarnings("deprecation")
+        Map<ResourceKey<Level>, ServerLevel> map = player.server.forgeGetWorldMap();
+
+        ResourceKey<Level> worldKey = ResourceKey.create(ResourceKey.createRegistryKey(new ResourceLocation("minecraft", "dimension")), dimension);
+
+        if(map.containsKey(worldKey)){
+            player.setRespawnPosition(worldKey, position, respawnAngle, respawnForced, sendSetSpawnMessage);
+            return true;
         }
         return false;
     }
@@ -54,7 +63,7 @@ public class ExpandServerPlayer {
      */
     @ZenCodeType.Getter("respawnPosition")
     @ZenCodeType.Method
-    public static BlockPos getRespawnPosition(ServerPlayer player){
+    public static @ZenCodeType.Nullable BlockPos getRespawnPosition(ServerPlayer player){
         return player.getRespawnPosition();
     }
 
@@ -65,7 +74,7 @@ public class ExpandServerPlayer {
     @ZenCodeType.Getter("respawnDimension")
     @ZenCodeType.Method
     public static ResourceLocation getRespawnDimension(ServerPlayer player) {
-        return player.getRespawnDimension().registry();
+        return player.getRespawnDimension().location();
     }
 
     /**
@@ -88,7 +97,33 @@ public class ExpandServerPlayer {
     }
 
     @ZenCodeType.Method
-    public static void trackStartFallingPosition(ServerPlayer player){player.trackStartFallingPosition();;
+    public static void trackStartFallingPosition(ServerPlayer player){
+        player.trackStartFallingPosition();
+    }
+
+    /**
+     * Moves the player to the specified coordinates
+     * Use it if you want to change the player's spawn point
+     * @param world - world where player will be respawn
+     */
+    @ZenCodeType.Method
+    public static void spawnIn(ServerPlayer pl, ServerLevel world){
+        pl.teleportTo(world, pl.getX(), pl.getY(), pl.getZ(), pl.getYRot(), pl.getXRot());
+        BlockPos spawn = pl.getRespawnPosition();
+        boolean forced = pl.isRespawnForced();
+        Optional<Vec3> optional;
+        if(spawn!=null && Level.isInSpawnableBounds(spawn))
+        {
+            optional = Player.findRespawnPositionAndUseSpawnBlock(world, spawn, 0, forced, true);
+        }
+        else
+        {
+            optional = Optional.empty();
+        }
+        BlockPos worldSpawn = world.getSharedSpawnPos();
+        Vec3 spawnPos = optional.orElse(new Vec3(worldSpawn.getX() + 0.5, worldSpawn.getY() + 0.2, worldSpawn.getZ() + 0.5));
+        pl.teleportTo(world, spawnPos.get(Direction.Axis.X), spawnPos.get(Direction.Axis.Y), spawnPos.get(Direction.Axis.Z), pl.getXRot(), pl.getYRot());
+        pl.addEffect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 20 * 5, 20, true, false));
     }
 
 //    /**

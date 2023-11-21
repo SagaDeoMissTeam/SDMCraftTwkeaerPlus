@@ -80,10 +80,10 @@ public class ExpandTileEntityRack {
         tileEntityRack.setChanged();
 
     }
-    @ZenCodeType.Method
-    public static @NotNull Component getDisplayName(TileEntityRack tileEntityRack) {
-        return tileEntityRack.getDisplayName();
-    }
+//    @ZenCodeType.Method
+//    public static @NotNull Component getDisplayName(TileEntityRack tileEntityRack) {
+//        return tileEntityRack.getDisplayName();
+//    }
     @ZenCodeType.Method
     public static void setRemoved(TileEntityRack tileEntityRack) {
         tileEntityRack.setRemoved();
