@@ -17,12 +17,18 @@ import net.minecraft.core.RegistryAccess;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.levelgen.structure.Structure;
 import net.minecraftforge.common.ForgeMod;
 import net.minecraftforge.fml.ModLoader;
 import net.minecraftforge.server.ServerLifecycleHooks;
+import net.sixik.sdmcrtplus.source.client.SDMClientUtils;
+import net.sixik.sdmcrtplus.source.network.ModMessage;
+import net.sixik.sdmcrtplus.source.network.packet.ExperementalS2CPacket;
+import net.sixik.sdmcrtplus.source.network.packet.TestC2SPacket;
 import org.openzen.zencode.java.ZenCodeType;
 
 import java.io.*;
@@ -35,11 +41,15 @@ import java.util.*;
 @ZenCodeType.Name("mods.sdmcrtplus.utils.GlobalUtils")
 public class GlobalUtils {
 
+    public static void setEntityStop(){
+
+    }
+
     /**
      Allows you to get the Server from anywhere in the script.
      */
     @ZenCodeType.Method
-    public static MinecraftServer getServer(){
+    public static @ZenCodeType.Nullable MinecraftServer getServer(){
         return ServerLifecycleHooks.getCurrentServer();
     }
 
@@ -83,6 +93,10 @@ public class GlobalUtils {
         }
     }
 
+    @ZenCodeType.Method
+    public static void sendTestMessage(){
+        SDMClientUtils.test(20);
+    }
 
     protected static void content(Mod d1){
         try {

@@ -41,18 +41,6 @@ TileEntityRack.getCount(storage as ItemStorage) as int
 
 :::
 
-:::group{name=getDisplayName}
-
-Return Type: [Component](/vanilla/api/text/Component)
-
-```zenscript
-// TileEntityRack.getDisplayName() as Component
-
-myTileEntityRack.getDisplayName();
-```
-
-:::
-
 :::group{name=getItemCount}
 
 Return Type: int

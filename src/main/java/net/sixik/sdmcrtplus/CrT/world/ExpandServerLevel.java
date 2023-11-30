@@ -11,8 +11,6 @@ import net.minecraft.Util;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Registry;
 import net.minecraft.core.SectionPos;
-import net.minecraft.core.Vec3i;
-import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerChunkCache;
@@ -27,6 +25,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.Rotation;
 import net.minecraft.world.level.block.entity.StructureBlockEntity;
+import net.minecraft.world.level.border.WorldBorder;
 import net.minecraft.world.level.chunk.*;
 import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.levelgen.structure.BoundingBox;
@@ -36,7 +35,6 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.BlockRotProce
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplateManager;
-import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.common.world.ForgeChunkManager;
 import net.sixik.sdmcrtplus.Sdmcrtplus;
 import org.openzen.zencode.java.ZenCodeType;
@@ -368,5 +366,11 @@ public class ExpandServerLevel {
         long j4 = System.currentTimeMillis() - j3;
 //        p_183685_.sendSuccess(Component.literal(String.format(Locale.ROOT, "%d chunks have been reset. This took %d ms for %d chunks, or %02f ms per chunk", k3, j4, k3, (float)j4 / (float)k3)), true);
         return 1;
+    }
+
+
+    @ZenCodeType.Method
+    public static WorldBorder getWorldBorder(ServerLevel level){
+        return level.getWorldBorder();
     }
 }

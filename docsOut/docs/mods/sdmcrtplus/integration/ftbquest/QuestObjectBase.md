@@ -46,6 +46,18 @@ myQuestObjectBase.getId();
 
 :::
 
+:::group{name=getObjectType}
+
+Return Type: [QuestObjectType](/mods/sdmcrtplus/integration/ftbquest/QuestObjectType)
+
+```zenscript
+// QuestObjectBase.getObjectType() as QuestObjectType
+
+myQuestObjectBase.getObjectType();
+```
+
+:::
+
 :::group{name=getParentID}
 
 Return Type: long

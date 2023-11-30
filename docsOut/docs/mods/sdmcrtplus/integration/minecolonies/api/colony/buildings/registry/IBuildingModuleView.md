@@ -1,5 +1,7 @@
 # IBuildingModuleView
 
+This class is responsible for displaying schematics in the book. To be honest, I don't fucking know what to do with it at all.
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.

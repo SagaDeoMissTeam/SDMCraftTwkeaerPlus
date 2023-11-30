@@ -24,13 +24,13 @@ Return Type: boolean
 InventoryCitizen.damageInventoryItem<T : LivingEntity>(slot as int, amount as int, entityIn as @org.openzen.zencode.java.ZenCodeType.Nullable T, onBroken as Consumer<T>?) as boolean
 ```
 
-| Parameter |                       Type                       |
-|-----------|--------------------------------------------------|
-| slot      | int                                              |
-| amount    | int                                              |
-| entityIn  | @org.openzen.zencode.java.ZenCodeType.Nullable T |
-| onBroken  | Consumer&lt;T&gt;?                               |
-| T         | [LivingEntity](/vanilla/api/entity/LivingEntity) |
+| Parameter |                         Type                          |
+|-----------|-------------------------------------------------------|
+| slot      | int                                                   |
+| amount    | int                                                   |
+| entityIn  | @org.openzen.zencode.java.ZenCodeType.Nullable T      |
+| onBroken  | [Consumer](/mods/sdmcrtplus/utils/Consumer)&lt;T&gt;? |
+| T         | [LivingEntity](/vanilla/api/entity/LivingEntity)      |
 
 
 :::

@@ -1,5 +1,7 @@
 # BuildingEntry
 
+This class is responsible for all blocks that can store items or change in some way (such as a Piston, Chest, Funnel, etc.)
+
 ## Importing the class
 
 It might be required for you to import the package if you encounter any issues (like casting an Array), so better be safe than sorry and add the import at the very top of the file.
@@ -12,6 +14,8 @@ import mods.sdmcrtplus.integration.api.colony.buildings.registry.BuildingEntry;
 
 :::group{name=getBuildingBlock}
 
+Allows you to get a Regular block from the Entity Block.
+
 Return Type: [AbstractBlockMinecolonies](/mods/sdmcrtplus/integration/minecolonies/api/blocks/AbstractBlockMinecolonies)
 
 ```zenscript
@@ -23,6 +27,8 @@ myBuildingEntry.getBuildingBlock();
 :::
 
 :::group{name=getModuleProducers}
+
+This is a synchronization module with the server.
 
 Return Type: stdlib.List&lt;[Supplier](/mods/sdmcrtplus/utils/Supplier)&gt;
 

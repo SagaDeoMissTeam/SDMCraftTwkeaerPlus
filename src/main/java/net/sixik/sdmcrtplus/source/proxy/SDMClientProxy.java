@@ -7,6 +7,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.sixik.sdmcrtplus.source.client.events.SDMClientEvents;
 import net.sixik.sdmcrtplus.source.lore.client.LoreQuoteHandler;
 
 import java.util.Random;
@@ -19,6 +20,7 @@ public class SDMClientProxy extends SDMCommonProxy{
         modBus.addListener(this::onClientSetup);
 
         MinecraftForge.EVENT_BUS.register(LoreQuoteHandler.INSTANCE);
+        MinecraftForge.EVENT_BUS.register(SDMClientEvents.INSTANCE);
     }
 
     @Override

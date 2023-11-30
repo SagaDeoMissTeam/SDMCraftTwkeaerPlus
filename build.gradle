@@ -161,49 +161,60 @@ dependencies {
     compileOnly(ctDep)
     runtimeOnly(fg.deobf(ctDep))
 //    implementation fg.deobf("curse.maven:game-stages-268655:4396244")
-    implementation fg.deobf("curse.maven:bookshelf-228525:4556697")
+    compileOnly fg.deobf("curse.maven:bookshelf-228525:4556697")
     annotationProcessor 'com.blamejared.crafttweaker:Crafttweaker_Annotation_Processors:3.0.0.15'
-    implementation fg.deobf("curse.maven:curios-309927:4523009")
-    implementation fg.deobf("curse.maven:the-twilight-forest-227639:4389567")
-    implementation fg.deobf("curse.maven:majrusz-library-437409:4709662")
-    implementation fg.deobf("curse.maven:majruszs-progressive-difficulty-430642:4709668")
-    implementation fg.deobf("curse.maven:corgilib-693313:4554111")
+    compileOnly fg.deobf("curse.maven:curios-309927:4523009")
+    compileOnly fg.deobf("curse.maven:the-twilight-forest-227639:4389567")
+    compileOnly fg.deobf("curse.maven:majrusz-library-437409:4709662")
+    compileOnly fg.deobf("curse.maven:majruszs-progressive-difficulty-430642:4709668")
+    compileOnly fg.deobf("curse.maven:corgilib-693313:4554111")
 
-    implementation fg.deobf("curse.maven:ftb-library-forge-404465:4500548")
-    implementation fg.deobf("curse.maven:ftb-quests-forge-289412:4530022")
-    implementation fg.deobf("curse.maven:ftb-teams-forge-404468:4477315")
-    implementation fg.deobf("curse.maven:item-filters-309674:4055379")
-    implementation fg.deobf("curse.maven:enhanced-celestials-438447:4598311")
-    implementation fg.deobf("curse.maven:architectury-api-419699:4521273")
+    compileOnly fg.deobf("curse.maven:ftb-library-forge-404465:4500548")
+    compileOnly("curse.maven:ftb-quests-forge-289412:4530022")
+    compileOnly fg.deobf("curse.maven:ftb-teams-forge-404468:4477315")
+    compileOnly fg.deobf("curse.maven:item-filters-309674:4055379")
+    compileOnly("curse.maven:enhanced-celestials-438447:4598311")
+    compileOnly fg.deobf("curse.maven:architectury-api-419699:4521273")
 
-    implementation fg.deobf("curse.maven:waystones-245755:4635420")
-    implementation fg.deobf("curse.maven:night-config-fixes-813369:4459148")
-    implementation fg.deobf("curse.maven:placebo-283644:4677899")
-    implementation fg.deobf("curse.maven:balm-531761:4442591")
-    implementation fg.deobf("curse.maven:patchouli-306770:4031402")
-    implementation fg.deobf("curse.maven:caelus-308989:3929284")
+    compileOnly("curse.maven:waystones-245755:4635420")
+    compileOnly("curse.maven:night-config-fixes-813369:4459148")
+    compileOnly("curse.maven:placebo-283644:4677899")
+    compileOnly("curse.maven:balm-531761:4442591")
+    compileOnly("curse.maven:patchouli-306770:4031402")
+    compileOnly("curse.maven:caelus-308989:3929284")
 
-    implementation fg.deobf("curse.maven:apotheosis-313970:4730358")
-    implementation fg.deobf("curse.maven:enigmatic-legacy-336184:4392950")
+    compileOnly fg.deobf("curse.maven:apotheosis-313970:4730358")
+    compileOnly("curse.maven:enigmatic-legacy-336184:4392950")
 
-    implementation fg.deobf("curse.maven:minecolonies-245506:4735228")
+    compileOnly("curse.maven:minecolonies-245506:4735228")
 
-    implementation fg.deobf("curse.maven:blockui-522992:4399022")
-    implementation fg.deobf("curse.maven:domum-ornamentum-527361:4741135")
-    implementation fg.deobf("curse.maven:multi-piston-303278:4128597")
-    implementation fg.deobf("curse.maven:structurize-298744:4716727")
+    compileOnly("curse.maven:blockui-522992:4399022")
+    compileOnly("curse.maven:domum-ornamentum-527361:4741135")
+    compileOnly("curse.maven:multi-piston-303278:4128597")
+    compileOnly("curse.maven:structurize-298744:4716727")
 
-    implementation fg.deobf("curse.maven:the-impossible-library-661115:4742104")
-    implementation fg.deobf("curse.maven:music-triggers-518410:4742124")
+    compileOnly fg.deobf("curse.maven:the-impossible-library-661115:4742104")
+    compileOnly fg.deobf("curse.maven:music-triggers-518410:4742124")
 
     annotationProcessor ctDep
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
-    implementation fg.deobf("curse.maven:project-mmo-353935:4680174")
+    compileOnly("curse.maven:project-mmo-353935:4680174")
 
-    implementation fg.deobf("curse.maven:open-parties-and-claims-636608:4686628")
+    compileOnly("curse.maven:open-parties-and-claims-636608:4686628")
 
-//    implementation files('libs/JobsPlus+1.19.2-0.9.2.jar')
+    compileOnly("curse.maven:yungs-api-421850:4441682")
+    compileOnly("curse.maven:travelers-titles-504908:4034656")
+
+    compileOnly("curse.maven:rhino-416294:4715267")
+    compileOnly("curse.maven:kubejs-238086:4734415")
+
+    compileOnly fg.deobf("curse.maven:official-divinerpg-363543:4512117")
+    compileOnly fg.deobf("curse.maven:roughly-enough-items-310111:4812888")
+    implementation fg.deobf("curse.maven:fancyvideo-api-591686:3865525")
+    implementation fg.deobf("curse.maven:jei-238222:4712866")
+    compileOnly files('libs/hc-1.19.2-1.2.0.jar')
+    compileOnly files('libs/hollowengine-1.19.2-1.1.1.jar')
 //    implementation files('libs/jei-1.19.2-forge-11.6.0.1018.jar')
 }
 

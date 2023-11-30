@@ -175,4 +175,31 @@ myTeamData.getUUID();
 
 :::
 
+:::group{name=resetProgress}
+
+```zenscript
+TeamData.resetProgress(id as long, player as ServerPlayer)
+```
+
+| Parameter |                             Type                             |
+|-----------|--------------------------------------------------------------|
+| id        | long                                                         |
+| player    | [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer) |
+
+
+:::
+
+:::group{name=setCompleted}
+
+```zenscript
+TeamData.setCompleted(id as long)
+```
+
+| Parameter | Type |
+|-----------|------|
+| id        | long |
+
+
+:::
+
 

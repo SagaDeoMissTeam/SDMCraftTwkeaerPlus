@@ -196,3 +196,31 @@ LoreQuoteUtils.playCustom(player as ServerPlayer)
 
 :::
 
+:::group{name=playVideo}
+
+```zenscript
+LoreQuoteUtils.playVideo(player as ServerPlayer, video as string, volume as int)
+```
+
+| Parameter |                             Type                             |
+|-----------|--------------------------------------------------------------|
+| player    | [ServerPlayer](/vanilla/api/entity/type/player/ServerPlayer) |
+| video     | string                                                       |
+| volume    | int                                                          |
+
+
+:::
+
+:::group{name=test}
+
+```zenscript
+LoreQuoteUtils.test(t as boolean)
+```
+
+| Parameter |  Type   |
+|-----------|---------|
+| t         | boolean |
+
+
+:::
+

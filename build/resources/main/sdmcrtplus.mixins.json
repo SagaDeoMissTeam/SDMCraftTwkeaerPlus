@@ -4,12 +4,12 @@
   "package": "net.sixik.sdmcrtplus.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "sdmcrtplus.refmap.json",
-
   "mixins": [
     "accessor.AbstractArrowAccessor",
     "accessor.MobAccessor",
     "mods.apotheosis.BossEventsMixin",
     "mods.enhancedcelestials.LunarForecastMixin",
+    "mods.jei.EventRegistrationMixin",
     "mods.majruszsdifficulty.UndeadArmyManagerMixin",
     "vanilla.ChestBlockEntityMixin",
     "vanilla.ChestLootGenMixin",

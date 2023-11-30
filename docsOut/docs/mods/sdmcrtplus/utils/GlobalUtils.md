@@ -52,14 +52,24 @@ GlobalUtils.UUIDToString(uuid as invalid) as string
 
 :::
 
+:::group{name=exportContent}
+
+```zenscript
+// GlobalUtils.exportContent()
+
+GlobalUtils.exportContent();
+```
+
+:::
+
 :::group{name=getServer}
 
 Allows you to get the Server from anywhere in the script.
 
-Return Type: [Server](/vanilla/api/game/Server)
+Return Type: [Server](/vanilla/api/game/Server)?
 
 ```zenscript
-// GlobalUtils.getServer() as Server
+// GlobalUtils.getServer() as Server?
 
 GlobalUtils.getServer();
 ```
@@ -86,6 +96,16 @@ Return Type: stdlib.List&lt;[ResourceLocation](/vanilla/api/resource/ResourceLoc
 // GlobalUtils.getStructuresName() as stdlib.List<ResourceLocation>
 
 GlobalUtils.getStructuresName();
+```
+
+:::
+
+:::group{name=sendTestMessage}
+
+```zenscript
+// GlobalUtils.sendTestMessage()
+
+GlobalUtils.sendTestMessage();
 ```
 
 :::

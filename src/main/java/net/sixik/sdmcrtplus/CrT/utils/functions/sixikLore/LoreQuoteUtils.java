@@ -2,10 +2,14 @@ package net.sixik.sdmcrtplus.CrT.utils.functions.sixikLore;
 
 
 import com.aizistral.enigmaticlegacy.client.Quote;
+import com.blamejared.crafttweaker.api.CraftTweakerAPI;
 import com.blamejared.crafttweaker.api.annotation.ZenRegister;
 import com.blamejared.crafttweaker_annotations.annotations.Document;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.sounds.SoundEvent;
+import net.sixik.sdmcrtplus.source.cinematic.client.ClientHandler;
+import net.sixik.sdmcrtplus.source.cinematic.networking.PacketHandler;
+import net.sixik.sdmcrtplus.source.cinematic.networking.message.SendVideoPlayer;
 import net.sixik.sdmcrtplus.source.lore.LoreQuote;
 import net.sixik.sdmcrtplus.source.lore.client.LoreSubtitles;
 import org.openzen.zencode.java.ZenCodeType;
@@ -16,6 +20,24 @@ import java.util.List;
 @Document("mods/sdmcrtplus/utils/functions/sixikLore/LoreQuoteUtils")
 @ZenCodeType.Name("mods.sdmcrtplus.utils.functions.sixikLore.LoreQuoteUtils")
 public class LoreQuoteUtils {
+
+    @ZenCodeType.Method
+    public static void test(boolean t){
+        ClientHandler.isOpen = t;
+    }
+
+    @ZenCodeType.Method
+    public static void playVideo(ServerPlayer player, String video, int volume){
+        try {
+            if (video == null){
+                CraftTweakerAPI.LOGGER.error("VIDEO IS NULL", new Throwable("Check Video name or is video exist !"));
+            }
+
+            PacketHandler.sendTo(new SendVideoPlayer(video, volume), player);
+        } catch (Exception e){
+            CraftTweakerAPI.LOGGER.error(e);
+        }
+    }
 
     @ZenCodeType.Method
     public static List<LoreQuote> getAllQuotes(){

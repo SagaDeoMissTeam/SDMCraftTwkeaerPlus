@@ -14,6 +14,18 @@ Team extends [TeamBase](/mods/sdmcrtplus/integration/ftbteams/TeamBase). That me
 
 ## Methods
 
+:::group{name=getData}
+
+Return Type: [MapData](/vanilla/api/data/MapData)
+
+```zenscript
+// Team.getData() as MapData
+
+myTeam.getData();
+```
+
+:::
+
 :::group{name=getManager}
 
 Return Type: [TeamManager](/mods/sdmcrtplus/integration/ftbteams/TeamManager)

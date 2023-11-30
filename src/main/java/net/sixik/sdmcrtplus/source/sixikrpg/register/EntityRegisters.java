@@ -5,6 +5,7 @@ import net.minecraft.server.packs.resources.SimplePreparableReloadListener;
 import net.minecraft.util.profiling.ProfilerFiller;
 import net.sixik.sdmcrtplus.CrT.utils.functions.sixikrpg.block.BlockSkillBase;
 import net.sixik.sdmcrtplus.CrT.utils.functions.sixikrpg.entity.elements.EntityElementBase;
+import net.sixik.sdmcrtplus.Sdmcrtplus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,5 +36,6 @@ public class EntityRegisters extends SimplePreparableReloadListener<Void> {
     protected void apply(Void p_10793_, ResourceManager p_10794_, ProfilerFiller p_10795_) {
         ENTITY_ELEMENT_BASES_LIST.clear();
         BLOCK_SKILL_BASES_LIST.clear();
+        Sdmcrtplus.CLIENT_GUI_RESTRICTED.clear();
     }
 }

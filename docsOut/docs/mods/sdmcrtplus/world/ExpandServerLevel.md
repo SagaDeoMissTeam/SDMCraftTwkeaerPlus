@@ -141,6 +141,18 @@ ServerLevel.getStructuresOnPos(pos as BlockPos) as stdlib.List<Structure>
 
 :::
 
+:::group{name=getWorldBorder}
+
+Return Type: [WorldBorder](/mods/sdmcrtplus/world/level/border/WorldBorder)
+
+```zenscript
+// ServerLevel.getWorldBorder() as WorldBorder
+
+serverLevel.getWorldBorder();
+```
+
+:::
+
 :::group{name=hasForcedChunks}
 
 Checks if a level has any forced chunks. Mainly used for seeing if a level should continue ticking with no players in it.

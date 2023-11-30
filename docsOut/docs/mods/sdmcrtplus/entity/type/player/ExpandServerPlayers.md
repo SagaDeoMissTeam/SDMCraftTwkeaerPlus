@@ -34,10 +34,10 @@ serverPlayer.getRespawnDimension();
 
 Will allow you to get the player's rebirth point. If there is a bed, then the coordinates of the bed, if not, then the global point in the world.
 
-Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)
+Return Type: [BlockPos](/vanilla/api/util/math/BlockPos)?
 
 ```zenscript
-// ServerPlayer.getRespawnPosition() as BlockPos
+// ServerPlayer.getRespawnPosition() as BlockPos?
 
 serverPlayer.getRespawnPosition();
 ```
@@ -82,16 +82,32 @@ Modifies the player's objection point.
 Return Type: boolean
 
 ```zenscript
-ServerPlayer.setRespawnPosition(position as BlockPos, dimension as ResourceLocation, respawnAngle as int, respawnForced as boolean, sendSetSpawnMessage as boolean) as boolean
+ServerPlayer.setRespawnPosition(dimension as ResourceLocation, position as BlockPos?, respawnAngle as int, respawnForced as boolean, sendSetSpawnMessage as boolean) as boolean
 ```
 
 |      Parameter      |                            Type                            |                                  Description                                  |
 |---------------------|------------------------------------------------------------|-------------------------------------------------------------------------------|
-| position            | [BlockPos](/vanilla/api/util/math/BlockPos)                | - Coordinates on which the player will appear                                 |
 | dimension           | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | - The dimension in which the player will appear                               |
+| position            | [BlockPos](/vanilla/api/util/math/BlockPos)?               | - Coordinates on which the player will appear                                 |
 | respawnAngle        | int                                                        | - The angle of rotation of the character's body when respawn                  |
 | respawnForced       | boolean                                                    | - This objection is forced. Using the respawn() method ?                      |
 | sendSetSpawnMessage | boolean                                                    | - Send a notification to the player that his respawn point has been changed ? |
+
+
+:::
+
+:::group{name=spawnIn}
+
+Moves the player to the specified coordinates
+ Use it if you want to change the player's spawn point
+
+```zenscript
+ServerPlayer.spawnIn(world as ServerLevel)
+```
+
+| Parameter |                     Type                      |             Description              |
+|-----------|-----------------------------------------------|--------------------------------------|
+| world     | [ServerLevel](/vanilla/api/world/ServerLevel) | - world where player will be respawn |
 
 
 :::
@@ -113,5 +129,5 @@ serverPlayer.trackStartFallingPosition();
 |------------------|------------------------------------------------------------|------------|------------|---------------------------------------------------------------------------------------------------------------------------------------------------|
 | lastActionTime   | long                                                       | true       | false      | Returns the last time the player moved                                                                                                            |
 | respawnDimension | [ResourceLocation](/vanilla/api/resource/ResourceLocation) | true       | false      | Allows you to get a dimension in which the player will be reborn after death or after teleportation from the ender world                          |
-| respawnPosition  | [BlockPos](/vanilla/api/util/math/BlockPos)                | true       | false      | Will allow you to get the player's rebirth point. If there is a bed, then the coordinates of the bed, if not, then the global point in the world. |
+| respawnPosition  | [BlockPos](/vanilla/api/util/math/BlockPos)?               | true       | false      | Will allow you to get the player's rebirth point. If there is a bed, then the coordinates of the bed, if not, then the global point in the world. |
 

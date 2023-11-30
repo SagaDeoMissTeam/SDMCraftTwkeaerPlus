@@ -64,10 +64,10 @@ myQuestFile.getAllTasks();
 
 :::group{name=getBase}
 
-Return Type: [QuestObjectBase](/mods/sdmcrtplus/integration/ftbquest/QuestObjectBase)
+Return Type: [QuestObjectBase](/mods/sdmcrtplus/integration/ftbquest/QuestObjectBase)?
 
 ```zenscript
-QuestFile.getBase(id as long) as QuestObjectBase
+QuestFile.getBase(id as long) as QuestObjectBase?
 ```
 
 | Parameter | Type |
@@ -79,10 +79,10 @@ QuestFile.getBase(id as long) as QuestObjectBase
 
 :::group{name=getChapter}
 
-Return Type: [Chapter](/mods/sdmcrtplus/integration/ftbquest/Chapter)
+Return Type: [Chapter](/mods/sdmcrtplus/integration/ftbquest/Chapter)?
 
 ```zenscript
-QuestFile.getChapter(id as long) as Chapter
+QuestFile.getChapter(id as long) as Chapter?
 ```
 
 | Parameter | Type |
@@ -94,10 +94,10 @@ QuestFile.getChapter(id as long) as Chapter
 
 :::group{name=getChapterGroup}
 
-Return Type: [ChapterGroup](/mods/sdmcrtplus/integration/ftbquest/ChapterGroup)
+Return Type: [ChapterGroup](/mods/sdmcrtplus/integration/ftbquest/ChapterGroup)?
 
 ```zenscript
-QuestFile.getChapterGroup(id as long) as ChapterGroup
+QuestFile.getChapterGroup(id as long) as ChapterGroup?
 ```
 
 | Parameter | Type |
@@ -109,10 +109,10 @@ QuestFile.getChapterGroup(id as long) as ChapterGroup
 
 :::group{name=getObject}
 
-Return Type: [QuestObject](/mods/sdmcrtplus/integration/ftbquest/QuestObject)
+Return Type: [QuestObject](/mods/sdmcrtplus/integration/ftbquest/QuestObject)?
 
 ```zenscript
-QuestFile.getObject(id as long) as QuestObject
+QuestFile.getObject(id as long) as QuestObject?
 ```
 
 | Parameter | Type |
@@ -124,10 +124,10 @@ QuestFile.getObject(id as long) as QuestObject
 
 :::group{name=getQuest}
 
-Return Type: [Quest](/mods/sdmcrtplus/integration/ftbquest/Quest)
+Return Type: [Quest](/mods/sdmcrtplus/integration/ftbquest/Quest)?
 
 ```zenscript
-QuestFile.getQuest(id as long) as Quest
+QuestFile.getQuest(id as long) as Quest?
 ```
 
 | Parameter | Type |
@@ -139,10 +139,10 @@ QuestFile.getQuest(id as long) as Quest
 
 :::group{name=getReward}
 
-Return Type: [Reward](/mods/sdmcrtplus/integration/ftbquest/Reward)
+Return Type: [Reward](/mods/sdmcrtplus/integration/ftbquest/Reward)?
 
 ```zenscript
-QuestFile.getReward(id as long) as Reward
+QuestFile.getReward(id as long) as Reward?
 ```
 
 | Parameter | Type |
